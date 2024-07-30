@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["eslint.config.cjs", "src"],
+  "include": ["eslint.config.cjs", "src", "svg.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
