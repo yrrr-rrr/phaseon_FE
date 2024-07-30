@@ -1,4 +1,4 @@
-import { SVG } from './GetSvg';
+import { SVG } from './SVG';
 import * as s from '../../style/header/HeaderStyle';
 
 export default function Header() {
