@@ -1,9 +1,9 @@
 import { useContext, useEffect } from 'react';
-import { ProjectDetailContext } from '../../../context/ProjectDetailContext';
+import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import { Updater } from 'use-immer';
-import * as s from '../../../style/projectDetail/ProjectIntroStyle';
-import { DetailDataType } from '../../../interface';
-import { ReactComponent as Banner } from '../../../assets/svg/AttiBanner.svg';
+import * as s from '../../style/projectDetail/ProjectIntroStyle';
+import { DetailDataType } from '../../interface';
+import { ReactComponent as Banner } from '../../assets/svg/AttiBanner.svg';
 
 export default function ProjectIntro() {
   const { data, updateData } = useContext(ProjectDetailContext);

@@ -1,5 +1,7 @@
 import Header from '../components/common/Header';
-import ProjectIntro from '../components/common/projectDetail/ProjectIntro';
+import ProjectDashboard from '../components/projectDetail/ProjectDashboard';
+import ProjectIntro from '../components/projectDetail/ProjectIntro';
+import { CategoryProvider } from '../context/CategoryContext';
 import { ProjectDetailProvider } from '../context/ProjectDetailContext';
 import * as s from '../style/projectDetail/ProjectDetailsStyle';
 
@@ -10,6 +12,9 @@ export default function ProjectDetails() {
       <s.Main>
         <ProjectDetailProvider>
           <ProjectIntro />
+          <CategoryProvider>
+            <ProjectDashboard />
+          </CategoryProvider>
         </ProjectDetailProvider>
       </s.Main>
     </>
