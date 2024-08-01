@@ -24,8 +24,24 @@
     "projectinfo": {
       "carousel": [
         {
-          "img": "string",
-          "type": "row or col or video"
+          "img": "0Y95Mzpib4I",
+          "type": "video"
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1505221594957-3931cba3a090?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9ua2V5fGVufDB8fDB8fHww",
+          "type": "row"
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1471421455671-b9e8a4114185?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9ua2V5fGVufDB8fDB8fHww",
+          "type": "row"
+        },
+        {
+          "img": "https://images.unsplash.com/photo-1445583934509-4ad5ffe6ef08?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vbmtleXxlbnwwfHwwfHx8MA%3D%3D",
+          "type": "row"
+        },
+        {
+          "img": "https://plus.unsplash.com/premium_photo-1685783757091-80707f8f37ba?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1vbmtleXxlbnwwfHwwfHx8MA%3D%3D",
+          "type": "row"
         }
       ],
       "mainfeatures": {
@@ -33,7 +49,31 @@
         "feature": [
           {
             "title": "마음 속 이야기 나누기",
-            "description": "stri우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?ng"
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "일상 속 작은 도우미",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "오늘은 뭐하지?",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "추억으로",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "오늘은 뭐하지?",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "오늘은 뭐하지?",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+          },
+          {
+            "title": "오늘은 뭐하지?",
+            "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
           }
         ]
       },
