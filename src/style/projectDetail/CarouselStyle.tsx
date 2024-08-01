@@ -1,0 +1,70 @@
+import styled from 'styled-components';
+import { ReactComponent as LeftButton } from '../../assets/svg/LeftButton.svg';
+import { ReactComponent as RightButton } from '../../assets/svg/RightButton.svg';
+
+export const Section = styled.section`
+  width: 780px;
+  height: 218px;
+  position: relative;
+`;
+
+export const CarouselViewport = styled.section`
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f8;
+  overflow: hidden;
+`;
+
+export const CarouselContainer = styled.div`
+  width: 100%;
+  height: 196px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const CarouselSlide = styled.div`
+  margin: 0 4px 0 4px;
+`;
+
+export const Img = styled.img`
+  width: 320px;
+  height: 180px;
+`;
+
+export const ButtonSection = styled.section`
+  width: 100%;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SlideButton = styled.button<{ $bgColor: string }>`
+  margin: 0 3px 0 3px;
+  width: 6px;
+  height: 6px;
+  border: ${({ $bgColor }) =>
+    $bgColor == 'color' ? '0.6px solid rgba(105, 172, 255, 0.08)' : '0.6px solid rgba(23,23,25,0.08)'};
+  border-radius: 100%;
+  outline: none;
+  background-color: ${({ $bgColor }) => ($bgColor == 'color' ? '#69ACFF' : '#F2F2F7')};
+  cursor: pointer;
+`;
+
+export const PrevButton = styled(LeftButton)`
+  position: absolute;
+  top: 93px;
+  left: 20px;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+`;
+
+export const NextButton = styled(RightButton)`
+  position: absolute;
+  top: 93px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+`;
