@@ -12,12 +12,12 @@ export default function ProjectInfo() {
           <s.Title>{`01. ${data.projectname} 기능 소개`}</s.Title>
           <s.ShortDescription>{data.category.projectinfo.mainfeatures.shortdescription}</s.ShortDescription>
         </s.MarginBox>
-        {data.category.projectinfo.mainfeatures.feature.map((obj, n) => (
-          <s.MarginBox key={obj.title + n}>
-            <s.FeatureTitle>{obj.title}</s.FeatureTitle>
+        {data.category.projectinfo.mainfeatures.feature.map((featureObj, key) => (
+          <s.MarginBox key={featureObj.title + key}>
+            <s.FeatureTitle>{featureObj.title}</s.FeatureTitle>
             <div>
-              {obj.description.split('<br/>').map((text, n) => (
-                <s.FeatureDesription key={text + n}>
+              {featureObj.description.split('<br/>').map((text, textKey) => (
+                <s.FeatureDesription key={text + textKey}>
                   {text}
                   <br />
                 </s.FeatureDesription>
@@ -32,8 +32,8 @@ export default function ProjectInfo() {
           <s.ShortDescription>{`${data.projectname} Build with:`}</s.ShortDescription>
         </s.MarginBox>
         <s.TechBox>
-          {data.category.projectinfo.techstack.map((tech, n) => (
-            <s.Tech key={tech + n}>
+          {data.category.projectinfo.techstack.map((tech, key) => (
+            <s.Tech key={key}>
               <s.TechText>{`#${tech}`}</s.TechText>
             </s.Tech>
           ))}

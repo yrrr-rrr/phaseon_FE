@@ -31,12 +31,12 @@ export default function Carousel() {
       />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
-          {data.category.projectinfo.carousel.map((obj, n) => {
-            if (obj.type == 'video') {
+          {data.category.projectinfo.carousel.map((carouselObj, key) => {
+            if (carouselObj.type == 'video') {
               return (
-                <s.CarouselSlide key={obj.img + n}>
+                <s.CarouselSlide key={carouselObj.img + key}>
                   <YouTube
-                    videoId={obj.img}
+                    videoId={carouselObj.img}
                     opts={{
                       width: '320px',
                       height: '180px',
@@ -46,22 +46,22 @@ export default function Carousel() {
               );
             } else {
               return (
-                <s.CarouselSlide key={obj.img + n}>
-                  <s.Img src={obj.img} alt="" />
-                  {/* imgType={obj.type} */}
+                <s.CarouselSlide key={carouselObj.img + key}>
+                  <s.Img src={carouselObj.img} alt="" />
+                  {/* imgType={carouselObj.type} */}
                 </s.CarouselSlide>
               );
             }
           })}
         </s.CarouselContainer>
         <s.ButtonSection>
-          {data.category.projectinfo.carousel.map((obj, n) => (
+          {data.category.projectinfo.carousel.map((carouselObj, index) => (
             <s.SlideButton
               aria-label="btn"
-              key={obj.img + obj.type + n}
-              $bgColor={currentImg == n ? 'color' : 'none'}
+              key={index}
+              $bgColor={currentImg == index ? 'color' : 'none'}
               onClick={() => {
-                emblaApi?.scrollTo(n);
+                emblaApi?.scrollTo(index);
               }}
             ></s.SlideButton>
           ))}
