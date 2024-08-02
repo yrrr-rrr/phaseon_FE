@@ -90,16 +90,52 @@
     "performance": {
       "certifiedaward": [
         {
-          "badge": "people's choice",
+          "badge": "Top3",
           "award": "Google Solution Challenge TOP 3"
+        },
+        {
+          "badge": "Top10",
+          "award": "Google Solution Challenge TOP 10"
+        },
+        {
+          "badge": "Top100",
+          "award": "Google Solution Challenge TOP 100"
+        },
+        {
+          "badge": "PeopleChoice",
+          "award": "2024 창업중심대학 예비부문 협약"
         }
       ],
-      "accomplishment": ["string"],
+      "accomplishment": [
+        "Google Solution Challenge TOP 3",
+        "Google Solution Challenge TOP 10",
+        "Google Solution Challenge TOP 100",
+        "2024 창업중심대학 예비부문 협약"
+      ],
       "news": [
         {
-          "img": "string",
+          "img": "https://via.placeholder.com/80",
           "title": "기사 제목",
-          "content": "기사내용 기사 내용"
+          "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
+          "link": "string"
+        },
+        {
+          "img": "https://via.placeholder.com/80",
+          "title": "기사 제목",
+          "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
+          "link": "string"
+        },
+        {
+          "img": "https://via.placeholder.com/80",
+          "title": "기사 제목",
+          "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
+          "link": "string"
+        },
+        {
+          "img": "https://via.placeholder.com/80",
+          "title": "기사 제목",
+          "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
+          "link": "string"
         }
       ]
     },
