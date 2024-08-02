@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import * as s from '../../style/projectDetail/ProjectDashboardStyle';
 import { CategoryContext } from '../../context/CategoryContext';
 import ProjectInfo from './ProjectInfo';
+import Performance from './Performance';
 
 export default function ProjectDashboard() {
   const { currentCategory, setCurrentCategory } = useContext(CategoryContext);
@@ -28,6 +29,7 @@ export default function ProjectDashboard() {
         ))}
       </s.CategoryBox>
       {currentCategory == 'information' && <ProjectInfo />}
+      {currentCategory == 'performance' && <Performance />}
     </s.Section>
   );
 }
