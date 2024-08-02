@@ -1,5 +1,4 @@
 import React, { SetStateAction } from 'react';
-import { Updater } from 'use-immer';
 interface PathType {
   path: string;
   fill: string;
@@ -119,7 +118,6 @@ export interface DetailDataType {
     introduction: Introduction;
   };
 }
-
 export interface CategoryContextType {
   currentCategory: string;
   setCurrentCategory: React.Dispatch<SetStateAction<string>>;
