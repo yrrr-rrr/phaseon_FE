@@ -1,3 +1,4 @@
+import React, { SetStateAction } from 'react';
 interface PathType {
   path: string;
   fill: string;
@@ -116,4 +117,8 @@ export interface DetailDataType {
     performance: Performance;
     introduction: Introduction;
   };
+}
+export interface CategoryContextType {
+  currentCategory: string;
+  setCurrentCategory: React.Dispatch<SetStateAction<string>>;
 }
