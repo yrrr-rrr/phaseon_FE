@@ -14,16 +14,16 @@ export default function ProjectDashboard() {
   return (
     <s.Section>
       <s.CategoryBox>
-        {categories.map((obj, n) => (
+        {categories.map((category, key) => (
           <s.CategoryText
-            key={obj.id + n}
-            $id={obj.id}
+            key={key}
+            $id={category.id}
             $currentCategory={currentCategory}
             onClick={() => {
-              setCurrentCategory(obj.id);
+              setCurrentCategory(category.id);
             }}
           >
-            {obj.text}
+            {category.text}
           </s.CategoryText>
         ))}
       </s.CategoryBox>
