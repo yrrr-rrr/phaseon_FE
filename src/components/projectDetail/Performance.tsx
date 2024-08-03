@@ -7,7 +7,7 @@ export default function Performance() {
   const { data } = useContext(ProjectDetailContext);
   return (
     <s.Section>
-      <section>
+      <s.MarginBox>
         <s.TitleBox>
           <s.Title>Certified Award</s.Title>
           <s.ShortDescription>Phase On 공식 인증 성과</s.ShortDescription>
@@ -32,7 +32,7 @@ export default function Performance() {
             <s.Li key={awardObj.award + index}>{awardObj.award}</s.Li>
           ))}
         </s.Ul>
-      </section>
+      </s.MarginBox>
       <s.MarginBox>
         <s.TitleBox>
           <s.Title>Accomplishments</s.Title>

@@ -21,6 +21,11 @@ export const ShortDescription = styled.p`
   letter-spacing: 0.203px;
 `;
 
+export const PaddingBox = styled.section`
+  padding: 0 20px;
+  width: 740px;
+`;
+
 export const NewsBox = styled.section`
   margin-bottom: 24px;
   width: 740px;
