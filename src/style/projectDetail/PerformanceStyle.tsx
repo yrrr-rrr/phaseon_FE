@@ -96,6 +96,7 @@ export const Li = styled.li`
 `;
 
 export const MarginBox = styled.section`
+  padding: 0 20px;
   margin: 24px 0;
   width: 740px;
 `;

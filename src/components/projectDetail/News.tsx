@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom';
 import { NewsItem } from '../../interface';
 import * as s from '../../style/projectDetail/NewsStyle';
 
 export default function News({ data, projectName }: { data: NewsItem[]; projectName: string }) {
-  const navigate = useNavigate();
   return (
-    <section>
+    <s.PaddingBox>
       <s.TitleBox>
         <s.Title>News</s.Title>
         <s.ShortDescription>{`${projectName}의 보도자료`}</s.ShortDescription>
@@ -24,6 +22,6 @@ export default function News({ data, projectName }: { data: NewsItem[]; projectN
           </s.NewsTextBox>
         </s.NewsBox>
       ))}
-    </section>
+    </s.PaddingBox>
   );
 }
