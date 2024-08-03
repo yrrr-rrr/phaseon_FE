@@ -65,7 +65,8 @@ export interface ProfileLink {
 }
 
 export interface Member {
-  img: string;
+  img: string | null;
+  name: string;
   role: string;
   email: string;
   profilelink: ProfileLink[];
