@@ -13,6 +13,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
 `;
+
 export const TitleBox = styled.section`
   margin-bottom: 24px;
 `;
@@ -97,40 +98,4 @@ export const Li = styled.li`
 export const MarginBox = styled.section`
   margin: 24px 0;
   width: 740px;
-`;
-
-export const NewsBox = styled.section`
-  margin-bottom: 24px;
-  width: 740px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-`;
-
-export const NewsImg = styled.img`
-  width: 80px;
-  height: 80px;
-`;
-
-export const NewsTextBox = styled.section`
-  width: 628px;
-  height: 100%;
-`;
-
-export const NewsTitle = styled.p`
-  margin-bottom: 8px;
-  color: #222228;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 144.5%;
-  letter-spacing: -0.004px;
-`;
-
-export const NewsContent = styled.p`
-  color: #525662;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 133.4%;
-  letter-spacing: 0.302px;
 `;
