@@ -56,6 +56,7 @@ export interface NewsItem {
   img: string;
   title: string;
   content: string;
+  link: string;
 }
 
 export interface ProfileLink {
