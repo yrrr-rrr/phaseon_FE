@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/PerformanceStyle';
+import News from './News';
 
 export default function Performance() {
   const { data } = useContext(ProjectDetailContext);
@@ -43,21 +44,7 @@ export default function Performance() {
           ))}
         </s.Ul>
       </s.MarginBox>
-      <section>
-        <s.TitleBox>
-          <s.Title>News</s.Title>
-          <s.ShortDescription>{`${data.projectname}의 보도자료`}</s.ShortDescription>
-        </s.TitleBox>
-        {data.category.performance.news.map((newsObj, index) => (
-          <s.NewsBox key={newsObj.title + index}>
-            <s.NewsImg src={newsObj.img} alt="" />
-            <s.NewsTextBox>
-              <s.NewsTitle>{newsObj.title}</s.NewsTitle>
-              <s.NewsContent>{newsObj.content}</s.NewsContent>
-            </s.NewsTextBox>
-          </s.NewsBox>
-        ))}
-      </section>
+      <News data={data.category.performance.news} projectName={data.projectname} />
     </s.Section>
   );
 }
