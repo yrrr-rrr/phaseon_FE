@@ -44,7 +44,13 @@ export interface MainFeature {
 
 export interface ReleaseVersion {
   version: number;
-  extrafeature: string[];
+  date: string;
+  extrafeature: ExtraFeatur[];
+}
+
+export interface ExtraFeatur {
+  feature: string;
+  description: string;
 }
 
 export interface CertifiedAward {

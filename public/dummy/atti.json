@@ -87,8 +87,40 @@
     "release": {
       "releaseversion": [
         {
-          "version": "number",
-          "extrafeature": ["string"]
+          "version": "1.1",
+          "date": "2024.08.03",
+          "extrafeature": [
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+            },
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+            },
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+            }
+          ]
+        },
+        {
+          "version": "1.2",
+          "date": "2024.08.03",
+          "extrafeature": [
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd<br/>fjfjkbㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ"
+            },
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+            },
+            {
+              "feature": "ㅇㅇㅇㅇ",
+              "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+            }
+          ]
         }
       ]
     },
