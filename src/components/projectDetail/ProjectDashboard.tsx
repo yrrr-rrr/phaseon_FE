@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import * as s from '../../style/projectDetail/ProjectDashboardStyle';
 import { CategoryContext } from '../../context/CategoryContext';
 import ProjectInfo from './ProjectInfo';
-import Performance from './Performance';\
+import Performance from './Performance';
 import Introduction from './Introduction';
 import Release from './Release';
 
