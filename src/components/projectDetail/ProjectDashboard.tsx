@@ -5,6 +5,7 @@ import ProjectInfo from './ProjectInfo';
 import Performance from './Performance';
 import Introduction from './Introduction';
 import Release from './Release';
+import ActionPanel from './ActionPanel';
 
 export default function ProjectDashboard() {
   const { currentCategory, setCurrentCategory } = useContext(CategoryContext);
@@ -34,6 +35,7 @@ export default function ProjectDashboard() {
       {currentCategory == 'performance' && <Performance />}
       {currentCategory == 'release' && <Release />}
       {currentCategory == 'introduction' && <Introduction />}
+      <ActionPanel />
     </s.Section>
   );
 }
