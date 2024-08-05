@@ -3,17 +3,23 @@
   "star": 3,
   "view": 0,
   "floatmenu": {
+    "view": 0,
     "category": "IT / App",
     "buttons": [
       {
-        "icon": "instargram",
+        "icon": "https://via.placeholder.com/16",
         "buttontext": "인스타그램",
         "link": "https://www.instagram.com/yrrrr_rrrrr/"
       }
     ],
-    "releasenote": "string",
-    "performace": ["img string"],
-    "members": ["img string"]
+    "releasenote": "No releases published",
+    "performance": ["ivfmg", "iqemg", "imwg", "img"],
+    "members": [
+      "https://via.placeholder.com/40",
+      "https://via.placeholder.com/40",
+      "https://via.placeholder.com/40",
+      "https://via.placeholder.com/40"
+    ]
   },
   "intro": {
     "banner": "img",

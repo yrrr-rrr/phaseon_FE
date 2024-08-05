@@ -89,6 +89,7 @@ export interface MainProjectInfo {
 
 export interface FloatMenu {
   category: string;
+  view: number;
   buttons: Button[];
   releasenote: string;
   performance: string[];
