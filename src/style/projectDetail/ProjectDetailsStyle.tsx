@@ -6,4 +6,14 @@ export const Main = styled.main`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  position: relative;
+`;
+export const Div = styled.div`
+  width: 320px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 210px;
+  z-index: 4;
 `;

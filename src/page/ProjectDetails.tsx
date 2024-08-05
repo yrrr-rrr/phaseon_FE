@@ -1,4 +1,5 @@
 import Header from '../components/common/Header';
+import FloatingBox from '../components/projectDetail/FloatingBox';
 import ProjectDashboard from '../components/projectDetail/ProjectDashboard';
 import ProjectIntro from '../components/projectDetail/ProjectIntro';
 import { CategoryProvider } from '../context/CategoryContext';
@@ -11,6 +12,9 @@ export default function ProjectDetails() {
       <Header />
       <s.Main>
         <ProjectDetailProvider>
+          <s.Div>
+            <FloatingBox />
+          </s.Div>
           <ProjectIntro />
           <CategoryProvider>
             <ProjectDashboard />
