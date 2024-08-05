@@ -179,7 +179,103 @@
     "introduction": {
       "members": [
         {
-          "img": "string",
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
+          "name": "서예린",
+          "role": "Front-End Developer",
+          "email": "seyerin12@naver.com",
+          "profilelink": [
+            {
+              "icon": "instargram",
+              "link": "https://www.instagram.com/yrrrr_rrrrr/"
+            }
+          ]
+        },
+        {
+          "img": null,
           "name": "서예린",
           "role": "Front-End Developer",
           "email": "seyerin12@naver.com",

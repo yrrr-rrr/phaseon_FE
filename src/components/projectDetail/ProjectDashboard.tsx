@@ -2,9 +2,9 @@ import { useContext } from 'react';
 import * as s from '../../style/projectDetail/ProjectDashboardStyle';
 import { CategoryContext } from '../../context/CategoryContext';
 import ProjectInfo from './ProjectInfo';
-import Performance from './Performance';
+import Performance from './Performance';\
+import Introduction from './Introduction';
 import Release from './Release';
-
 
 export default function ProjectDashboard() {
   const { currentCategory, setCurrentCategory } = useContext(CategoryContext);
@@ -33,6 +33,7 @@ export default function ProjectDashboard() {
       {currentCategory == 'information' && <ProjectInfo />}
       {currentCategory == 'performance' && <Performance />}
       {currentCategory == 'release' && <Release />}
+      {currentCategory == 'introduction' && <Introduction />}
     </s.Section>
   );
 }
