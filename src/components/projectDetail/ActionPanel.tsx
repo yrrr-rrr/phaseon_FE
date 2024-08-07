@@ -12,8 +12,8 @@ export default function ActionPanel() {
       <s.ProjectName>{data.projectname}</s.ProjectName>
       <s.ShortDescription>{data.intro.projectbrief}</s.ShortDescription>
       <s.ButtonBox>
-        <StarButton />
-        <ShareButton />
+        <StarButton width={117} height={48} />
+        <ShareButton width={117} height={48} />
       </s.ButtonBox>
     </s.Section>
   );

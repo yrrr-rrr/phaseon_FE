@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "img": "png/atti.png",
+      "projectname": "ATTI",
+      "description": "치매환자를 위한 기억의 회상과 기록 솔루션"
+    },
+    {
+      "img": "png/drugbox.png",
+      "projectname": "DrugBox",
+      "description": "의약품의 올바른 관리 및 폐기를 도와주는 솔루션"
+    },
+    {
+      "img": "png/plogus.png",
+      "projectname": "PlogUs",
+      "description": "플로깅 활동을 통해 환경과 건강 모두를 지킬 수 있는 프로젝트"
+    },
+    {
+      "img": "png/fluentify.png",
+      "projectname": "fluentify",
+      "description": "청각 장애 아동의 의사소통 문제를 해결하는 솔루션"
+    },
+    {
+      "img": "png/comma.png",
+      "projectname": "COM-MA",
+      "description": "청각 장애 부모와 자녀(CODA)를 위한 AI 카메라 기반 수화 교육 플랫폼"
+    },
+    {
+      "img": "png/earth&i.png",
+      "projectname": "Earth&I",
+      "description": "기후 변화 대응을 위한 행동을 촉구하는 플랫폼"
+    },
+    {
+      "img": "png/spacedog.png",
+      "projectname": "SpaceDog",
+      "description": "청각장애인을 위한 반려견 케어 지원 솔루션"
+    },
+    {
+      "img": "png/pathpal.png",
+      "projectname": "PathPal",
+      "description": "시각 장애인을 위한 안전한 보행을 지원하는 AI 기반 내비게이션 서비스"
+    },
+    {
+      "img": "png/pengy.png",
+      "projectname": "Pengy",
+      "description": "일상에서 화재 위험을 쉽게 관리하고 예방하는 AI 친구"
+    },
+    {
+      "img": "png/vridge.png",
+      "projectname": "VRIDGE",
+      "description": "언어 장애인을 위한 나만의 목소리를 만들어주는 특별한 음성 합션 솔루션"
+    },
+    {
+      "img": "png/saybetter.png",
+      "projectname": "SayBetter",
+      "description": "뇌 손상 장애 아동을 위한 편리한 비대면 언어 치료 솔루션"
+    },
+    {
+      "img": "png/audiopoli.png",
+      "projectname": "AudioPoli",
+      "description": "AI 기반 긴급 상황 실시간 대응 음성 분석 시스템"
+    }
+  ]
+}

@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 
-export const Button = styled.button<{ $border: string; $color: string; $type: string }>`
+export const Button = styled.button<{
+  $border: string;
+  $color: string;
+  $type: string;
+  $width: number;
+  $height: number;
+}>`
   padding: 14px 10.7px;
-  width: 117px;
-  height: 48px;
+  width: ${({ $width }) => `${$width}px`};
+  height: ${({ $height }) => `${$height}px`};
   box-sizing: border-box;
   border: ${({ $border }) => $border};
   border-radius: 10px;
 
   color: ${({ $color }) => $color};
-  font-size: 16px;
+  font-size: ${({ $width }) => ($width == 103 ? '13px' : '16px')};
   font-weight: 600;
   line-height: 150%;
   letter-spacing: 0.091px;

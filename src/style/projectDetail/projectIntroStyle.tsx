@@ -9,6 +9,11 @@ export const Section = styled.section`
   position: relative;
 `;
 
+export const Banner = styled.img`
+  width: 1100px;
+  height: 160px;
+`;
+
 export const IntroSection = styled.section`
   width: 740px;
   height: 334px;
@@ -19,7 +24,7 @@ export const IntroSection = styled.section`
   flex: none;
 `;
 
-export const MainImg = styled(AttiMainImg)`
+export const MainImg = styled.img`
   margin-bottom: 24px;
   width: 160px;
   border-radius: 4px;

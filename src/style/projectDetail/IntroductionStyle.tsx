@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Instagram } from '../../assets/svg/Instagram.svg';
+import { ReactComponent as instargram } from '../../assets/svg/instargram.svg';
 import { ReactComponent as Person } from '../../assets/svg/Person.svg';
 
 export const Section = styled.section`
