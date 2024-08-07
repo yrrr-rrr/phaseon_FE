@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-import { ReactComponent as AttiMainImg } from '../../assets/svg/AttiMainImg.svg';
 export const Section = styled.section`
   width: 1100px;
-  height: 414px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -12,16 +10,25 @@ export const Section = styled.section`
 export const Banner = styled.img`
   width: 1100px;
   height: 160px;
+  position: absolute;
+`;
+
+export const TempBanner = styled.div`
+  width: 1100px;
+  height: 160px;
+  position: absolute;
+  background-color: #f7f7f8;
 `;
 
 export const IntroSection = styled.section`
-  width: 740px;
-  height: 334px;
+  margin-top: 80px;
+  padding: 0 20px;
+  width: 780px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80px;
   flex: none;
+  z-index: 2;
 `;
 
 export const MainImg = styled.img`
