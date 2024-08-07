@@ -11,6 +11,7 @@ const initialDetailData: DetailDataType = {
   projectname: '',
   star: 0,
   floatmenu: {
+    view: 0,
     category: '',
     buttons: [],
     releasenote: '',
