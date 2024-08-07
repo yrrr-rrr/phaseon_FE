@@ -131,3 +131,13 @@ export interface CategoryContextType {
   currentCategory: string;
   setCurrentCategory: React.Dispatch<SetStateAction<string>>;
 }
+
+export interface Projects {
+  img: string;
+  projectname: string;
+  description: string;
+}
+
+export interface ProjectGalleryData {
+  data: Projects[];
+}
