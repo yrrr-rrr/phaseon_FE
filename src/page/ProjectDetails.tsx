@@ -1,3 +1,4 @@
+import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
 import FloatingBox from '../components/projectDetail/FloatingBox';
 import ProjectDashboard from '../components/projectDetail/ProjectDashboard';
@@ -21,6 +22,7 @@ export default function ProjectDetails() {
           </CategoryProvider>
         </ProjectDetailProvider>
       </s.Main>
+      <Footer />
     </>
   );
 }
