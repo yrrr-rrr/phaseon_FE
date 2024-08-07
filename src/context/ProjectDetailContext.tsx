@@ -15,8 +15,6 @@ const initialDetailData: DetailDataType = {
     category: '',
     buttons: [],
     releasenote: '',
-    performance: [],
-    members: [],
   },
   intro: {
     banner: '',

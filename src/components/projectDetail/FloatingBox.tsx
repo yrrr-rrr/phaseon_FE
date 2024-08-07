@@ -5,9 +5,17 @@ import StarButton from '../common/StarButon';
 import ShareButton from '../common/ShareButton';
 import * as s from '../../style/projectDetail/FloatingBoxStyle';
 import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
+import { CategoryContext } from '../../context/CategoryContext';
 
 export default function FloatingBox() {
   const { data } = useContext(ProjectDetailContext);
+  const { setCurrentCategory, introRef } = useContext(CategoryContext);
+
+  function changeCategory(category: string) {
+    setCurrentCategory(category);
+    introRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <s.Section>
       <s.ViewCategoryBox>
@@ -38,20 +46,50 @@ export default function FloatingBox() {
       <s.ImgBox>
         <s.Title>주요 성과</s.Title>
         <div>
-          {data.floatmenu.performance.map((badge, index) => (
-            <s.Badge key={badge + index} width={40} height={40} />
-          ))}
+          {data.category.performance.certifiedaward.map((awardObj, index) => {
+            switch (awardObj.badge) {
+              case 'Top3':
+                return <s.Top3 key={awardObj.badge + index} width={40} height={40} />;
+                break;
+              case 'Top10':
+                return <s.Top10 key={awardObj.badge + index} width={40} height={40} />;
+                break;
+              case 'Top50':
+                return <s.Top50 key={awardObj.badge + index} width={40} height={40} />;
+                break;
+              case 'Top100':
+                return <s.Top100 key={awardObj.badge + index} width={40} height={40} />;
+                break;
+              case 'PeopleChoice':
+                return <s.PeopleChoice key={awardObj.badge + index} width={40} height={40} />;
+                break;
+            }
+          })}
         </div>
-        <s.MoreContent>전체보기</s.MoreContent>
+        <s.MoreContent
+          onClick={() => {
+            changeCategory('performance');
+          }}
+        >
+          전체보기
+        </s.MoreContent>
       </s.ImgBox>
       <s.ImgBox>
         <s.Title>제작자</s.Title>
         <div>
-          {data.floatmenu.members.map((memberImg, index) => (
-            <s.Img key={index} src={memberImg} alt="" />
-          ))}
+          {data.category.introduction.members.map((memberObj, index) => {
+            if (index < 6) {
+              return <s.Img key={index} src="https://via.placeholder.com/40" alt="" />;
+            }
+          })}
         </div>
-        <s.MoreContent>전체보기</s.MoreContent>
+        <s.MoreContent
+          onClick={() => {
+            changeCategory('introduction');
+          }}
+        >
+          전체보기
+        </s.MoreContent>
       </s.ImgBox>
       <s.ButtonBox>
         <StarButton width={103} height={32} />
