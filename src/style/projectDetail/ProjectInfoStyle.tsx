@@ -77,7 +77,6 @@ export const TechBox = styled.section`
 export const Tech = styled.div`
   padding: 5px 10px;
   margin-right: 16px;
-  width: 78px;
   height: 100%;
   box-sizing: border-box;
   border-radius: 4px;
