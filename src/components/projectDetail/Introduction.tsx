@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/IntroductionStyle';
-import { ReactComponent as Instagram } from '../../assets/svg/Instagram.svg';
+import { ReactComponent as Instargram } from '../../assets/svg/Instargram.svg';
 
 export default function Introduction() {
   const { data } = useContext(ProjectDetailContext);
@@ -19,7 +19,7 @@ export default function Introduction() {
             {memberObj.profilelink.map((links, linkindex) => {
               if (links.icon == 'instargram') {
                 return (
-                  <Instagram
+                  <Instargram
                     key={links.link}
                     onClick={() => {
                       window.open(links.link);
