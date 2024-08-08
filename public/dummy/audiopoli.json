@@ -24,23 +24,11 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "4MbzBjkOC8Q",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
-          },
-          {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
-          },
-          {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
-          },
-          {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/audiopoli/audiopoli-carousel1.png",
             "type": "row"
           }
         ],

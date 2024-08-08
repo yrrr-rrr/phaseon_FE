@@ -24,23 +24,27 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "i28pV065ZAY",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/saybetter/saybetter-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/saybetter/saybetter-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/saybetter/saybetter-carousel3.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/saybetter/saybetter-carousel4.png",
+            "type": "row"
+          },
+          {
+            "img": "png/saybetter/saybetter-carousel5.png",
             "type": "row"
           }
         ],
@@ -97,7 +101,7 @@
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m1.png",
             "name": "지영인",
             "role": "PM",
             "email": "ooo@naver.com",
@@ -109,7 +113,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m2.png",
             "name": "이채원",
             "role": "Educator App Engineer",
             "email": "ooo@naver.com",
@@ -121,7 +125,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m3.png",
             "name": "고현철",
             "role": "Learner App Engineer",
             "email": "ooo@naver.com",
@@ -133,7 +137,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m4.png",
             "name": "한지윤",
             "role": "UI/UX Designer",
             "email": "ooo@naver.com",
@@ -145,7 +149,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m5.png",
             "name": "최선규",
             "role": "Service Server Engineer",
             "email": "ooo@naver.com",
@@ -157,7 +161,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m6.png",
             "name": "김태규",
             "role": "ML Server Engineer",
             "email": "ooo@naver.com",
@@ -169,7 +173,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m7.png",
             "name": "이지호",
             "role": "Service Server Enginner",
             "email": "ooo@naver.com",
@@ -181,7 +185,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/saybetter/saybetter-m8.png",
             "name": "이은미",
             "role": "Service Server Engineer",
             "email": "ooo@naver.com",
