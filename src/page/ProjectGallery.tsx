@@ -9,9 +9,9 @@ export default function ProjectGallery() {
   const TopRef = useRef<HTMLDivElement>(null);
   return (
     <>
-      <Header />
+      <Header TopRef={TopRef} />
       <s.Main>
-        <ProjectInfo TopRef={TopRef} />
+        <ProjectInfo />
         <ProjectCollection TopRef={TopRef} />
       </s.Main>
       <Footer />
