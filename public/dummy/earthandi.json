@@ -24,23 +24,55 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "ly9mLo1H3fs",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/eartandi/earthandi-carousel1",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/eartandi/earthandi-carousel2",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/eartandi/earthandi-carousel3",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/eartandi/earthandi-carousel4",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel5",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel6",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel7",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel8",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel9",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel10",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel11",
+            "type": "row"
+          },
+          {
+            "img": "png/eartandi/earthandi-carousel12",
             "type": "row"
           }
         ],
@@ -74,24 +106,6 @@
       "release": {
         "releaseversion": [
           {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
-          {
             "version": "1.2",
             "date": "2024.08.03",
             "extrafeature": [
@@ -115,7 +129,7 @@
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/eartandi/eartandi-m1.png",
             "name": "손형준",
             "role": "Client / Server Developer",
             "email": "ooo@naver.com",
@@ -127,7 +141,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/eartandi/eartandi-m2.png",
             "name": "이상돈",
             "role": "AI Developer",
             "email": "ooo@naver.com",
@@ -139,7 +153,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/eartandi/eartandi-m3.png",
             "name": "심서현",
             "role": "Designer",
             "email": "ooo@naver.com",
@@ -151,7 +165,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/eartandi/eartandi-m4.png",
             "name": "정원호",
             "role": "Client Developer",
             "email": "ooo@naver.com",

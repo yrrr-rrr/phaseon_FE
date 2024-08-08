@@ -24,23 +24,23 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "nOnOSi51t-M",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/drugbox/drugbox-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/drugbox/drugbox-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/drugbox/drugbox-carousel3.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/drugbox/drugbox-carousel4.png",
             "type": "row"
           }
         ],
@@ -70,24 +70,6 @@
       "release": {
         "releaseversion": [
           {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
-          {
             "version": "1.2",
             "date": "2024.08.03",
             "extrafeature": [
@@ -111,7 +93,7 @@
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/drugbox/drugbox-m1.png",
             "name": "김범준",
             "role": "AI Engineer",
             "email": "ooo@naver.com",
@@ -123,7 +105,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/drugbox/drugbox-m2.png",
             "name": "권보민",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",
@@ -135,7 +117,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/drugbox/drugbox-m3.png",
             "name": "김도연",
             "role": "ios Developer",
             "email": "ooo@naver.com",
@@ -147,7 +129,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/drugbox/drugbox-m4.png",
             "name": "김미주",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",

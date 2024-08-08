@@ -24,23 +24,19 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "cHLJiLGHlWs",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pengy/pengy-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pengy/pengy-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
-          },
-          {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pengy/pengy-carousel3.png",
             "type": "row"
           }
         ],
@@ -88,24 +84,6 @@
       "release": {
         "releaseversion": [
           {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
-          {
             "version": "1.2",
             "date": "2024.08.03",
             "extrafeature": [
@@ -120,33 +98,16 @@
       "performance": {
         "certifiedaward": [
           {
-            "badge": "Top3",
-            "award": "Google Solution Challenge TOP 3"
-          },
-          {
-            "badge": "Top10",
-            "award": "Google Solution Challenge TOP 10"
-          },
-          {
             "badge": "Top100",
             "award": "Google Solution Challenge TOP 100"
-          },
-          {
-            "badge": "PeopleChoice",
-            "award": "2024 창업중심대학 예비부문 협약"
           }
         ],
-        "accomplishment": [
-          "Google Solution Challenge TOP 3",
-          "Google Solution Challenge TOP 10",
-          "Google Solution Challenge TOP 100",
-          "2024 창업중심대학 예비부문 협약"
-        ]
+        "accomplishment": ["Google Solution Challenge TOP 100"]
       },
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/pengy/pengy-m1.png",
             "name": "박장현",
             "role": "Back-End Developer / AI Developers",
             "email": "ooo@naver.com",
@@ -158,7 +119,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pengy/pengy-m2.png",
             "name": "도수빈",
             "role": "Back-End Developer / AI Developer",
             "email": "ooo@naver.com",
@@ -170,7 +131,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pengy/pengy-m3.png",
             "name": "Byeori Moon",
             "role": "Front-End Developer / Designer",
             "email": "ooo@naver.com",
@@ -182,7 +143,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pengy/pengy-m3.png",
             "name": "박준형",
             "role": "Front-End Developer / AI Developer",
             "email": "ooo@naver.com",

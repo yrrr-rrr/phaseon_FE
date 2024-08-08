@@ -24,23 +24,31 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "7HeddwSCQK8",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pathpal/pathpal-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pathpal/pathpal-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pathpal/pathpal-carousel3.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/pathpal/pathpal-carousel4.png",
+            "type": "row"
+          },
+          {
+            "img": "png/pathpal/pathpal-carousel5.png",
+            "type": "row"
+          },
+          {
+            "img": "png/pathpal/pathpal-carousel6.png",
             "type": "row"
           }
         ],
@@ -74,24 +82,6 @@
       "release": {
         "releaseversion": [
           {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
-          {
             "version": "1.2",
             "date": "2024.08.03",
             "extrafeature": [
@@ -106,59 +96,16 @@
       "performance": {
         "certifiedaward": [
           {
-            "badge": "Top3",
-            "award": "Google Solution Challenge TOP 3"
-          },
-          {
-            "badge": "Top10",
-            "award": "Google Solution Challenge TOP 10"
-          },
-          {
             "badge": "Top100",
             "award": "Google Solution Challenge TOP 100"
-          },
-          {
-            "badge": "PeopleChoice",
-            "award": "2024 창업중심대학 예비부문 협약"
           }
         ],
-        "accomplishment": [
-          "Google Solution Challenge TOP 3",
-          "Google Solution Challenge TOP 10",
-          "Google Solution Challenge TOP 100",
-          "2024 창업중심대학 예비부문 협약"
-        ],
-        "news": [
-          {
-            "img": "https://via.placeholder.com/80",
-            "title": "[부경투데이] ‘구글 솔루션 챌린지’ 한국 최초 우승! (Korean team won 'Google for developers solution challenge' for the first time)",
-            "content": "구글이 개최하는 글로벌대회 ‘구글 솔루션 챌린지 2024(Google for Developers Solution Challenge 2024)’에서 한국 최초로 국립부경대학교 학생팀이 우승을 차지했다. 국립부경대 컴퓨터공학전공 이홍주, 박수정, 전주은, 공업디자인전공 이지은 학생팀은 전 세계 110여 개국, 2,000여 개 대학의 구글 학생 개발자 클럽(Google Developer Student Clubs) 학생들을 대상으로 열린 이번 대회에서 인도, 나이지리아 팀과 함께 최종 우승팀(TOP3)에 올랐다.",
-            "link": "https://www.pknu.ac.kr/main/51?action=view&no=716237"
-          },
-          {
-            "img": "https://via.placeholder.com/80",
-            "title": "[아주경제] 국립부경대생, 구글 솔루션 챌린지 우승 쾌거",
-            "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
-            "link": "https://m.news.nate.com/view/20240710n31018"
-          },
-          {
-            "img": "https://via.placeholder.com/80",
-            "title": "[KBS] 부경대팀, ‘구글 솔루션 챌린지’ 한국 최초 우승",
-            "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
-            "link": "https://n.news.naver.com/article/056/0011761612?sid=102"
-          },
-          {
-            "img": "https://via.placeholder.com/80",
-            "title": "[연합뉴스] 부경대팀, '구글 솔루션 챌린지' 우승",
-            "content": "기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용기사내용 기사 내용 기사내용 기사내용 기사내용",
-            "link": "https://www.yna.co.kr/view/AKR20240710118300051"
-          }
-        ]
+        "accomplishment": ["Google Solution Challenge TOP 100"]
       },
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/pathpal/pathpal-m1.png",
             "name": "이수지",
             "role": "Pm / ios",
             "email": "ooo@naver.com",
@@ -170,7 +117,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pathpal/pathpal-m2.png",
             "name": "신은빈",
             "role": "AL / ML",
             "email": "ooo@naver.com",
@@ -182,7 +129,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pathpal/pathpal-m3.png",
             "name": "홍승택",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",
@@ -194,7 +141,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/pathpal/pathpal-m4.png",
             "name": "김여원",
             "role": "Designer",
             "email": "ooo@naver.com",

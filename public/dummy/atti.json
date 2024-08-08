@@ -28,19 +28,23 @@
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/atti/atti-carousel1",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/atti/atti-carousel2",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/atti/atti-carousel3",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/atti/atti-carousel4",
+            "type": "row"
+          },
+          {
+            "img": "png/atti/atti-carousel5",
             "type": "row"
           }
         ],
@@ -85,24 +89,6 @@
       },
       "release": {
         "releaseversion": [
-          {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
           {
             "version": "1.2",
             "date": "2024.08.03",
@@ -170,7 +156,7 @@
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/atti/atti-m1",
             "name": "이홍주",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -182,7 +168,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/atti/atti-m2",
             "name": "박수정",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -194,7 +180,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/atti/atti-m3",
             "name": "전주은",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -206,7 +192,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/atti/atti-m4",
             "name": "이지은",
             "role": "Designer",
             "email": "ooo@naver.com",

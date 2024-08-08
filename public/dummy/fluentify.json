@@ -24,24 +24,24 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
+            "img": "5v3-PxTcWEM",
             "type": "video"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/fluentify/fluentify-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/fluentify/fluentify-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
+            "img": "png/fluentify/fluentify-carousel3.gif",
+            "type": "col"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
-            "type": "row"
+            "img": "png/fluentify/fluentify-carousel4.gif",
+            "type": "col"
           }
         ],
         "mainfeatures": {
@@ -97,7 +97,7 @@
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/fluentify/fluentify-m1.png",
             "name": "강민서",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -109,7 +109,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/fluentify/fluentify-m2.png",
             "name": "유회성",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",
@@ -121,7 +121,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/fluentify/fluentify-m3.png",
             "name": "임채림",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",
@@ -133,7 +133,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/fluentify/fluentify-m4.png",
             "name": "김주연",
             "role": "ML Developer",
             "email": "ooo@naver.com",

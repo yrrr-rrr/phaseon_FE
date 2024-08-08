@@ -24,23 +24,19 @@
       "projectinfo": {
         "carousel": [
           {
-            "img": "0Y95Mzpib4I",
-            "type": "video"
-          },
-          {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/vridge/vridge-carousel1.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/vridge/vridge-carousel2.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/vridge/vridge-carousel3.png",
             "type": "row"
           },
           {
-            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "img": "png/vridge/vridge-carousel4.png",
             "type": "row"
           }
         ],
@@ -70,24 +66,6 @@
       "release": {
         "releaseversion": [
           {
-            "version": "1.1",
-            "date": "2024.08.03",
-            "extrafeature": [
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              },
-              {
-                "feature": "ㅇㅇㅇㅇ",
-                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
-              }
-            ]
-          },
-          {
             "version": "1.2",
             "date": "2024.08.03",
             "extrafeature": [
@@ -102,33 +80,16 @@
       "performance": {
         "certifiedaward": [
           {
-            "badge": "Top3",
-            "award": "Google Solution Challenge TOP 3"
-          },
-          {
-            "badge": "Top10",
-            "award": "Google Solution Challenge TOP 10"
-          },
-          {
             "badge": "Top100",
             "award": "Google Solution Challenge TOP 100"
-          },
-          {
-            "badge": "PeopleChoice",
-            "award": "2024 창업중심대학 예비부문 협약"
           }
         ],
-        "accomplishment": [
-          "Google Solution Challenge TOP 3",
-          "Google Solution Challenge TOP 10",
-          "Google Solution Challenge TOP 100",
-          "2024 창업중심대학 예비부문 협약"
-        ]
+        "accomplishment": ["Google Solution Challenge TOP 100"]
       },
       "introduction": {
         "members": [
           {
-            "img": null,
+            "img": "png/vridge/vridge-m1.png",
             "name": "유용민",
             "role": "Android-End Developer",
             "email": "ooo@naver.com",
@@ -140,7 +101,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/vridge/vridge-m2.png",
             "name": "고지훈",
             "role": "AI Developer / ML",
             "email": "ooo@naver.com",
@@ -152,7 +113,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/vridge/vridge-m3.png",
             "name": "임용지",
             "role": "Back-End Developer",
             "email": "ooo@naver.com",
@@ -164,7 +125,7 @@
             ]
           },
           {
-            "img": null,
+            "img": "png/vridge/vridge-m4.png",
             "name": "이동훈",
             "role": "Android-End Developer",
             "email": "ooo@naver.com",
