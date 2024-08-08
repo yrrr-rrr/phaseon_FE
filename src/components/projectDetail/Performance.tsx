@@ -14,16 +14,22 @@ export default function Performance() {
         </s.TitleBox>
         <s.BadgeBox>
           {data.category.performance.certifiedaward.map((awardObj, key) => {
-            if (awardObj.badge == 'Top3') {
-              return <s.Top3 key={key} />;
-            } else if (awardObj.badge == 'Top10') {
-              return <s.Top10 key={key} />;
-            } else if (awardObj.badge == 'Top50') {
-              return <s.Top10 key={key} />;
-            } else if (awardObj.badge == 'Top100') {
-              return <s.Top100 key={key} />;
-            } else {
-              return <s.PeopleChoice key={key} />;
+            switch (awardObj.badge) {
+              case 'Top3':
+                return <s.Top3 key={awardObj.badge + key} width={80} height={80} />;
+                break;
+              case 'Top10':
+                return <s.Top10 key={awardObj.badge + key} width={80} height={80} />;
+                break;
+              case 'Top50':
+                return <s.Top50 key={awardObj.badge + key} width={80} height={80} />;
+                break;
+              case 'Top100':
+                return <s.Top100 key={awardObj.badge + key} width={80} height={80} />;
+                break;
+              case 'PeopleChoice':
+                return <s.PeopleChoice key={awardObj.badge + key} width={80} height={80} />;
+                break;
             }
           })}
         </s.BadgeBox>

@@ -4,17 +4,19 @@ import { Updater } from 'use-immer';
 import * as s from '../../style/projectDetail/ProjectIntroStyle';
 import { DetailDataType } from '../../interface';
 import { useParams } from 'react-router-dom';
+import { CategoryContext } from '../../context/CategoryContext';
 
 export default function ProjectIntro() {
   const { data, updateData } = useContext(ProjectDetailContext);
+  const { introRef } = useContext(CategoryContext);
   const { projectName } = useParams();
   useEffect(() => {
-    console.log('a');
     if (!projectName) return;
     getData(updateData, projectName);
   }, []);
 
   return (
+
     <s.Section>
       <s.TempBanner />
       {/* <s.Banner src={`/public/png/${projectName}Banner.png`} alt="" /> */}

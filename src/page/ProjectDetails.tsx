@@ -9,18 +9,16 @@ import { ProjectDetailProvider } from '../context/ProjectDetailContext';
 import * as s from '../style/projectDetail/ProjectDetailsStyle';
 
 export default function ProjectDetails() {
-  const { projectName } = useParams();
-  console.log(projectName);
   return (
     <>
       <Header />
       <s.Main>
         <ProjectDetailProvider>
-          <s.Div>
-            <FloatingBox />
-          </s.Div>
-          <ProjectIntro />
           <CategoryProvider>
+            <s.Div>
+              <FloatingBox />
+            </s.Div>
+            <ProjectIntro />
             <ProjectDashboard />
           </CategoryProvider>
         </ProjectDetailProvider>

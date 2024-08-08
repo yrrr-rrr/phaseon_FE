@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { ReactComponent as Top3 } from '../../assets/svg/Top3.svg';
+import { ReactComponent as Top3Icon } from '../../assets/svg/Top3.svg';
+import { ReactComponent as Top10Icon } from '../../assets/svg/Top10.svg';
+import { ReactComponent as Top100Icon } from '../../assets/svg/Top100.svg';
+import { ReactComponent as Top50Icon } from '../../assets/svg/Top50.svg';
+import { ReactComponent as PeoPleChoiceIcon } from '../../assets/svg/PeopleChoice.svg';
 
 export const Section = styled.section`
   margin-bottom: 80px;
@@ -161,7 +165,19 @@ export const ImgBox = styled.div`
   gap: 8px;
 `;
 
-export const Badge = styled(Top3)`
+export const Top3 = styled(Top3Icon)`
+  margin-right: -10px;
+`;
+export const Top10 = styled(Top10Icon)`
+  margin-right: -10px;
+`;
+export const Top50 = styled(Top50Icon)`
+  margin-right: -10px;
+`;
+export const Top100 = styled(Top100Icon)`
+  margin-right: -10px;
+`;
+export const PeopleChoice = styled(PeoPleChoiceIcon)`
   margin-right: -10px;
 `;
 
@@ -172,6 +188,7 @@ export const MoreContent = styled.span`
   line-height: 13px;
   letter-spacing: 0.06px;
   text-decoration-line: underline;
+  cursor: pointer;
 `;
 
 export const Img = styled.img`

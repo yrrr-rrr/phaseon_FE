@@ -14,6 +14,6 @@ export const Div = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 210px;
+  right: 10vw;
   z-index: 4;
 `;

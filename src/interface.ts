@@ -92,8 +92,6 @@ export interface FloatMenu {
   view: number;
   buttons: Button[];
   releasenote: string;
-  performance: string[];
-  members: string[];
 }
 
 export interface Intro {
@@ -130,6 +128,7 @@ export interface DetailDataType {
 export interface CategoryContextType {
   currentCategory: string;
   setCurrentCategory: React.Dispatch<SetStateAction<string>>;
+  introRef: React.RefObject<HTMLDivElement>;
 }
 
 export interface Projects {
