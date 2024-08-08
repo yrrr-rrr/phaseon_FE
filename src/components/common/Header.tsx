@@ -1,26 +1,33 @@
-import { SVG } from './SVG';
-import * as s from '../../style/header/HeaderStyle';
+import * as s from '../../style/common/HeaderStyle';
+import { ReactComponent as ProjectIcon } from '../../assets/svg/ProjectIcon.svg';
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <s.Header>
       <s.NavigationBox width={353}>
-        <SVG width="112" height="32" name="logo" />
+        <s.Logo />
         <s.Nav>
-          <s.IconBox color="#69ACFF">
-            <SVG width="24" height="24" name="project" />
+          <s.IconBox
+            color="#69ACFF"
+            onClick={() => {
+              navigate('/project');
+            }}
+          >
+            <ProjectIcon />
             <span>프로젝트</span>
           </s.IconBox>
           <span>아티클</span>
         </s.Nav>
       </s.NavigationBox>
       <s.NavigationBox width={214}>
-        <SVG width="24" height="24" name="search" />
+        <s.Search />
         <s.RegisterButton>
-          <SVG width="18" height="18" name="register" />
+          <s.Register />
           등록하기
         </s.RegisterButton>
-        <SVG width="32" height="32" name="user" />
+        <s.User width={32} height={32} />
       </s.NavigationBox>
     </s.Header>
   );
