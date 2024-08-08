@@ -10,10 +10,20 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 1);
+    overflow: auto;
   }
   #root{
     width: 100%;
     height: 100%;
-    
   }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #E0E0E2;
+}
 `;
