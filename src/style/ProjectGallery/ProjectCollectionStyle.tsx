@@ -36,6 +36,6 @@ export const Description = styled.p`
 
 export const Img = styled.img`
   width: 19vw;
-  /* width: 253px;
-  height: 253px; */
+  height: 19vw;
+  border-radius: 12px;
 `;

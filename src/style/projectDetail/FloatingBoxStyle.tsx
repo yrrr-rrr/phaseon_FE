@@ -4,6 +4,7 @@ import { ReactComponent as Top10Icon } from '../../assets/svg/Top10.svg';
 import { ReactComponent as Top100Icon } from '../../assets/svg/Top100.svg';
 import { ReactComponent as Top50Icon } from '../../assets/svg/Top50.svg';
 import { ReactComponent as PeoPleChoiceIcon } from '../../assets/svg/PeopleChoice.svg';
+import { ReactComponent as Person } from '../../assets/svg/Person.svg';
 
 export const Section = styled.section`
   margin-bottom: 80px;
@@ -196,6 +197,7 @@ export const Img = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 100%;
+  background-color: white;
 `;
 
 export const ButtonBox = styled.div`
@@ -203,4 +205,10 @@ export const ButtonBox = styled.div`
   width: 208px;
   display: flex;
   gap: 8px;
+`;
+
+export const PersonSvg = styled(Person)`
+  margin-right: -10px;
+  border-radius: 100%;
+  background-color: white;
 `;

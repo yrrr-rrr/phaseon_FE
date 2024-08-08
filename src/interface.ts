@@ -133,6 +133,7 @@ export interface CategoryContextType {
 
 export interface Projects {
   img: string;
+  param: string;
   projectname: string;
   description: string;
 }

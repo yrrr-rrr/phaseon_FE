@@ -23,6 +23,8 @@ export const Profile = styled.div`
 `;
 
 export const Img = styled.img`
+  width: 56px;
+  height: 56px;
   margin-bottom: 16px;
   border-radius: 100%;
 `;
@@ -45,6 +47,7 @@ export const InfoBox = styled.span`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   color: rgba(55, 56, 60, 0.61);
   font-size: 15px;
   font-style: normal;

@@ -27,4 +27,5 @@ export const CategoryText = styled.span<{ $currentCategory: string; $id: string 
   font-weight: 500;
   line-height: 146.7%;
   letter-spacing: 0.144px;
+  cursor: pointer;
 `;

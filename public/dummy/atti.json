@@ -28,23 +28,23 @@
             "type": "video"
           },
           {
-            "img": "png/atti/atti-carousel1",
+            "img": "png/atti/atti-carousel1.png",
             "type": "row"
           },
           {
-            "img": "png/atti/atti-carousel2",
+            "img": "png/atti/atti-carousel2.png",
             "type": "row"
           },
           {
-            "img": "png/atti/atti-carousel3",
+            "img": "png/atti/atti-carousel3.png",
             "type": "row"
           },
           {
-            "img": "png/atti/atti-carousel4",
+            "img": "png/atti/atti-carousel4.png",
             "type": "row"
           },
           {
-            "img": "png/atti/atti-carousel5",
+            "img": "png/atti/atti-carousel5.png",
             "type": "row"
           }
         ],
@@ -156,7 +156,7 @@
       "introduction": {
         "members": [
           {
-            "img": "png/atti/atti-m1",
+            "img": "png/atti/atti-m1.png",
             "name": "이홍주",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -168,7 +168,7 @@
             ]
           },
           {
-            "img": "png/atti/atti-m2",
+            "img": "png/atti/atti-m2.png",
             "name": "박수정",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -180,7 +180,7 @@
             ]
           },
           {
-            "img": "png/atti/atti-m3",
+            "img": "png/atti/atti-m3.png",
             "name": "전주은",
             "role": "Front-End Developer",
             "email": "ooo@naver.com",
@@ -192,7 +192,7 @@
             ]
           },
           {
-            "img": "png/atti/atti-m4",
+            "img": "png/atti/atti-m4.png",
             "name": "이지은",
             "role": "Designer",
             "email": "ooo@naver.com",
