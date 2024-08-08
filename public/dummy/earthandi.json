@@ -28,51 +28,51 @@
             "type": "video"
           },
           {
-            "img": "png/eartandi/earthandi-carousel1",
+            "img": "png/earthandi/earthandi-carousel1.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel2",
+            "img": "png/earthandi/earthandi-carousel2.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel3",
+            "img": "png/earthandi/earthandi-carousel3.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel4",
+            "img": "png/earthandi/earthandi-carousel4.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel5",
+            "img": "png/earthandi/earthandi-carousel5.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel6",
+            "img": "png/earthandi/earthandi-carousel6.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel7",
+            "img": "png/earthandi/earthandi-carousel7.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel8",
+            "img": "png/earthandi/earthandi-carousel8.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel9",
+            "img": "png/earthandi/earthandi-carousel9.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel10",
+            "img": "png/earthandi/earthandi-carousel10.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel11",
+            "img": "png/earthandi/earthandi-carousel11.png",
             "type": "row"
           },
           {
-            "img": "png/eartandi/earthandi-carousel12",
+            "img": "png/earthandi/earthandi-carousel12.png",
             "type": "row"
           }
         ],
@@ -129,7 +129,7 @@
       "introduction": {
         "members": [
           {
-            "img": "png/eartandi/eartandi-m1.png",
+            "img": "png/earthandi/earthandi-m1.png",
             "name": "손형준",
             "role": "Client / Server Developer",
             "email": "ooo@naver.com",
@@ -141,7 +141,7 @@
             ]
           },
           {
-            "img": "png/eartandi/eartandi-m2.png",
+            "img": "png/earthandi/earthandi-m2.png",
             "name": "이상돈",
             "role": "AI Developer",
             "email": "ooo@naver.com",
@@ -153,7 +153,7 @@
             ]
           },
           {
-            "img": "png/eartandi/eartandi-m3.png",
+            "img": "png/earthandi/earthandi-m3.png",
             "name": "심서현",
             "role": "Designer",
             "email": "ooo@naver.com",
@@ -165,7 +165,7 @@
             ]
           },
           {
-            "img": "png/eartandi/eartandi-m4.png",
+            "img": "png/earthandi/earthandi-m4.png",
             "name": "정원호",
             "role": "Client Developer",
             "email": "ooo@naver.com",
