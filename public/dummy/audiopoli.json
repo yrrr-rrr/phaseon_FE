@@ -87,8 +87,8 @@
             "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "instargram",
-                "link": "https://www.instargram.com"
+                "icon": "none",
+                "link": ""
               }
             ]
           },
@@ -99,8 +99,8 @@
             "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "instargram",
-                "link": "https://www.instargram.com"
+                "icon": "none",
+                "link": ""
               }
             ]
           },
@@ -111,8 +111,8 @@
             "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "instargram",
-                "link": "https://www.instargram.com"
+                "icon": "none",
+                "link": ""
               }
             ]
           },
@@ -123,8 +123,8 @@
             "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "instargram",
-                "link": "https://www.instargram.com"
+                "icon": "none",
+                "link": ""
               }
             ]
           }
