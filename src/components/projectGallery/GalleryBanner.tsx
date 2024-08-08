@@ -1,9 +1,10 @@
+import React from 'react';
 import { ReactComponent as Banner } from '../../assets/svg/ProjectGalleryBanner.svg';
 import * as s from '../../style/ProjectGallery/GalleryBannerStyle';
 
-export default function ProjectInfo() {
+export default function ProjectInfo({ TopRef }: { TopRef: React.RefObject<HTMLDivElement> }) {
   return (
-    <s.Section>
+    <s.Section ref={TopRef}>
       <Banner />
       <s.TextBox>
         <s.HighlightText>링크 하나로 끝나는 쉬운 프로젝트 홍보!</s.HighlightText>

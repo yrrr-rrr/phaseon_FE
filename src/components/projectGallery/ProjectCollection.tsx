@@ -4,7 +4,7 @@ import { ProjectGalleryData } from '../../interface';
 import * as s from '../../style/ProjectGallery/ProjectCollectionStyle';
 import { useNavigate } from 'react-router-dom';
 
-export default function ProjectCollection() {
+export default function ProjectCollection({ TopRef }: { TopRef: React.RefObject<HTMLDivElement> }) {
   const [project, updateProject] = useImmer<ProjectGalleryData>({
     data: [],
   });
@@ -18,6 +18,7 @@ export default function ProjectCollection() {
         <s.Project
           key={index}
           onClick={() => {
+            TopRef.current?.scrollIntoView({ behavior: 'smooth' });
             navigate(projectObj.param.toLowerCase());
           }}
         >
