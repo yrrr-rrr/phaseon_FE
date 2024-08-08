@@ -18,7 +18,7 @@ export default function ProjectCollection() {
         <s.Project
           key={index}
           onClick={() => {
-            navigate(projectObj.projectname.toLowerCase());
+            navigate(projectObj.param.toLowerCase());
           }}
         >
           <s.Img src={projectObj.img} alt="" />
