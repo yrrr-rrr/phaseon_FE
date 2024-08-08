@@ -1,6 +1,6 @@
 {
   "data": {
-    "projectname": "ATTI",
+    "projectname": "PathPal",
     "star": 3,
     "floatmenu": {
       "view": 0,
@@ -12,20 +12,13 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published",
-      "performance": ["ivfmg", "iqemg", "imwg", "img"],
-      "members": [
-        "https://via.placeholder.com/40",
-        "https://via.placeholder.com/40",
-        "https://via.placeholder.com/40",
-        "https://via.placeholder.com/40"
-      ]
+      "releasenote": "No releases published"
     },
     "intro": {
       "banner": "img",
       "projectimg": "img",
-      "projectbrief": "치매환자를 위한 기억의 회상과 기록 솔루션",
-      "description": "음성봇 ATTI가 “과거의 중요한 기억을 잊어버리는 것 \", \"일상생활에서 기억해야 할 것을 잊어버리는 것\"으로 구분지어 과거의 의미있는 기억을 떠올리고 현재와 미래에 규칙적인 생활을 구축할 수 있도록 도와줘요."
+      "projectbrief": "시각 장애인을 위한 안전한 보행을 지원하는 AI 기반 내비게이션 서비스",
+      "description": "PathPal은 ‘안전한 길을 안내하다’라는 슬로건 아래, 시각 장애인이 편안하게 길을 찾을 수 있도록 돕는 솔루션이에요! AI 기술을 활용해 주변 환경을 인식하고, 음성과 진동으로 사용자에게 실시간 정보를 제공하여 안전하게 목적지에 도착할 수 있도록 지원합니다."
     },
     "category": {
       "projectinfo": {
@@ -52,43 +45,31 @@
           }
         ],
         "mainfeatures": {
-          "shortdescription": "ATTI는 우리의 기억을 도와주는 친구예요. 어떤 기능들이 있는지 한번 볼까요?",
+          "shortdescription": "AI 음성 안내 및 진동 피드백 기능으로 시각 장애인의 안전한 보행을 돕는 PathPal! 그 기능들을 함께 알아볼까요?",
           "feature": [
             {
-              "title": "마음 속 이야기 나누기",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "🚶‍♂️ 안전한 길 안내",
+              "description": "사용자가 출발지를 입력하면, 음성과 진동으로 길을 안내해요.<br/>길을 걷는 동안 주변 물체와 위험 요소에 대한 정보를 지속적으로 제공받을 수 있어요."
             },
             {
-              "title": "일상 속 작은 도우미",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "🗺️ 현재 위치 확인",
+              "description": "시간으로 현재 위치와 방향을 알려줘요.<br/>나침반 기능을 통해 사용자가 올바른 방향으로 나아갈 수 있도록 도와줍니다."
             },
             {
-              "title": "오늘은 뭐하지?",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "📱 손쉬운 음성 검색",
+              "description": "음성으로 출발지와 목적지를 쉽게 검색할 수 있어요.<br/>복잡한 터치 없이 간편하게 길을 찾을 수 있답니다."
             },
             {
-              "title": "추억 속으로 슝~",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "🔍 주변 물체 인식",
+              "description": "카메라를 통해 주변의 물체를 인식하고, 음성으로 해당 물체의 위치와 정보를 안내해요.<br/>예를 들어, 벤치나 횡단보도 같은 중요한 지점을 쉽게 알아차릴 수 있어요."
             },
             {
-              "title": "중요한 순간 저장소",
-              "description": "좋아하는 사진을 올리고, 그 사진에 이름이나 연도, 사람, 키워드를 추가해요.<br/>이렇게 하면 나중에도 소중한 순간들을 쉽게 찾아볼 수 있어요."
-            },
-            {
-              "title": "일상의 리듬 찾기",
-              "description": "매일 반복되는 일이나 좋아하는 활동을 루틴으로 등록해요.<br/>이름, 시간, 날짜, 사진까지 넣으면 나만의 일상 관리가 더 재미있어질 거예요."
-            },
-            {
-              "title": "알림 친구",
-              "description": "할 일이나 루틴 시간이 되면 ATTI가 알려줘요.<br/>이제 중요한 일을 잊어버리는 일은 없겠죠?"
-            },
-            {
-              "title": "보호자님, 걱정 덜어드려요",
-              "description": "보호자님들도 기억 회상 활동이나 루틴 완료 상태를 주간 보고서로 받아볼 수 있어요.<br/>이제 환자분들을 더 잘 이해하고 케어할 수 있겠죠?"
+              "title": "⚠️ 위험 감지 알림",
+              "description": "장애물이나 위험 요소가 감지되면 진동으로 경고해요.<br/>사용자가 안전하게 보행할 수 있도록 지속적으로 주의를 기울입니다."
             }
           ]
         },
-        "techstack": ["Firebase", "Flutter", "Gemini"]
+        "techstack": ["Swift", "SpringBoot", "Firebase", "Google Maps", "Google STT", "Google TTS", "Google Analytics"]
       },
       "release": {
         "releaseversion": [
@@ -178,8 +159,8 @@
         "members": [
           {
             "img": null,
-            "name": "이홍주",
-            "role": "Front-End Developer",
+            "name": "이수지",
+            "role": "Pm / ios",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -190,8 +171,8 @@
           },
           {
             "img": null,
-            "name": "박수정",
-            "role": "Front-End Developer",
+            "name": "신은빈",
+            "role": "AL / ML",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -202,8 +183,8 @@
           },
           {
             "img": null,
-            "name": "전주은",
-            "role": "Front-End Developer",
+            "name": "홍승택",
+            "role": "Back-End Developer",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -214,7 +195,7 @@
           },
           {
             "img": null,
-            "name": "이지은",
+            "name": "김여원",
             "role": "Designer",
             "email": "ooo@naver.com",
             "profilelink": [
