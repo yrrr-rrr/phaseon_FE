@@ -9,7 +9,11 @@ export default function Introduction() {
     <s.Section>
       {data.category.introduction.members.map((memberObj, index) => (
         <s.Profile key={index}>
-          {memberObj.img == null ? <s.PersonSvg width="80" height="80" /> : <s.Img src={memberObj.img} alt="" />}
+          {memberObj.img == null ? (
+            <s.PersonSvg width="56" height="56" />
+          ) : (
+            <s.Img src={`/public/${memberObj.img}`} alt="" />
+          )}
           <s.Name>{memberObj.name}</s.Name>
           <s.InfoBox>
             <span>{memberObj.role}</span>

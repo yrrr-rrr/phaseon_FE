@@ -50,7 +50,7 @@ export default function Performance() {
           ))}
         </s.Ul>
       </s.MarginBox>
-      <News data={data.category.performance.news} projectName={data.projectname} />
+      {data.category.performance.news && <News data={data.category.performance.news} projectName={data.projectname} />}
     </s.Section>
   );
 }

@@ -47,7 +47,7 @@ export default function Carousel() {
             } else {
               return (
                 <s.CarouselSlide key={carouselObj.img + key}>
-                  <s.Img src={carouselObj.img} alt="" />
+                  <s.Img src={`/public/${carouselObj.img}`} alt="" $type={carouselObj.type} />
                   {/* imgType={carouselObj.type} */}
                 </s.CarouselSlide>
               );
