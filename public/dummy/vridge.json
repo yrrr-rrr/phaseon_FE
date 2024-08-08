@@ -1,0 +1,182 @@
+{
+  "data": {
+    "projectname": "VRIDGE",
+    "star": 3,
+    "floatmenu": {
+      "view": 0,
+      "category": "IT / App",
+      "buttons": [
+        {
+          "icon": "https://via.placeholder.com/16",
+          "buttontext": "인스타그램",
+          "link": "https://www.instargram.com/yrrrr_rrrrr/"
+        }
+      ],
+      "releasenote": "No releases published"
+    },
+    "intro": {
+      "banner": "img",
+      "projectimg": "img",
+      "projectbrief": "언어 장애인을 위한 나만의 목소리를 만들어주는 특별한 음성 합션 솔루션",
+      "description": "VRIDGE는 언어 장애인을 위해 개발된 음성 합성 애플리케이션입니다. 이 솔루션은 사용자가 가족의 목소리를 기반으로 자신만의 고유한 목소리를 생성하여, 보다 자연스럽고 감정이 담긴 대화를 나눌 수 있도록 돕습니다. 대화를 통한 소통은 가족이나 친구와의 관계를 더욱 깊게 만들며, 단순한 텍스트 메시지를 넘어 실제 음성을 통한 의사소통의 기회를 제공합니다."
+    },
+    "category": {
+      "projectinfo": {
+        "carousel": [
+          {
+            "img": "0Y95Mzpib4I",
+            "type": "video"
+          },
+          {
+            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "type": "row"
+          },
+          {
+            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "type": "row"
+          },
+          {
+            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "type": "row"
+          },
+          {
+            "img": "https://via.placeholder.com/320x80.png?text=temp+img",
+            "type": "row"
+          }
+        ],
+        "mainfeatures": {
+          "shortdescription": "언어 장애인을 위한 나만의 목소리를 만들어주는 VRIDGE! 그 기능들을 함께 알아볼까요?",
+          "feature": [
+            {
+              "title": "🗣️ 개인 맞춤형 음성 합성",
+              "description": "사용자가 가족의 목소리를 입력하면, 그 목소리를 기반으로 자신만의 고유한 음성을 생성할 수 있어요.<br/>이렇게 생성된 목소리를 통해 더 따뜻하고 감정이 담긴 대화를 나눌 수 있답니다."
+            },
+            {
+              "title": "🤖 손쉬운 모바일 어플리케이션",
+              "description": "Android 기반의 애플리케이션을 통해 언제 어디서나 손쉽게 접근하고 사용할 수 있어요.<br/>“이제 내 목소리로 이야기해볼까요?”라는 느낌으로 간편하게 소통할 수 있습니다."
+            },
+            {
+              "title": "📞 실시간 음성 생성",
+              "description": "사용자가 입력한 문장을 즉시 음성 파일로 변환하여, 즉각적으로 대화에 참여할 수 있도록 도와줘요.<br/>“이 문장을 내 목소리로 만들어볼까요?”라는 느낌으로 원활한 소통을 지원합니다."
+            },
+            {
+              "title": "🤝 소통의 불평등 해소",
+              "description": "VRIDGE는 언어 장애인들이 가족, 친구와의 의사소통을 더욱 원활하게 할 수 있도록 돕습니다.<br/>이를 통해 소통의 불평등을 줄이고, 모두가 평등하게 대화할 수 있는 기회를 제공합니다."
+            }
+          ]
+        },
+        "techstack": ["Android", "Firebase", "Spring", "Google Cloud"]
+      },
+      "release": {
+        "releaseversion": [
+          {
+            "version": "1.1",
+            "date": "2024.08.03",
+            "extrafeature": [
+              {
+                "feature": "ㅇㅇㅇㅇ",
+                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+              },
+              {
+                "feature": "ㅇㅇㅇㅇ",
+                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+              },
+              {
+                "feature": "ㅇㅇㅇㅇ",
+                "description": "sasasasasasasassbhamhbnjdcn,jf ,jjd fjfjkb"
+              }
+            ]
+          },
+          {
+            "version": "1.2",
+            "date": "2024.08.03",
+            "extrafeature": [
+              {
+                "feature": "비어있음",
+                "description": "비어있음"
+              }
+            ]
+          }
+        ]
+      },
+      "performance": {
+        "certifiedaward": [
+          {
+            "badge": "Top3",
+            "award": "Google Solution Challenge TOP 3"
+          },
+          {
+            "badge": "Top10",
+            "award": "Google Solution Challenge TOP 10"
+          },
+          {
+            "badge": "Top100",
+            "award": "Google Solution Challenge TOP 100"
+          },
+          {
+            "badge": "PeopleChoice",
+            "award": "2024 창업중심대학 예비부문 협약"
+          }
+        ],
+        "accomplishment": [
+          "Google Solution Challenge TOP 3",
+          "Google Solution Challenge TOP 10",
+          "Google Solution Challenge TOP 100",
+          "2024 창업중심대학 예비부문 협약"
+        ]
+      },
+      "introduction": {
+        "members": [
+          {
+            "img": null,
+            "name": "유용민",
+            "role": "Android-End Developer",
+            "email": "ooo@naver.com",
+            "profilelink": [
+              {
+                "icon": "instargram",
+                "link": "https://www.instargram.com"
+              }
+            ]
+          },
+          {
+            "img": null,
+            "name": "고지훈",
+            "role": "AI Developer / ML",
+            "email": "ooo@naver.com",
+            "profilelink": [
+              {
+                "icon": "instargram",
+                "link": "https://www.instargram.com"
+              }
+            ]
+          },
+          {
+            "img": null,
+            "name": "임용지",
+            "role": "Back-End Developer",
+            "email": "ooo@naver.com",
+            "profilelink": [
+              {
+                "icon": "instargram",
+                "link": "https://www.instargram.com"
+              }
+            ]
+          },
+          {
+            "img": null,
+            "name": "이동훈",
+            "role": "Android-End Developer",
+            "email": "ooo@naver.com",
+            "profilelink": [
+              {
+                "icon": "instargram",
+                "link": "https://www.instargram.com"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

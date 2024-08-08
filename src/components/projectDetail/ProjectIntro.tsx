@@ -16,8 +16,10 @@ export default function ProjectIntro() {
   }, []);
 
   return (
-    <s.Section ref={introRef}>
-      <s.Banner src={`/public/png/${projectName}Banner.png`} alt="" />
+
+    <s.Section>
+      <s.TempBanner />
+      {/* <s.Banner src={`/public/png/${projectName}Banner.png`} alt="" /> */}
       <s.IntroSection>
         <s.MainImg src={`/public/png/${projectName}.png`} alt="" />
         <s.ProjectName>{data.projectname}</s.ProjectName>

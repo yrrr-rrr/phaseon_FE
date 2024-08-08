@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { ReactComponent as LogoIcon } from '../../assets/svg/Logo.svg';
+import { ReactComponent as SearchIcon } from '../../assets/svg/Search.svg';
+import { ReactComponent as RegisterIcon } from '../../assets/svg/Register.svg';
+import { ReactComponent as UserIcon } from '../../assets/svg/Person.svg';
 
 export const Header = styled.header`
   padding: 0 170px 0 170px;
@@ -18,6 +22,19 @@ export const NavigationBox = styled.section<{ width: number }>`
   align-items: center;
 `;
 
+export const Logo = styled(LogoIcon)`
+  cursor: pointer;
+`;
+export const Search = styled(SearchIcon)`
+  cursor: pointer;
+`;
+export const Register = styled(RegisterIcon)`
+  cursor: pointer;
+`;
+export const User = styled(UserIcon)`
+  cursor: pointer;
+`;
+
 export const Nav = styled.nav`
   width: 177px;
   display: flex;
@@ -30,6 +47,7 @@ export const IconBox = styled.div<{ color: string }>`
   color: ${({ color }) => color};
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const RegisterButton = styled.button`
@@ -45,4 +63,15 @@ export const RegisterButton = styled.button`
   align-items: center;
   outline: none;
   background-color: rgba(255, 255, 255, 1);
+
+  &&:hover {
+    background-color: #f7fbff;
+  }
+  &&:active {
+    background-color: #edf5ff;
+  }
+`;
+
+export const Article = styled.span`
+  color: #47484c;
 `;

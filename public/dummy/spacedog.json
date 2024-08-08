@@ -1,6 +1,6 @@
 {
   "data": {
-    "projectname": "ATTI",
+    "projectname": "Space Dog",
     "star": 3,
     "floatmenu": {
       "view": 0,
@@ -17,8 +17,8 @@
     "intro": {
       "banner": "img",
       "projectimg": "img",
-      "projectbrief": "치매환자를 위한 기억의 회상과 기록 솔루션",
-      "description": "음성봇 ATTI가 “과거의 중요한 기억을 잊어버리는 것 \", \"일상생활에서 기억해야 할 것을 잊어버리는 것\"으로 구분지어 과거의 의미있는 기억을 떠올리고 현재와 미래에 규칙적인 생활을 구축할 수 있도록 도와줘요."
+      "projectbrief": "청각장애인을 위한 반려견 케어 지원 솔루션",
+      "description": "Space Dog은 반려견의 짖음이나 이상 행동을 감지하여 청각장애인에게 알림을 제공하는 애플리케이션입니다. 위치 추적 기능을 통해 반려견의 탈출 시에도 안전하게 관리할 수 있도록 돕습니다."
     },
     "category": {
       "projectinfo": {
@@ -45,43 +45,31 @@
           }
         ],
         "mainfeatures": {
-          "shortdescription": "ATTI는 우리의 기억을 도와주는 친구예요. 어떤 기능들이 있는지 한번 볼까요?",
+          "shortdescription": "청각장애인을 위한 웨어러블 기기를 활용한 애플리케이션 Space Dog! 어떤 기능들이 있는지 함께 살펴볼까요?",
           "feature": [
             {
-              "title": "마음 속 이야기 나누기",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "🐶 소리 감지 알림",
+              "description": "반려견의 짖음이나 파손 소리를 감지하여 사용자에게 즉시 알림을 보냅니다.<br/>이제 반려견의 행동을 쉽게 모니터링할 수 있어요!"
             },
             {
-              "title": "일상 속 작은 도우미",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "🔔 탈출 경고 및 위치 추적",
+              "description": "반려견이 설정된 경계를 넘어 탈출하면 즉시 경고하고, Google Maps를 통해 현재 위치를 실시간으로 추적할 수 있습니다.<br/> 반려견의 안전을 지킬 수 있는 믿음직한 도우미입니다."
             },
             {
-              "title": "오늘은 뭐하지?",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "📱 사용자 관리 시스템",
+              "description": "Firebase를 활용한 안전한 사용자 인증 및 데이터 저장을 통해 개인 정보를 보호합니다.<br/>쉽게 회원가입하고 필요한 정보를 관리할 수 있어요."
             },
             {
-              "title": "추억 속으로 슝~",
-              "description": "우리랑 얘기하면서 소중한 기억들을 기록해요.<br/>기분이 어떤지, 무엇을 기억하고 싶은지 ATTI가 들어줄 거예요.<br/>이야기하다 보면 마음도 가벼워지고 기억도 더 잘 남겠죠?"
+              "title": "📊 최근 알림 확인 및 푸시 알림",
+              "description": "반려견의 행동에 대한 최근 알림을 쉽게 확인할 수 있으며,<br/>중요한 사건 발생 시 푸시 알림을 통해 즉시 사용자에게 알려줍니다."
             },
             {
-              "title": "중요한 순간 저장소",
-              "description": "좋아하는 사진을 올리고, 그 사진에 이름이나 연도, 사람, 키워드를 추가해요.<br/>이렇게 하면 나중에도 소중한 순간들을 쉽게 찾아볼 수 있어요."
-            },
-            {
-              "title": "일상의 리듬 찾기",
-              "description": "매일 반복되는 일이나 좋아하는 활동을 루틴으로 등록해요.<br/>이름, 시간, 날짜, 사진까지 넣으면 나만의 일상 관리가 더 재미있어질 거예요."
-            },
-            {
-              "title": "알림 친구",
-              "description": "할 일이나 루틴 시간이 되면 ATTI가 알려줘요.<br/>이제 중요한 일을 잊어버리는 일은 없겠죠?"
-            },
-            {
-              "title": "보호자님, 걱정 덜어드려요",
-              "description": "보호자님들도 기억 회상 활동이나 루틴 완료 상태를 주간 보고서로 받아볼 수 있어요.<br/>이제 환자분들을 더 잘 이해하고 케어할 수 있겠죠?"
+              "title": "🌌 청각장애인을 위한 맞춤형 솔루션",
+              "description": "Space Dog는 청각장애인이 반려견을 안전하고 편리하게 돌볼 수 있도록 설계되었습니다.<br/>이제 걱정 없이 소중한 반려견과 소통할 수 있는 기회를 제공합니다."
             }
           ]
         },
-        "techstack": ["Firebase", "Flutter", "Gemini"]
+        "techstack": ["Flutter", "Firebase", "Flask", "Spring", "Colab", "OpenCV", "Google Cloud", "Google Maps"]
       },
       "release": {
         "releaseversion": [
@@ -171,8 +159,8 @@
         "members": [
           {
             "img": null,
-            "name": "이홍주",
-            "role": "Front-End Developer",
+            "name": "이지수",
+            "role": "FE / DB / Design",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -183,8 +171,8 @@
           },
           {
             "img": null,
-            "name": "박수정",
-            "role": "Front-End Developer",
+            "name": "장혜정",
+            "role": "BE/ DB / AI",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -195,8 +183,8 @@
           },
           {
             "img": null,
-            "name": "전주은",
-            "role": "Front-End Developer",
+            "name": "유채림",
+            "role": "Circuit Design",
             "email": "ooo@naver.com",
             "profilelink": [
               {
@@ -207,8 +195,8 @@
           },
           {
             "img": null,
-            "name": "이지은",
-            "role": "Designer",
+            "name": "양지훈",
+            "role": "3D Modeling",
             "email": "ooo@naver.com",
             "profilelink": [
               {
