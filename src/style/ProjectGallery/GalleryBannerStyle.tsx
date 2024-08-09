@@ -7,7 +7,6 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   margin-left: calc(-50vw + 50%);
-  overflow-x: hidden;
 `;
 
 export const TextBox = styled.div`
