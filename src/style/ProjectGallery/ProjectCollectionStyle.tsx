@@ -18,7 +18,7 @@ export const Project = styled.div`
   cursor: pointer;
 `;
 
-export const ProjectName = styled.span`
+export const ProjectName = styled.p`
   color: #47484c;
   font-size: 14px;
   font-weight: 500;
