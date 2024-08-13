@@ -12,7 +12,7 @@ export default function ProjectDetails() {
   return (
     <>
       <Header />
-      <s.Main>
+      <s.Main $overflow="none">
         <ProjectDetailProvider>
           <CategoryProvider>
             <s.Div>
