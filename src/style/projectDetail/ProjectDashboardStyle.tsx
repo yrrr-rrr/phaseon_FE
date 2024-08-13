@@ -16,7 +16,7 @@ export const CategoryBox = styled.section`
   align-items: center;
 `;
 
-export const CategoryText = styled.span<{ $currentCategory: string; $id: string }>`
+export const CategoryText = styled.p<{ $currentCategory: string; $id: string }>`
   margin-right: 32px;
   width: auto;
   height: 100%;

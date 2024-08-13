@@ -10,7 +10,7 @@ export const Section = styled.section`
   align-items: center;
 `;
 
-export const ProjectName = styled.span`
+export const ProjectName = styled.p`
   color: black;
   font-size: 24px;
   font-weight: 700;

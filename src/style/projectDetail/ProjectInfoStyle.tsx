@@ -86,7 +86,7 @@ export const Tech = styled.div`
   background-color: rgba(50, 173, 230, 0.08);
 `;
 
-export const TechText = styled.span`
+export const TechText = styled.p`
   color: #32ade6;
   font-size: 12px;
   font-weight: 510;

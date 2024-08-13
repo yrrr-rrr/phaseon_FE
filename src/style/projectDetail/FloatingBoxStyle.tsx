@@ -52,7 +52,7 @@ export const Category = styled.p`
   background-color: #34c75914;
 `;
 
-export const View = styled.span`
+export const View = styled.p`
   color: #47484c;
   font-size: 13px;
   font-weight: 400;
@@ -92,7 +92,7 @@ export const PromotionButton = styled.button`
   }
 `;
 
-export const ButtonText = styled.span`
+export const ButtonText = styled.p`
   margin-left: 4px;
   color: #69acff;
   font-size: 13px;
@@ -123,7 +123,7 @@ export const CoffeeChatButton = styled.button`
   }
 `;
 
-export const CoffeeChatText = styled.span`
+export const CoffeeChatText = styled.p`
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -140,7 +140,7 @@ export const ReleaseBox = styled.div`
   gap: 8px;
 `;
 
-export const Title = styled.span`
+export const Title = styled.p`
   color: #171719;
   font-size: 11px;
   font-weight: 590;
@@ -182,7 +182,7 @@ export const PeopleChoice = styled(PeoPleChoiceIcon)`
   margin-right: -10px;
 `;
 
-export const MoreContent = styled.span`
+export const MoreContent = styled.p`
   color: #47484c;
   font-size: 11px;
   font-weight: 400;
