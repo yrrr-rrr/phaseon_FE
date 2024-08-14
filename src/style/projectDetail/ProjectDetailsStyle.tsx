@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const Main = styled.main`
-  padding: 0 170px;
+export const Main = styled.main<{ $overflow: string }>`
+  padding: 0 12vw;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: ${({ $overflow }) => $overflow};
 `;
 export const Div = styled.div`
   width: 320px;

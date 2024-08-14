@@ -10,7 +10,7 @@ export default function ProjectGallery() {
   return (
     <>
       <Header TopRef={TopRef} />
-      <s.Main>
+      <s.Main $overflow="hidden">
         <ProjectInfo />
         <ProjectCollection TopRef={TopRef} />
       </s.Main>

@@ -3,13 +3,15 @@ import { ReactComponent as InstargramIcon } from '../../assets/svg/InstargramNon
 import { ReactComponent as LinkedInIcon } from '../../assets/svg/LinkedIn.svg';
 
 export const Footer = styled.footer`
-  padding: 40px 20px 24px 20px;
+  padding: 0 170px;
   width: 100%;
   height: 292px;
+  border-top: 1px solid #cfebff;
   box-sizing: border-box;
 `;
 
 export const TopSection = styled.section`
+  padding: 40px 20px 32px 20px;
   width: 100%;
   height: 54px;
   display: flex;
@@ -46,7 +48,7 @@ export const Menu = styled.span`
 `;
 
 export const MidSection = styled.section`
-  margin: 32px 0;
+  padding: 0px 20px 32px 20px;
   width: 100%;
   height: 70px;
   display: flex;
@@ -77,6 +79,7 @@ export const Div = styled.div`
 `;
 
 export const BottomSection = styled.section`
+  padding: 0px 20px 24px 20px;
   width: 100%;
   height: 40px;
   border-top: 1px solid #cfebff;
@@ -86,6 +89,7 @@ export const BottomSection = styled.section`
 `;
 
 export const Instargram = styled(InstargramIcon)`
+  margin-right: 16px;
   cursor: pointer;
 `;
 export const LinkedIn = styled(LinkedInIcon)`

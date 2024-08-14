@@ -4,21 +4,21 @@ export const Section = styled.section`
   padding: 32px 0px;
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 48px;
 `;
 
 export const Project = styled.div`
-  width: 253px;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  flex: 1 0 0;
   cursor: pointer;
 `;
 
-export const ProjectName = styled.span`
+export const ProjectName = styled.p`
   color: #47484c;
   font-size: 14px;
   font-weight: 500;
@@ -35,7 +35,7 @@ export const Description = styled.p`
 `;
 
 export const Img = styled.img`
-  width: 19vw;
-  height: 19vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 12px;
 `;

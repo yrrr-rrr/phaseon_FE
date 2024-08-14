@@ -72,6 +72,6 @@ export const RegisterButton = styled.button`
   }
 `;
 
-export const Article = styled.span`
+export const Article = styled.p`
   color: #47484c;
 `;
