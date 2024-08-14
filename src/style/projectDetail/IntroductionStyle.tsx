@@ -33,7 +33,7 @@ export const PersonSvg = styled(Person)`
   margin-bottom: 16px;
 `;
 
-export const Name = styled.span`
+export const Name = styled.p`
   color: #171719;
   font-size: 20px;
   font-style: normal;
@@ -42,7 +42,7 @@ export const Name = styled.span`
   letter-spacing: -0.24px;
 `;
 
-export const InfoBox = styled.span`
+export const InfoBox = styled.p`
   height: 48px;
   display: flex;
   flex-direction: column;

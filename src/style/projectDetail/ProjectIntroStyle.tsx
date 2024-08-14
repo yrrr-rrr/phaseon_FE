@@ -41,7 +41,7 @@ export const MainImg = styled.img`
     0px 0px 2.702px 0px rgba(0, 0, 0, 0.08);
 `;
 
-export const ProjectName = styled.span`
+export const ProjectName = styled.p`
   font-size: 36px;
   font-weight: 700;
   line-height: 133.4%;
