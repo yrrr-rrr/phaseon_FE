@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 1100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
 `;
 
 export const Banner = styled.img`
-  width: 1100px;
+  width: 100%;
   height: 160px;
   position: absolute;
 `;
 
 export const TempBanner = styled.div`
-  width: 1100px;
+  width: 100%;
   height: 160px;
   position: absolute;
   background-color: #f7f7f8;
@@ -28,7 +28,7 @@ export const IntroSection = styled.section`
   display: flex;
   flex-direction: column;
   flex: none;
-  z-index: 2;
+  z-index: 1;
 `;
 
 export const MainImg = styled.img`
