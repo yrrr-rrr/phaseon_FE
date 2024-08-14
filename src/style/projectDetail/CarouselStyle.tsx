@@ -3,7 +3,7 @@ import { ReactComponent as LeftButton } from '../../assets/svg/LeftButton.svg';
 import { ReactComponent as RightButton } from '../../assets/svg/RightButton.svg';
 
 export const Section = styled.section`
-  width: 780px;
+  width: 100%;
   height: 218px;
   position: relative;
 `;
