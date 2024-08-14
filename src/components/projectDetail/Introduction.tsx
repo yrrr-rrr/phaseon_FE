@@ -16,8 +16,8 @@ export default function Introduction() {
           )}
           <s.Name>{memberObj.name}</s.Name>
           <s.InfoBox>
-            <span>{memberObj.role}</span>
-            <span>{memberObj.email}</span>
+            <p>{memberObj.role}</p>
+            <p>{memberObj.email}</p>
           </s.InfoBox>
           <div>
             {memberObj.profilelink.map((links, linkindex) => {

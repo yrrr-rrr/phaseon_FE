@@ -14,7 +14,7 @@ export default function ShareButton({ width, height }: { width: number; height: 
       }}
     >
       <Share />
-      <span>공유하기</span>
+      <p>공유하기</p>
     </s.Button>
   );
 }
