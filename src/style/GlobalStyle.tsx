@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 1);
-    overflow: auto;
   }
   #root{
     width: 100%;
