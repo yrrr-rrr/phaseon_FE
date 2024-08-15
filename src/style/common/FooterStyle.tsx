@@ -3,15 +3,16 @@ import { ReactComponent as InstargramIcon } from '../../assets/svg/InstargramNon
 import { ReactComponent as LinkedInIcon } from '../../assets/svg/LinkedIn.svg';
 
 export const Footer = styled.footer`
-  padding: 0 170px;
+  padding: 40px min(170px, calc(70px + ((100vw - 1200px) / 2))) 24px min(170px, calc(70px + ((100vw - 1200px) / 2)));
   width: 100%;
-  height: 292px;
   border-top: 1px solid #cfebff;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `;
 
 export const TopSection = styled.section`
-  padding: 40px 20px 32px 20px;
   width: 100%;
   height: 54px;
   display: flex;
@@ -19,7 +20,7 @@ export const TopSection = styled.section`
 `;
 
 export const ServiceInfo = styled.div`
-  width: 271px;
+  width: 30%;
   height: 100%;
   gap: 4px;
 
@@ -31,8 +32,9 @@ export const ServiceInfo = styled.div`
 `;
 
 export const FooterMenu = styled.div`
-  width: 381px;
+  width: 40%;
   display: flex;
+  justify-content: end;
   gap: 32px;
 
   color: #171719;
@@ -43,12 +45,11 @@ export const FooterMenu = styled.div`
   cursor: pointer;
 `;
 
-export const Menu = styled.span`
+export const Menu = styled.p`
   cursor: pointer;
 `;
 
 export const MidSection = styled.section`
-  padding: 0px 20px 32px 20px;
   width: 100%;
   height: 70px;
   display: flex;
@@ -79,7 +80,6 @@ export const Div = styled.div`
 `;
 
 export const BottomSection = styled.section`
-  padding: 0px 20px 24px 20px;
   width: 100%;
   height: 40px;
   border-top: 1px solid #cfebff;

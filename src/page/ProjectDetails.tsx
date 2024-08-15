@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom';
 import Footer from '../components/common/Footer';
 import Header from '../components/common/Header';
 import FloatingBox from '../components/projectDetail/FloatingBox';
@@ -7,12 +6,13 @@ import ProjectIntro from '../components/projectDetail/ProjectIntro';
 import { CategoryProvider } from '../context/CategoryContext';
 import { ProjectDetailProvider } from '../context/ProjectDetailContext';
 import * as s from '../style/projectDetail/ProjectDetailsStyle';
+import { Main } from '../style/common/MainStyle';
 
 export default function ProjectDetails() {
   return (
     <>
       <Header />
-      <s.Main $overflow="none">
+      <Main $overflow="none">
         <ProjectDetailProvider>
           <CategoryProvider>
             <s.Div>
@@ -22,7 +22,7 @@ export default function ProjectDetails() {
             <ProjectDashboard />
           </CategoryProvider>
         </ProjectDetailProvider>
-      </s.Main>
+      </Main>
       <Footer />
     </>
   );

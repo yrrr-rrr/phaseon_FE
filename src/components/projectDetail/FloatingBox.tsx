@@ -81,9 +81,9 @@ export default function FloatingBox() {
           {data.category.introduction.members.map((memberObj, index) => {
             if (index < 6) {
               if (memberObj.img == null) {
-                return <s.PersonSvg width="40" height="40" />;
+                return <s.PersonSvg width="40" height="40" key={index} />;
               } else {
-                return <s.Img src={`/public/${memberObj.img}`} alt="" />;
+                return <s.Img src={`/public/${memberObj.img}`} alt="" key={index} />;
               }
               // return <s.Img key={index} src={`/public/${memberObj.img}`} alt="" />;
             }

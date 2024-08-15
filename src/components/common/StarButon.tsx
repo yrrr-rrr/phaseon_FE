@@ -19,8 +19,8 @@ export default function StarButton({ width, height }: { width: number; height: n
       }}
     >
       <Star />
-      <span>좋아요</span>
-      <span>{data.star}</span>
+      <p>좋아요</p>
+      <p>{data.star}</p>
     </s.Button>
   );
 }
