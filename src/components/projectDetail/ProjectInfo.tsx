@@ -2,10 +2,14 @@ import { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/ProjectInfoStyle';
 import Carousel from './Carousel';
+import { ZoomContext } from '../../context/ZoomContext';
+import ZoomContainer from './Zoom/ZoomContainer';
 export default function ProjectInfo() {
   const { data } = useContext(ProjectDetailContext);
+  const { showZoomComponent } = useContext(ZoomContext);
   return (
     <s.Section>
+      {showZoomComponent && <ZoomContainer />}
       <Carousel />
       <s.MainFeatureBox>
         <s.MarginBox>
