@@ -1,4 +1,5 @@
 import React, { SetStateAction } from 'react';
+import { Updater } from 'use-immer';
 interface PathType {
   path: string;
   fill: string;
@@ -140,4 +141,49 @@ export interface Projects {
 
 export interface ProjectGalleryData {
   data: Projects[];
+}
+
+export interface HandelDoubleClickType {
+  isZoomed: boolean;
+  setIsZoomed: React.Dispatch<SetStateAction<boolean>>;
+  setZoomCount: React.Dispatch<SetStateAction<number>>;
+  updateTransform: Updater<{ x: number; y: number }>;
+}
+
+export interface HandleMouseDownType {
+  isZoomed: boolean;
+  setDrag: React.Dispatch<SetStateAction<boolean>>;
+  updateStartPos: Updater<{ x: number; y: number }>;
+}
+
+export interface HandleMouseMoveType {
+  imgRef: React.RefObject<HTMLImageElement>;
+  drag: boolean;
+  startPos: {
+    x: number;
+    y: number;
+  };
+  updateStartPos: Updater<{ x: number; y: number }>;
+  transform: {
+    x: number;
+    y: number;
+  };
+  updateTransform: Updater<{ x: number; y: number }>;
+  zoomCount: number;
+}
+
+export interface HandleMouseUpType {
+  setDrag: React.Dispatch<SetStateAction<boolean>>;
+  transform: {
+    x: number;
+    y: number;
+  };
+  updateTransform: Updater<{ x: number; y: number }>;
+  zoomCount: number;
+  startPos: {
+    x: number;
+    y: number;
+  };
+  isZoomed: boolean;
+  drag: boolean;
 }
