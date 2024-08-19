@@ -14,21 +14,49 @@ export const Section = styled.section<{ $show: boolean }>`
 `;
 
 export const HandelBox = styled.section`
-  width: 98%;
-  height: 20px;
+  width: 98vw;
+  height: 30px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 0;
+  z-index: 6;
   background-color: yellowgreen;
 `;
 
-export const Img = styled.img<{ $type: string }>`
-  padding-top: 20px;
-  width: ${({ $type }) => ($type == 'row' ? '98%' : '30%')};
+export const ImgWrapper = styled.div`
+  position: relative;
+  width: 100%;
   height: 100%;
+  overflow: hidden;
+`;
+
+export const Div = styled.div<{ $drag: boolean; $dragOffSet: number }>`
+  display: flex;
+  align-items: center;
+  transition-duration: ${({ $drag }) => ($drag ? 'none' : '0.3s')};
+  transform: translateX(${({ $dragOffSet }) => `${$dragOffSet}px`});
+`;
+
+export const Img = styled.img<{
+  $type: string;
+  $zoomCount: number;
+  $drag: boolean;
+  $dragDirection: string;
+  $dragOffSet: number;
+}>`
+  padding: 0 20px;
   box-sizing: border-box;
-  cursor: grab;
+  width: ${({ $type }) => ($type == 'row' ? '100%' : '40%')};
+  height: 100vh;
+  position: absolute;
+  object-fit: contain;
+  user-select: none;
+  transition-duration: ${({ $dragOffSet }) => ($dragOffSet != 0 ? '' : '0.3s')};
+  transform-origin: center center;
+  opacity: ${({ $dragDirection }) => ($dragDirection !== 'none' ? 0 : 1)};
+  cursor: ${({ $drag }) => ($drag ? 'grabbing' : 'grab')};
 `;
 
 export const Button = styled.p<{ $direction: string }>`
