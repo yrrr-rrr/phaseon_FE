@@ -7,14 +7,13 @@ import * as s from '../../../style/projectDetail/ZoomimgStyle';
 
 export default function ZoomContainer() {
   const { data } = useContext(ProjectDetailContext);
-  const { showZoomComponent, setStartImg } = useContext(ZoomContext);
+  const { showZoomComponent, setStartImg, startImg } = useContext(ZoomContext);
   const carouselImgs = data.category.projectinfo.carousel;
 
   return (
     <s.Section $show={showZoomComponent}>
       <HandleBox />
-      <s.Button
-        $direction={'left'}
+      <s.LeftButton
         onClick={() => {
           setStartImg((prev) => {
             if (prev == 0) {
@@ -23,12 +22,9 @@ export default function ZoomContainer() {
             return prev - 1;
           });
         }}
-      >
-        prev
-      </s.Button>
+      />
       <ZoomMediaBox />
-      <s.Button
-        $direction={'right'}
+      <s.RightButton
         onClick={() => {
           setStartImg((prev) => {
             if (prev == carouselImgs.length - 1) {
@@ -36,10 +32,9 @@ export default function ZoomContainer() {
             }
             return prev + 1;
           });
+          console.log(startImg);
         }}
-      >
-        next
-      </s.Button>
+      />
     </s.Section>
   );
 }
