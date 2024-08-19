@@ -71,7 +71,7 @@ export default function ZoomMediaBox() {
             handleDoubleClick({ setIsZoomed, isZoomed, setZoomCount, updateTransform });
           }}
         >
-          <s.Div $zoomCount={zoomCount}>
+          <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].type}>
             <s.Img
               src={`/public/${carouselImgs[startImg].img}`}
               alt=""

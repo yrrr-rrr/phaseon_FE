@@ -10,9 +10,9 @@ export const ImgWrapper = styled.div<{ $type: string }>`
   overflow: hidden;
 `;
 
-export const Div = styled.div<{ $zoomCount: number }>`
-  width: ${({ $zoomCount }) => `${80 * $zoomCount}%`};
-  height: 70%;
+export const Div = styled.div<{ $zoomCount: number; $type: string }>`
+  width: ${({ $zoomCount, $type }) => `${$type == 'row' ? 80 * $zoomCount : 40 * $zoomCount}%`};
+  height: ${({ $type }) => ($type == 'row' ? '80%' : '75%')};
   position: relative;
 `;
 
