@@ -154,6 +154,9 @@ export interface HandleMouseDownType {
   isZoomed: boolean;
   setDrag: React.Dispatch<SetStateAction<boolean>>;
   updateStartPos: Updater<{ x: number; y: number }>;
+  updateDragNextImg: Updater<{ x: number; y: number }>;
+  setDragAndDrop: React.Dispatch<SetStateAction<boolean>>;
+  setDragOffSet: React.Dispatch<SetStateAction<number>>;
 }
 
 export interface HandleMouseMoveType {
@@ -170,6 +173,7 @@ export interface HandleMouseMoveType {
   };
   updateTransform: Updater<{ x: number; y: number }>;
   zoomCount: number;
+  setDragOffSet: React.Dispatch<SetStateAction<number>>;
 }
 
 export interface HandleMouseUpType {
@@ -186,4 +190,14 @@ export interface HandleMouseUpType {
   };
   isZoomed: boolean;
   drag: boolean;
+  dragNextImg: {
+    x: number;
+    y: number;
+  };
+  setStartImg: React.Dispatch<SetStateAction<number>>;
+  carouselImgs: CarouselItem[];
+  dragAndDrop: boolean;
+  setDragAndDrop: React.Dispatch<SetStateAction<boolean>>;
+  setDragOffSet: React.Dispatch<SetStateAction<number>>;
+  setDragDirection: React.Dispatch<SetStateAction<string>>;
 }
