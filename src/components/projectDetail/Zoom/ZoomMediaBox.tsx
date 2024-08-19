@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { ProjectDetailContext } from '../../../context/ProjectDetailContext';
 import { ZoomContext } from '../../../context/ZoomContext';
-import * as s from '../../../style/projectDetail/ZoomimgStyle';
+import * as s from '../../../style/ZoomStyle/ZoomMediaStyle.tsx';
 import { useImmer } from 'use-immer';
 import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '../../../utils/ZoomFunction.ts';
 
