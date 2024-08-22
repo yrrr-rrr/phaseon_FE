@@ -89,21 +89,17 @@ export function handleMouseUp(e: MouseEvent, params: HandleMouseUpType) {
   const yLimit = zoomCount > 1.5 ? 70 * zoomCount : 30 * zoomCount;
 
   if (isZoomed && drag) {
-    console.log(x, y);
     if (x > 300) {
-      console.log('a');
       updateTransform({
         x: xLimit,
         y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
       });
     } else if (x > -300) {
-      console.log('b', zoomCount);
       updateTransform({
         x: x,
         y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
       });
     } else {
-      console.log('c');
       updateTransform({
         x: -xLimit,
         y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
