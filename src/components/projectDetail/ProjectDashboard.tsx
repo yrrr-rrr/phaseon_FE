@@ -6,6 +6,7 @@ import Performance from './Performance';
 import Introduction from './Introduction';
 import Release from './Release';
 import ActionPanel from './ActionPanel';
+import { ZoomImgProvider } from '../../context/ZoomContext';
 
 export default function ProjectDashboard() {
   const { currentCategory, setCurrentCategory } = useContext(CategoryContext);
@@ -31,7 +32,7 @@ export default function ProjectDashboard() {
           </s.CategoryText>
         ))}
       </s.CategoryBox>
-      {currentCategory == 'information' && <ProjectInfo />}
+      <ZoomImgProvider>{currentCategory == 'information' && <ProjectInfo />}</ZoomImgProvider>
       {currentCategory == 'performance' && <Performance />}
       {currentCategory == 'release' && <Release />}
       {currentCategory == 'introduction' && <Introduction />}
