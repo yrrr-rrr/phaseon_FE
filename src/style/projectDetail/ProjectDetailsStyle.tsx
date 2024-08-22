@@ -7,5 +7,4 @@ export const Div = styled.div`
   justify-content: center;
   position: absolute;
   right: min(190px, calc(70px + ((100vw - 1200px) / 2)));
-  z-index: 2;
 `;
