@@ -115,6 +115,7 @@ export interface Introduction {
 export interface DetailDataType {
   projectname: string;
   star: number;
+  notification: number;
   floatmenu: FloatMenu;
   intro: Intro;
   category: {
