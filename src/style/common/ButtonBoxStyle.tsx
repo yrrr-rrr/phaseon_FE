@@ -11,12 +11,15 @@ export const ButtonBox = styled.div<{ $top: number }>`
   position: absolute;
   top: ${({ $top }) => `${$top}vh`};
   z-index: 1;
+  pointer-events: none;
 `;
 
 export const PrevButton = styled(Left)`
+  pointer-events: auto;
   cursor: pointer;
 `;
 
 export const NextButton = styled(Right)`
+  pointer-events: auto;
   cursor: pointer;
 `;

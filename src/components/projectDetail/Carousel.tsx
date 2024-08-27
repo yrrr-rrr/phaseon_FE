@@ -5,7 +5,7 @@ import { useCallback, useContext, useEffect, useState } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/CarouselStyle';
 import { ZoomContext } from '../../context/ZoomContext';
-import ButtonBox from '../common/ButtonBox';
+import ButtonBox from './ButtonBox';
 
 export default function Carousel() {
   const options: EmblaOptionsType = { align: 'center', loop: true, slidesToScroll: 2 };

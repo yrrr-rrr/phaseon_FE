@@ -6,7 +6,7 @@ import { Updater, useImmer } from 'use-immer';
 import { ProjectGalleryData } from '../../interface';
 import * as s from '../../style/projectDetail/AllProjectSliderStyle';
 import { useNavigate } from 'react-router-dom';
-import ButtonBox from '../common/ButtonBox';
+import ButtonBox from './ButtonBox';
 
 export default function AllProjectSlider() {
   const option = { loop: true, slidesToScroll: 2 };
