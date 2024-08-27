@@ -12,8 +12,12 @@ export default function ActionPanel() {
       <s.ProjectName>{data.projectname}</s.ProjectName>
       <s.ShortDescription>{data.intro.projectbrief}</s.ShortDescription>
       <s.ButtonBox>
-        <StarButton width={108} height={40} innerText="좋아요" />
-        <NotificationButton width={108} height={40} innerText="알림" />
+        <StarButton width={108} height={40}>
+          좋아요
+        </StarButton>
+        <NotificationButton width={108} height={40}>
+          알림
+        </NotificationButton>
       </s.ButtonBox>
     </s.Section>
   );

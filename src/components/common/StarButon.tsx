@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/common/ButtonStyle';
 import { ReactComponent as Star } from '../../assets/svg/Star.svg';
@@ -6,11 +6,11 @@ import { ReactComponent as Star } from '../../assets/svg/Star.svg';
 export default function StarButton({
   width,
   height,
-  innerText,
+  children,
 }: {
   width: number;
   height: number;
-  innerText?: string;
+  children?: React.ReactNode;
 }) {
   const { data, updateData } = useContext(ProjectDetailContext);
   return (
@@ -27,7 +27,7 @@ export default function StarButton({
       }}
     >
       <Star />
-      {innerText && <p>좋아요</p>}
+      {children}
       <p>{data.star}</p>
     </s.Button>
   );
