@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { ReactComponent as Left } from '../../assets/svg/LeftButton.svg';
-import { ReactComponent as Right } from '../../assets/svg/RightButton.svg';
 
 export const Section = styled.section<{ $show: boolean }>`
   width: 100%;
@@ -16,18 +14,6 @@ export const Section = styled.section<{ $show: boolean }>`
   z-index: 4;
 `;
 
-export const LeftButton = styled(Left)`
-  position: absolute;
-  left: 17vw;
-  z-index: 5;
-  cursor: pointer;
-`;
-export const RightButton = styled(Right)`
-  position: absolute;
-  right: 17vw;
-  z-index: 5;
-  cursor: pointer;
-`;
 export const CarouselButtonBox = styled.div`
   display: flex;
   position: absolute;
