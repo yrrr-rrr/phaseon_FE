@@ -24,7 +24,7 @@ export const Section = styled.section`
   top: 140px;
   gap: 8px;
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 `;
 
 export const ViewCategoryBox = styled.div`

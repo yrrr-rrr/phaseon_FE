@@ -5,6 +5,7 @@ import { useCallback, useContext, useEffect, useState } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/CarouselStyle';
 import { ZoomContext } from '../../context/ZoomContext';
+import ButtonBox from './ButtonBox';
 
 export default function Carousel() {
   const options: EmblaOptionsType = { align: 'center', loop: true, slidesToScroll: 2 };
@@ -31,11 +32,7 @@ export default function Carousel() {
 
   return (
     <s.Section>
-      <s.PrevButton
-        onClick={() => {
-          emblaApi?.scrollPrev();
-        }}
-      />
+      <ButtonBox emblaApi={emblaApi} top={9} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
           {slides.map((carouselObj, index) => {
@@ -86,11 +83,6 @@ export default function Carousel() {
           })}
         </s.ButtonSection>
       </s.CarouselViewport>
-      <s.NextButton
-        onClick={() => {
-          emblaApi?.scrollNext();
-        }}
-      />
     </s.Section>
   );
 }

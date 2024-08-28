@@ -7,6 +7,7 @@ import Introduction from './Introduction';
 import Release from './Release';
 import ActionPanel from './ActionPanel';
 import { ZoomImgProvider } from '../../context/ZoomContext';
+import AllProjectSlider from './AllProjectSlider';
 
 export default function ProjectDashboard() {
   const { currentCategory, setCurrentCategory } = useContext(CategoryContext);
@@ -37,6 +38,7 @@ export default function ProjectDashboard() {
       {currentCategory == 'release' && <Release />}
       {currentCategory == 'introduction' && <Introduction />}
       <ActionPanel />
+      <AllProjectSlider />
     </s.Section>
   );
 }
