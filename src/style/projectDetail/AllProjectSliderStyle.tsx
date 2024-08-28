@@ -36,10 +36,19 @@ export const MoreContent = styled.p`
 `;
 
 export const CarouselViewport = styled.section`
+  height: 85%;
   width: 100%;
   height: 100%;
   overflow: hidden;
 `;
+
+// export const Div = styled.div`
+//   height: 70%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   background-color: yellowgreen;
+// `;
 
 export const CarouselContainer = styled.div`
   margin: 20px 0;
