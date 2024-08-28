@@ -32,7 +32,7 @@ export default function Carousel() {
 
   return (
     <s.Section>
-      <ButtonBox emblaApi={emblaApi} top={9} />
+      <ButtonBox emblaApi={emblaApi} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
           {slides.map((carouselObj, index) => {

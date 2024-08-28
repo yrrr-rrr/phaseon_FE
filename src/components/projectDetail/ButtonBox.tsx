@@ -4,14 +4,12 @@ import * as s from '../../style/common/ButtonBoxStyle';
 export default function ButtonBox({
   emblaApi,
   startScroll,
-  top,
 }: {
   emblaApi: EmblaCarouselType | undefined;
   startScroll?: (emblaApi: EmblaCarouselType) => void;
-  top: number;
 }) {
   return (
-    <s.ButtonBox $top={top}>
+    <s.ButtonBox>
       <s.PrevButton
         onClick={() => {
           if (!emblaApi) return;
