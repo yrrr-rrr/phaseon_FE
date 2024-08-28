@@ -107,19 +107,23 @@
         "certifiedaward": [
           {
             "badge": "Top3",
-            "award": "Google Solution Challenge TOP 3"
+            "award": "Google Solution Challenge TOP 3",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "Top10",
-            "award": "Google Solution Challenge TOP 10"
+            "award": "Google Solution Challenge TOP 10",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "PeopleChoice",
-            "award": "2024 창업중심대학 예비부문 협약"
+            "award": "2024 창업중심대학 예비부문 협약",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": [

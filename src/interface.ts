@@ -57,6 +57,7 @@ export interface ExtraFeatur {
 export interface CertifiedAward {
   badge: string;
   award: string;
+  certifyingAgency: string;
 }
 
 export interface NewsItem {

@@ -12,10 +12,39 @@ export const Section = styled.section`
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
   flex-direction: column;
+  gap: 24px;
 `;
 
-export const TitleBox = styled.section`
-  margin-bottom: 24px;
+export const AwardBox = styled.section`
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const Award = styled.section`
+  margin: 0 16px 24px 0;
+  width: auto;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+export const AwardName = styled.p`
+  color: #171719;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.9%;
+  letter-spacing: 0.203px;
+`;
+
+export const Agency = styled.p`
+  color: rgba(55, 56, 60, 0.61);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 142.9%;
+  letter-spacing: 0.203px;
 `;
 
 export const Title = styled.p`
@@ -35,35 +64,23 @@ export const ShortDescription = styled.p`
   letter-spacing: 0.203px;
 `;
 
-export const BadgeBox = styled.section`
-  margin-bottom: 8px;
-  width: auto;
-  height: 80px;
-  display: flex;
-`;
-
 export const Top3 = styled(Top3Badge)`
-  margin-right: 20px;
   width: 80px;
 `;
 export const Top10 = styled(Top10Badge)`
-  margin-right: 20px;
   width: 80px;
 `;
 export const Top50 = styled(Top50Badge)`
-  margin-right: 20px;
   width: 80px;
 `;
 export const Top100 = styled(Top100Badge)`
-  margin-right: 20px;
   width: 80px;
 `;
 export const PeopleChoice = styled(PeopleChoiceBadge)`
-  margin-right: 20px;
   width: 80px;
 `;
 
-export const Ul = styled.ul`
+export const Uncertifiedaward = styled.ul`
   width: 740px;
   height: auto;
   display: flex;
