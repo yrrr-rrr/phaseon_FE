@@ -19,7 +19,6 @@ export default function ProjectIntro() {
   return (
     <s.Section ref={introRef}>
       <s.TempBanner />
-      {/* <s.Banner src={`/public/png/${projectName}Banner.png`} alt="" /> */}
       <s.IntroSection>
         <s.MainImg src={`/public/png/${projectName}.png`} alt="" />
         <s.ProjectName>{data.projectname}</s.ProjectName>
@@ -27,7 +26,7 @@ export default function ProjectIntro() {
         <s.Description>{data.intro.description}</s.Description>
         <s.CategoryBox>
           {data.category.map((text, index) => (
-            <s.Category>
+            <s.Category key={index}>
               <Temp />
               <p>{text}</p>
             </s.Category>

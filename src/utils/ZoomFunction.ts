@@ -85,24 +85,24 @@ export function handleMouseUp(e: MouseEvent, params: HandleMouseUpType) {
   const x = transform.x + dx;
   const y = transform.y + dy;
 
-  const xLimit = zoomCount > 1.5 ? 70 * zoomCount : 60 * zoomCount;
-  const yLimit = zoomCount > 1.5 ? 70 * zoomCount : 30 * zoomCount;
+  const xLimit = 25 * zoomCount;
+  const yLimit = 30 * zoomCount;
 
   if (isZoomed && drag) {
-    if (x > 300) {
+    if (x > 50) {
       updateTransform({
         x: xLimit,
-        y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
+        y: y > 50 ? yLimit : y > -50 ? y : -yLimit,
       });
-    } else if (x > -300) {
+    } else if (x > -50) {
       updateTransform({
         x: x,
-        y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
+        y: y > 50 ? yLimit : y > -50 ? y : -yLimit,
       });
     } else {
       updateTransform({
         x: -xLimit,
-        y: y > 80 ? yLimit : y > -80 ? y : -yLimit,
+        y: y > 50 ? yLimit : y > -50 ? y : -yLimit,
       });
     }
   }

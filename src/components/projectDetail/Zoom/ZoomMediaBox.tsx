@@ -72,6 +72,16 @@ export default function ZoomMediaBox() {
           }}
         >
           <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].type}>
+            <s.LeftButton
+              onClick={() => {
+                setStartImg((prev) => {
+                  if (prev == 0) {
+                    return carouselImgs.length - 1;
+                  }
+                  return prev - 1;
+                });
+              }}
+            />
             <s.Img
               src={`/public/${carouselImgs[startImg].img}`}
               alt=""
@@ -93,6 +103,16 @@ export default function ZoomMediaBox() {
                   updateDragNextImg,
                   setDragAndDrop,
                   setDragOffSet,
+                });
+              }}
+            />
+            <s.RightButton
+              onClick={() => {
+                setStartImg((prev) => {
+                  if (prev == carouselImgs.length - 1) {
+                    return 0;
+                  }
+                  return prev + 1;
                 });
               }}
             />

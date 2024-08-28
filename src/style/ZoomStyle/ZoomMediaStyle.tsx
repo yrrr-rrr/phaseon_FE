@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { ReactComponent as Left } from '../../assets/svg/LeftButton.svg';
+import { ReactComponent as Right } from '../../assets/svg/RightButton.svg';
 
 export const ImgWrapper = styled.div<{ $type: string }>`
   width: 100%;
@@ -11,9 +13,12 @@ export const ImgWrapper = styled.div<{ $type: string }>`
 `;
 
 export const Div = styled.div<{ $zoomCount: number; $type: string }>`
-  width: ${({ $zoomCount, $type }) => `${$type == 'row' ? 80 * $zoomCount : 40 * $zoomCount}%`};
+  width: ${({ $zoomCount, $type }) => `${$type == 'row' ? 70 * $zoomCount : 40 * $zoomCount}%`};
   height: ${({ $type }) => ($type == 'row' ? '80%' : '75%')};
   position: relative;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
 `;
 
 export const Img = styled.img<{
@@ -33,4 +38,17 @@ export const Img = styled.img<{
   transform-origin: center center;
   opacity: ${({ $dragDirection }) => ($dragDirection !== 'none' ? 0 : 1)};
   cursor: ${({ $drag }) => ($drag ? 'grabbing' : 'grab')};
+`;
+
+export const LeftButton = styled(Left)`
+  position: absolute;
+  left: 20px;
+  z-index: 5;
+  cursor: pointer;
+`;
+export const RightButton = styled(Right)`
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
 `;

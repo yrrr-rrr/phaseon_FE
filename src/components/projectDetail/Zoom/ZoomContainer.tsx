@@ -13,27 +13,7 @@ export default function ZoomContainer() {
   return (
     <s.Section $show={showZoomComponent}>
       <HandleBox />
-      <s.LeftButton
-        onClick={() => {
-          setStartImg((prev) => {
-            if (prev == 0) {
-              return carouselImgs.length - 1;
-            }
-            return prev - 1;
-          });
-        }}
-      />
       <ZoomMediaBox />
-      <s.RightButton
-        onClick={() => {
-          setStartImg((prev) => {
-            if (prev == carouselImgs.length - 1) {
-              return 0;
-            }
-            return prev + 1;
-          });
-        }}
-      />
       <s.CarouselButtonBox>
         {carouselImgs.map((carouselObj, index) => (
           <s.CarouselButton

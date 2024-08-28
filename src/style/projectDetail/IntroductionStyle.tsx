@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ReactComponent as instargram } from '../../assets/svg/instargram.svg';
 import { ReactComponent as Person } from '../../assets/svg/Person.svg';
 
 export const Section = styled.section`
@@ -16,24 +15,25 @@ export const Profile = styled.div`
   padding: 16px 0;
   margin-bottom: 16px;
   width: 178px;
-  height: 212px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const Img = styled.img`
+  margin-bottom: 12px;
   width: 56px;
   height: 56px;
-  margin-bottom: 16px;
   border-radius: 100%;
 `;
 
 export const PersonSvg = styled(Person)`
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 export const Name = styled.p`
+  margin-bottom: 4px;
   color: #171719;
   font-size: 20px;
   font-style: normal;
@@ -42,12 +42,7 @@ export const Name = styled.p`
   letter-spacing: -0.24px;
 `;
 
-export const InfoBox = styled.p`
-  height: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+export const Role = styled.div`
   color: rgba(55, 56, 60, 0.61);
   font-size: 15px;
   font-style: normal;
@@ -57,6 +52,7 @@ export const InfoBox = styled.p`
 `;
 
 export const LinkBox = styled.div`
+  margin-top: 12px;
   width: 100%;
   height: 24px;
   display: flex;

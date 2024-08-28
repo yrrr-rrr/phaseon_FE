@@ -107,19 +107,23 @@
         "certifiedaward": [
           {
             "badge": "Top3",
-            "award": "Google Solution Challenge TOP 3"
+            "award": "Google Solution Challenge TOP 3",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "Top10",
-            "award": "Google Solution Challenge TOP 10"
+            "award": "Google Solution Challenge TOP 10",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           },
           {
             "badge": "PeopleChoice",
-            "award": "2024 창업중심대학 예비부문 협약"
+            "award": "2024 창업중심대학 예비부문 협약",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": [
@@ -161,10 +165,17 @@
             "img": "png/atti/atti-m1.png",
             "name": "이홍주",
             "role": "Front-End Developer",
-            "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -173,10 +184,17 @@
             "img": "png/atti/atti-m2.png",
             "name": "박수정",
             "role": "Front-End Developer",
-            "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -185,10 +203,17 @@
             "img": "png/atti/atti-m3.png",
             "name": "전주은",
             "role": "Front-End Developer",
-            "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -197,10 +222,17 @@
             "img": "png/atti/atti-m4.png",
             "name": "이지은",
             "role": "Designer",
-            "email": "ooo@naver.com",
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

@@ -13,8 +13,6 @@ export default function NotificationButton({
 }) {
   const { data, updateData } = useContext(ProjectDetailContext);
 
-  console.log(data.notification);
-
   return (
     <s.Button $width={width} $height={height} $border={'1px solid #69ACFF'} $color={'#69acff'} $type={'notification'}>
       <Notification />

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { ReactComponent as Close } from '../../assets/svg/Close.svg';
 import { ReactComponent as Download } from '../../assets/svg/Download.svg';
 
-export const Section = styled.section`
-  width: 100%;
+export const Section = styled.section<{ $scroll: number }>`
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -66px;
+  top: ${({ $scroll }) => $scroll - 66}px;
   left: 0;
   background-color: #00000072;
   z-index: 4;
