@@ -8,6 +8,7 @@ export default function HandleBox() {
   return (
     <s.HandelBox>
       <s.Close
+        fill="white"
         onClick={() => {
           document.body.style.overflow = 'auto';
           setZoomCount(1);
