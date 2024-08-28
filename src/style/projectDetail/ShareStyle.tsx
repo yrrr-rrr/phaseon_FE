@@ -1,4 +1,4 @@
-import QRCode from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 import styled from 'styled-components';
 import { ReactComponent as Close } from '../../assets/svg/Close.svg';
 import { ReactComponent as Download } from '../../assets/svg/Download.svg';
@@ -59,7 +59,7 @@ export const Description = styled.p`
   letter-spacing: 0.342px;
 `;
 
-export const QRCodeStyle = styled(QRCode)`
+export const QRCodeStyle = styled(QRCodeCanvas)`
   width: 120px !important;
   height: 120px !important;
 `;
