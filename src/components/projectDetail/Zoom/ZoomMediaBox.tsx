@@ -18,7 +18,7 @@ export default function ZoomMediaBox() {
   const [dragNextImg, updateDragNextImg] = useImmer<{ x: number; y: number }>({ x: 0, y: 0 });
   const [dragOffSet, setDragOffSet] = useState(0);
   const [dragDirection, setDragDirection] = useState('none');
-  const carouselImgs = data.category.projectinfo.carousel;
+  const carouselImgs = data.menu.projectinfo.carousel;
 
   useEffect(() => {
     const MouseMoveFunction = (e: MouseEvent) => {

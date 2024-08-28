@@ -13,7 +13,7 @@ export default function Performance() {
           <s.ShortDescription>Phase On 공식 인증 성과</s.ShortDescription>
         </s.TitleBox>
         <s.BadgeBox>
-          {data.category.performance.certifiedaward.map((awardObj, key) => {
+          {data.menu.performance.certifiedaward.map((awardObj, key) => {
             switch (awardObj.badge) {
               case 'Top3':
                 return <s.Top3 key={awardObj.badge + key} width={80} height={80} />;
@@ -34,7 +34,7 @@ export default function Performance() {
           })}
         </s.BadgeBox>
         <s.Ul>
-          {data.category.performance.certifiedaward.map((awardObj, index) => (
+          {data.menu.performance.certifiedaward.map((awardObj, index) => (
             <s.Li key={awardObj.award + index}>{awardObj.award}</s.Li>
           ))}
         </s.Ul>
@@ -45,12 +45,12 @@ export default function Performance() {
           <s.ShortDescription>{`${data.projectname}팀 프로젝트 성과`}</s.ShortDescription>
         </s.TitleBox>
         <s.Ul>
-          {data.category.performance.accomplishment.map((text, index) => (
+          {data.menu.performance.accomplishment.map((text, index) => (
             <s.Li key={text + index}>{text}</s.Li>
           ))}
         </s.Ul>
       </s.MarginBox>
-      {data.category.performance.news && <News data={data.category.performance.news} projectName={data.projectname} />}
+      {data.menu.performance.news && <News data={data.menu.performance.news} projectName={data.projectname} />}
     </s.Section>
   );
 }

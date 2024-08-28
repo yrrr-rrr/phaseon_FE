@@ -1,4 +1,4 @@
-import React, { SetStateAction } from 'react';
+import { SetStateAction } from 'react';
 import { Updater } from 'use-immer';
 interface PathType {
   path: string;
@@ -89,7 +89,7 @@ export interface MainProjectInfo {
 }
 
 export interface FloatMenu {
-  category: string;
+  phase: string;
   view: number;
   buttons: Button[];
   releasenote: string;
@@ -116,9 +116,10 @@ export interface DetailDataType {
   projectname: string;
   star: number;
   notification: number;
+  category: string[];
   floatmenu: FloatMenu;
   intro: Intro;
-  category: {
+  menu: {
     projectinfo: MainProjectInfo;
     release: {
       releaseversion: ReleaseVersion[];

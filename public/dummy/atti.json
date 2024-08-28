@@ -3,9 +3,10 @@
     "projectname": "ATTI",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "치매환자를 위한 기억의 회상과 기록 솔루션",
       "description": "음성봇 ATTI가 “과거의 중요한 기억을 잊어버리는 것 \", \"일상생활에서 기억해야 할 것을 잊어버리는 것\"으로 구분지어 과거의 의미있는 기억을 떠올리고 현재와 미래에 규칙적인 생활을 구축할 수 있도록 도와줘요."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {

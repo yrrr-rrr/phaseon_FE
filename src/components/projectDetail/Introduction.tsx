@@ -7,7 +7,7 @@ export default function Introduction() {
   const { data } = useContext(ProjectDetailContext);
   return (
     <s.Section>
-      {data.category.introduction.members.map((memberObj, index) => (
+      {data.menu.introduction.members.map((memberObj, index) => (
         <s.Profile key={index}>
           {memberObj.img == null ? (
             <s.PersonSvg width="56" height="56" />

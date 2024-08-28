@@ -39,7 +39,7 @@ export const Category = styled.p`
   height: 23px;
   box-sizing: border-box;
 
-  color: #34c759;
+  color: #32ade6;
   font-size: 11px;
   font-weight: 600;
   line-height: 127.3%;
@@ -49,7 +49,7 @@ export const Category = styled.p`
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background-color: #34c75914;
+  background-color: rgba(50, 173, 230, 0.08);
 `;
 
 export const ViewBox = styled.div`

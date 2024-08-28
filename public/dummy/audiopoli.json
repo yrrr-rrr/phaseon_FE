@@ -3,9 +3,10 @@
     "projectname": "Audio Poli",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "AI 기반 긴급 상황 실시간 대응 음성 분석 시스템",
       "description": "Audio Poli는 인공지능을 활용해 사건 현장의 소리를 실시간으로 분석해요. 비명이나 긴급 신호, 파손 소리를 감지해서 사건의 심각성과 유형을 정확하게 파악한답니다. 필요할 때는 경찰과 응급 서비스에 자동으로 신고해요. 이렇게 하면 신고가 지연되는 곳에서도 빠르고 효과적으로 대응할 수 있도록 도와준답니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {

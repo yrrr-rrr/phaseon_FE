@@ -3,9 +3,10 @@
     "projectname": "VRIDGE",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "언어 장애인을 위한 나만의 목소리를 만들어주는 특별한 음성 합션 솔루션",
       "description": "VRIDGE는 언어 장애인을 위해 개발된 음성 합성 애플리케이션입니다. 이 솔루션은 사용자가 가족의 목소리를 기반으로 자신만의 고유한 목소리를 생성하여, 보다 자연스럽고 감정이 담긴 대화를 나눌 수 있도록 돕습니다. 대화를 통한 소통은 가족이나 친구와의 관계를 더욱 깊게 만들며, 단순한 텍스트 메시지를 넘어 실제 음성을 통한 의사소통의 기회를 제공합니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
