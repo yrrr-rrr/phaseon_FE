@@ -27,7 +27,7 @@ export default function ProjectIntro() {
         <s.Description>{data.intro.description}</s.Description>
         <s.CategoryBox>
           {data.category.map((text, index) => (
-            <s.Category>
+            <s.Category key={index}>
               <Temp />
               <p>{text}</p>
             </s.Category>
