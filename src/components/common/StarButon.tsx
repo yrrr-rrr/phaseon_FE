@@ -1,9 +1,17 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/common/ButtonStyle';
 import { ReactComponent as Star } from '../../assets/svg/Star.svg';
 
-export default function StarButton({ width, height }: { width: number; height: number }) {
+export default function StarButton({
+  width,
+  height,
+  children,
+}: {
+  width: number;
+  height: number;
+  children?: React.ReactNode;
+}) {
   const { data, updateData } = useContext(ProjectDetailContext);
   return (
     <s.Button
@@ -19,7 +27,7 @@ export default function StarButton({ width, height }: { width: number; height: n
       }}
     >
       <Star />
-      <p>좋아요</p>
+      {children}
       <p>{data.star}</p>
     </s.Button>
   );

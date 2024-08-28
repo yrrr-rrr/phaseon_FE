@@ -6,11 +6,11 @@ import { ReactComponent as Top50Icon } from '../../assets/svg/Top50.svg';
 import { ReactComponent as PeoPleChoiceIcon } from '../../assets/svg/PeopleChoice.svg';
 import { ReactComponent as Person } from '../../assets/svg/Person.svg';
 
-export const Section = styled.section`
+export const Section = styled.section<{ $buttonNum: number }>`
   margin-bottom: 80px;
-  padding: 16px;
-  width: 240px;
-  height: 545px;
+  padding: 16px 16px 8px 16px;
+  width: 220px;
+  height: calc(475px + ${({ $buttonNum }) => $buttonNum * 32}px);
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow:
@@ -28,13 +28,13 @@ export const Section = styled.section`
 `;
 
 export const ViewCategoryBox = styled.div`
-  width: 208px;
+  width: 188px;
   display: flex;
   justify-content: space-between;
 `;
 
 export const Category = styled.p`
-  padding: 4.5px 6px;
+  padding: 3px 4px;
   width: 67px;
   height: 23px;
   box-sizing: border-box;
@@ -52,6 +52,12 @@ export const Category = styled.p`
   background-color: #34c75914;
 `;
 
+export const ViewBox = styled.div`
+  width: 44px;
+  display: flex;
+  gap: 4px;
+`;
+
 export const View = styled.p`
   color: #47484c;
   font-size: 13px;
@@ -61,19 +67,19 @@ export const View = styled.p`
 `;
 
 export const PromotionBox = styled.div`
-  padding: 7.6px 0 12px 0;
-  width: 208px;
+  padding: 8px 0;
+  width: 188px;
   border-bottom: 1px solid #cfebff7f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4px;
 `;
 
 export const PromotionButton = styled.button`
-  margin-bottom: 4px;
   padding: 7px 14px;
-  width: 208px;
+  width: 188px;
   height: 32px;
   box-sizing: border-box;
   border: 1px solid #69acff;
@@ -103,7 +109,7 @@ export const ButtonText = styled.p`
 
 export const CoffeeChatButton = styled.button`
   padding: 7px 14px;
-  width: 208px;
+  width: 188px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 6px;
@@ -132,8 +138,8 @@ export const CoffeeChatText = styled.p`
 `;
 
 export const ReleaseBox = styled.div`
-  padding: 16px 12px;
-  width: 208px;
+  padding: 8px 0;
+  width: 188px;
   border-bottom: 1px solid #cfebff7f;
   display: flex;
   flex-direction: column;
@@ -157,8 +163,8 @@ export const ReleaseDescription = styled.p`
 `;
 
 export const ImgBox = styled.div`
-  padding: 16px 12px;
-  width: 208px;
+  padding: 8px 0;
+  width: 188px;
   border-bottom: 1px solid #cfebff7f;
   display: flex;
   flex-direction: column;
@@ -201,8 +207,14 @@ export const Img = styled.img`
 `;
 
 export const ButtonBox = styled.div`
-  margin: 16px 0;
-  width: 208px;
+  width: 188px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+export const Div = styled.div`
+  width: 100%;
   display: flex;
   gap: 8px;
 `;
