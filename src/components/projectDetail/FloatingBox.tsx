@@ -20,7 +20,7 @@ export default function FloatingBox() {
   return (
     <s.Section $buttonNum={data.floatmenu.buttons.length}>
       <s.ViewCategoryBox>
-        <s.Category>{data.floatmenu.category}</s.Category>
+        <s.Category>{`phase${data.floatmenu.phase}`}</s.Category>
         <s.ViewBox>
           <View />
           <s.View>{data.floatmenu.view}</s.View>
@@ -51,7 +51,7 @@ export default function FloatingBox() {
         <s.Title>주요 성과</s.Title>
         <div>
           {(() => {
-            switch (data.category.performance.certifiedaward[0]?.badge) {
+            switch (data.menu.performance.certifiedaward[0]?.badge) {
               case 'Top3':
                 return <s.Top3 width={40} height={40} />;
                 break;
@@ -81,7 +81,7 @@ export default function FloatingBox() {
       <s.ImgBox>
         <s.Title>제작자</s.Title>
         <div>
-          {data.category.introduction.members.map((memberObj, index) => {
+          {data.menu.introduction.members.map((memberObj, index) => {
             if (index < 6) {
               if (memberObj.img == null) {
                 return <s.PersonSvg width="40" height="40" key={index} />;

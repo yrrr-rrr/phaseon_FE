@@ -8,7 +8,7 @@ import * as s from '../../../style/ZoomStyle/ZoomContainerStyle';
 export default function ZoomContainer() {
   const { data } = useContext(ProjectDetailContext);
   const { showZoomComponent, setStartImg, startImg } = useContext(ZoomContext);
-  const carouselImgs = data.category.projectinfo.carousel;
+  const carouselImgs = data.menu.projectinfo.carousel;
 
   return (
     <s.Section $show={showZoomComponent}>

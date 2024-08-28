@@ -14,9 +14,9 @@ export default function ProjectInfo() {
       <s.MainFeatureBox>
         <s.MarginBox>
           <s.Title>{`01. ${data.projectname} 기능 소개`}</s.Title>
-          <s.ShortDescription>{data.category.projectinfo.mainfeatures.shortdescription}</s.ShortDescription>
+          <s.ShortDescription>{data.menu.projectinfo.mainfeatures.shortdescription}</s.ShortDescription>
         </s.MarginBox>
-        {data.category.projectinfo.mainfeatures.feature.map((featureObj, key) => (
+        {data.menu.projectinfo.mainfeatures.feature.map((featureObj, key) => (
           <s.MarginBox key={featureObj.title + key}>
             <s.FeatureTitle>{featureObj.title}</s.FeatureTitle>
             <div>
@@ -36,7 +36,7 @@ export default function ProjectInfo() {
           <s.ShortDescription>{`${data.projectname} Build with:`}</s.ShortDescription>
         </s.MarginBox>
         <s.TechBox>
-          {data.category.projectinfo.techstack.map((tech, key) => (
+          {data.menu.projectinfo.techstack.map((tech, key) => (
             <s.Tech key={key}>
               <s.TechText>{`#${tech}`}</s.TechText>
             </s.Tech>

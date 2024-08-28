@@ -1,4 +1,4 @@
-import React, { createContext, SetStateAction, useMemo, useState } from 'react';
+import { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
 import { DetailDataType } from '../interface';
 
@@ -12,9 +12,11 @@ interface ContextType {
 const initialDetailData: DetailDataType = {
   projectname: '',
   star: 0,
+  notification: 0,
+  category: [''],
   floatmenu: {
     view: 0,
-    category: '',
+    phase: '',
     buttons: [],
     releasenote: '',
   },
@@ -24,7 +26,7 @@ const initialDetailData: DetailDataType = {
     projectbrief: '',
     description: '',
   },
-  category: {
+  menu: {
     projectinfo: {
       carousel: [],
       mainfeatures: {

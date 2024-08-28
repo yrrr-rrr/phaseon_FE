@@ -15,9 +15,9 @@ export default function Carousel() {
   const [currentImg, setCurrentImg] = useState<number>(0);
 
   const slides =
-    data.category.projectinfo.carousel.length <= 2
-      ? [...data.category.projectinfo.carousel, ...data.category.projectinfo.carousel]
-      : data.category.projectinfo.carousel;
+    data.menu.projectinfo.carousel.length <= 2
+      ? [...data.menu.projectinfo.carousel, ...data.menu.projectinfo.carousel]
+      : data.menu.projectinfo.carousel;
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
