@@ -87,10 +87,18 @@
             "img": null,
             "name": "김민식",
             "role": "FE",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -99,10 +107,18 @@
             "img": null,
             "name": "김여진",
             "role": "BE",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -111,10 +127,18 @@
             "img": null,
             "name": "설지환",
             "role": "AI",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -123,10 +147,18 @@
             "img": null,
             "name": "장민석",
             "role": "BE / Hw",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

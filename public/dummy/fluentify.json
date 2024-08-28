@@ -103,10 +103,18 @@
             "img": "png/fluentify/fluentify-m1.png",
             "name": "강민서",
             "role": "Front-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -115,10 +123,18 @@
             "img": "png/fluentify/fluentify-m2.png",
             "name": "유회성",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -127,10 +143,18 @@
             "img": "png/fluentify/fluentify-m3.png",
             "name": "임채림",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -139,10 +163,18 @@
             "img": "png/fluentify/fluentify-m4.png",
             "name": "김주연",
             "role": "ML Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

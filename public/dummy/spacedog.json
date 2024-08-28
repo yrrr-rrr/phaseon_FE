@@ -107,10 +107,18 @@
             "img": "png/spacedog/spacedog-m1.png",
             "name": "이지수",
             "role": "FE / DB / Design",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -119,10 +127,18 @@
             "img": "png/spacedog/spacedog-m2.png",
             "name": "장혜정",
             "role": "BE/ DB / AI",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -131,10 +147,18 @@
             "img": "png/spacedog/spacedog-m3.png",
             "name": "유채림",
             "role": "Circuit Design",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -143,10 +167,18 @@
             "img": "png/spacedog/spacedog-m4.png",
             "name": "양지훈",
             "role": "3D Modeling",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

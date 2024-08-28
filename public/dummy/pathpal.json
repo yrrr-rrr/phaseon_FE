@@ -111,10 +111,18 @@
             "img": "png/pathpal/pathpal-m1.png",
             "name": "이수지",
             "role": "Pm / ios",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -123,10 +131,18 @@
             "img": "png/pathpal/pathpal-m2.png",
             "name": "신은빈",
             "role": "AL / ML",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -135,10 +151,18 @@
             "img": "png/pathpal/pathpal-m3.png",
             "name": "홍승택",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -147,10 +171,18 @@
             "img": "png/pathpal/pathpal-m4.png",
             "name": "김여원",
             "role": "Designer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

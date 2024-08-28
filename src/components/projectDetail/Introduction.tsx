@@ -15,16 +15,13 @@ export default function Introduction() {
             <s.Img src={`/public/${memberObj.img}`} alt="" />
           )}
           <s.Name>{memberObj.name}</s.Name>
-          <s.InfoBox>
-            <p>{memberObj.role}</p>
-            <p>{memberObj.email}</p>
-          </s.InfoBox>
-          <div>
-            {memberObj.profilelink.map((links, linkindex) => {
+          <s.Role>{memberObj.role}</s.Role>
+          <s.LinkBox>
+            {memberObj.profilelink.map((links, index) => {
               if (links.icon == 'instargram') {
                 return (
                   <Instargram
-                    key={links.link}
+                    key={links.link + index}
                     onClick={() => {
                       window.open(links.link);
                     }}
@@ -32,7 +29,7 @@ export default function Introduction() {
                 );
               }
             })}
-          </div>
+          </s.LinkBox>
         </s.Profile>
       ))}
     </s.Section>
