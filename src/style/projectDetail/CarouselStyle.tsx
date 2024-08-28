@@ -4,7 +4,7 @@ import { ReactComponent as RightButton } from '../../assets/svg/RightButton.svg'
 
 export const Section = styled.section`
   width: 100%;
-  height: 218px;
+  height: 232px;
   position: relative;
 `;
 

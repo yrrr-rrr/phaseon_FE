@@ -1,15 +1,17 @@
 import { EmblaCarouselType } from 'embla-carousel';
-import * as s from '../../style/common/ButtonBoxStyle';
+import * as s from '../../style/projectDetail/ButtonBoxStyle';
 
 export default function ButtonBox({
   emblaApi,
   startScroll,
+  padding,
 }: {
   emblaApi: EmblaCarouselType | undefined;
   startScroll?: (emblaApi: EmblaCarouselType) => void;
+  padding: number;
 }) {
   return (
-    <s.ButtonBox>
+    <s.ButtonBox $padding={padding}>
       <s.PrevButton
         onClick={() => {
           if (!emblaApi) return;

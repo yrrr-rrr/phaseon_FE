@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { ReactComponent as Left } from '../../assets/svg/LeftButton.svg';
 import { ReactComponent as Right } from '../../assets/svg/RightButton.svg';
 
-export const ButtonBox = styled.div`
-  padding: 10px 40px;
+export const ButtonBox = styled.div<{ $padding: number }>`
+  padding: 10px ${({ $padding }) => $padding}px;
   width: 100%;
   box-sizing: border-box;
   display: flex;

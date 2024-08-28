@@ -42,7 +42,7 @@ export default function AllProjectSlider() {
           전체보기
         </s.MoreContent>
       </s.TextBox>
-      <ButtonBox emblaApi={emblaApi} startScroll={startScroll} />
+      <ButtonBox emblaApi={emblaApi} startScroll={startScroll} padding={40} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
           {data.data.map((dataObj, index) => (
