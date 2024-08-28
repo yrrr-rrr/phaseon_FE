@@ -3,9 +3,10 @@
     "projectname": "COM-MA",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "청각 장애 부모와 자녀(CODA)를 위한 AI 카메라 기반 수화 교육 플랫폼 ",
       "description": "AI 카메라로 수화를 인식하고 학습 자료로 변환하여, CODA가 자신감을 가지고 부모와 소통할 수 있도록 지원해요."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {

@@ -3,9 +3,10 @@
     "projectname": "Earh&i",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "기후 변화 대응을 위한 행동을 촉구하는 플랫폼",
       "description": "Earth&I (E&I)는 기후 변화에 대한 인식은 있지만, 실제 행동으로 이어지지 않는 문제를 해결하는 플랫폼입니다. 사용자는 기후 행동이 지구와 자신의 건강에 얼마나 중요한지를 쉽게 이해하게 됩니다. E&I는 사람들의 행동을 변화시켜 기후 변화 대응을 위한 지속 가능한 습관을 형성하도록 돕습니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {

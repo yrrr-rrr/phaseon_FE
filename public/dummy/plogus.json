@@ -3,9 +3,10 @@
     "projectname": "PlogUs",
     "star": 3,
     "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -21,7 +22,7 @@
       "projectbrief": "플로깅 활동을 통해 환경과 건강 모두를 지킬 수 있는 프로젝트",
       "description": "PlogUs 어플리케이션은 환경을 지키고 건강한 라이프스타일을 즐기는 사람들을 위한 해결책이에요. 이 어플리케이션을 통해 우리는 함께 환경을 개선하고 더 나은 미래를 만들어 나갈 수 있습니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
