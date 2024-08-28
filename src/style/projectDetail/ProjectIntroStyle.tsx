@@ -64,3 +64,32 @@ export const Description = styled.p`
   line-height: 162.5%;
   letter-spacing: 0.091px;
 `;
+
+export const CategoryBox = styled.section`
+  margin-top: 20px;
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 10px;
+`;
+
+export const Category = styled.div`
+  padding: 4px 8px;
+  width: auto;
+  height: 24px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #32ade614;
+
+  color: #32ade6;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 133.4%;
+  letter-spacing: 0.302px;
+`;

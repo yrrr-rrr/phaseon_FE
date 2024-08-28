@@ -5,6 +5,7 @@ import * as s from '../../style/projectDetail/ProjectIntroStyle';
 import { DetailDataType } from '../../interface';
 import { useParams } from 'react-router-dom';
 import { CategoryContext } from '../../context/CategoryContext';
+import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
 
 export default function ProjectIntro() {
   const { data, updateData } = useContext(ProjectDetailContext);
@@ -24,6 +25,14 @@ export default function ProjectIntro() {
         <s.ProjectName>{data.projectname}</s.ProjectName>
         <s.ProjectBrief>{data.intro.projectbrief}</s.ProjectBrief>
         <s.Description>{data.intro.description}</s.Description>
+        <s.CategoryBox>
+          {data.category.map((text, index) => (
+            <s.Category>
+              <Temp />
+              <p>{text}</p>
+            </s.Category>
+          ))}
+        </s.CategoryBox>
       </s.IntroSection>
     </s.Section>
   );

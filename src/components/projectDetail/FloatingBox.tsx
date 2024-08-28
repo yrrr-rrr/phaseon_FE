@@ -20,7 +20,7 @@ export default function FloatingBox() {
   return (
     <s.Section $buttonNum={data.floatmenu.buttons.length}>
       <s.ViewCategoryBox>
-        <s.Category>{`phase${data.floatmenu.phase}`}</s.Category>
+        <s.Category>{`phase ${data.floatmenu.phase}`}</s.Category>
         <s.ViewBox>
           <View />
           <s.View>{data.floatmenu.view}</s.View>
