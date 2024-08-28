@@ -8,7 +8,7 @@ export default function Share() {
     document.body.style.overflow = 'hidden';
   }, []);
   return (
-    <s.Section>
+    <s.Section $scroll={window.pageYOffset}>
       <s.QRcodeBox>
         <s.CloseButton
           fill="black"

@@ -14,6 +14,7 @@ export default function ShareButton({ width, height }: { width: number; height: 
       $type={'share'}
       onClick={() => {
         setShowShare(true);
+        // window.scrollTo(0, 0);
       }}
     >
       <Share />
