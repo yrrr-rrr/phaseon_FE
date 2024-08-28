@@ -13,7 +13,7 @@ export default function ProjectIntro() {
   useEffect(() => {
     if (!projectName) return;
     getData(updateData, projectName);
-  }, []);
+  }, [projectName]);
 
   return (
     <s.Section ref={introRef}>

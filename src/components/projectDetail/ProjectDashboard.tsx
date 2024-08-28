@@ -9,6 +9,8 @@ import ActionPanel from './ActionPanel';
 import { ZoomImgProvider } from '../../context/ZoomContext';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import Share from './Share';
+import AllProjectSlider from './AllProjectSlider';
+
 
 export default function ProjectDashboard() {
   const { showShare } = useContext(ProjectDetailContext);
@@ -42,6 +44,7 @@ export default function ProjectDashboard() {
         {currentCategory == 'release' && <Release />}
         {currentCategory == 'introduction' && <Introduction />}
         <ActionPanel />
+        <AllProjectSlider />
       </s.Section>
     </>
   );

@@ -9,8 +9,8 @@ export default function ShareButton({ width, height }: { width: number; height: 
     <s.Button
       $width={width}
       $height={height}
-      $border={'1px solid #69ACFF'}
-      $color={'69acff'}
+      $border={'none'}
+      $color={'#69acff'}
       $type={'share'}
       onClick={() => {
         setShowShare(true);
