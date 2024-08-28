@@ -38,7 +38,7 @@ export default function ProjectInfo() {
         <s.TechBox>
           {data.menu.projectinfo.techstack.map((tech, key) => (
             <s.Tech key={key}>
-              <s.TechText>{`#${tech}`}</s.TechText>
+              <s.TechText>{`${tech}`}</s.TechText>
             </s.Tech>
           ))}
         </s.TechBox>
