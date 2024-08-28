@@ -13,9 +13,7 @@ export default function ZoomContainer() {
   return (
     <s.Section $show={showZoomComponent}>
       <HandleBox />
-
       <ZoomMediaBox />
-
       <s.CarouselButtonBox>
         {carouselImgs.map((carouselObj, index) => (
           <s.CarouselButton

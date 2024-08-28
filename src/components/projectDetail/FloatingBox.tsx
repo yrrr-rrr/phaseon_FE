@@ -88,7 +88,6 @@ export default function FloatingBox() {
               } else {
                 return <s.Img src={`/public/${memberObj.img}`} alt="" key={index} />;
               }
-              // return <s.Img key={index} src={`/public/${memberObj.img}`} alt="" />;
             }
           })}
         </div>
