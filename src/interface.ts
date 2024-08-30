@@ -94,6 +94,8 @@ export interface FloatMenu {
   view: number;
   buttons: Button[];
   releasenote: string;
+  isLiked: boolean;
+  isNotified: boolean;
 }
 
 export interface Intro {

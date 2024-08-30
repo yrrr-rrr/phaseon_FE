@@ -19,6 +19,8 @@ const initialDetailData: DetailDataType = {
     phase: '',
     buttons: [],
     releasenote: '',
+    isLiked: false,
+    isNotified: false,
   },
   intro: {
     banner: '',
