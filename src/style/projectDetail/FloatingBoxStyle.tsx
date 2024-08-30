@@ -7,7 +7,6 @@ import { ReactComponent as PeoPleChoiceIcon } from '../../assets/svg/PeopleChoic
 import { ReactComponent as Person } from '../../assets/svg/Person.svg';
 
 export const Section = styled.section<{ $buttonNum: number }>`
-  margin-bottom: 80px;
   padding: 16px 16px 8px 16px;
   width: 220px;
   height: calc(475px + ${({ $buttonNum }) => $buttonNum * 32}px);
