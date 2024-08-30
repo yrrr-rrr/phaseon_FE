@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Div = styled.div`
   width: 240px;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   position: absolute;
