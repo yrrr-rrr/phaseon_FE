@@ -7,7 +7,7 @@ export default function Introduction() {
   const { data } = useContext(ProjectDetailContext);
   return (
     <s.Section>
-      {data.category.introduction.members.map((memberObj, index) => (
+      {data.menu.introduction.members.map((memberObj, index) => (
         <s.Profile key={index}>
           {memberObj.img == null ? (
             <s.PersonSvg width="56" height="56" />
@@ -15,16 +15,13 @@ export default function Introduction() {
             <s.Img src={`/public/${memberObj.img}`} alt="" />
           )}
           <s.Name>{memberObj.name}</s.Name>
-          <s.InfoBox>
-            <span>{memberObj.role}</span>
-            <span>{memberObj.email}</span>
-          </s.InfoBox>
-          <div>
-            {memberObj.profilelink.map((links, linkindex) => {
+          <s.Role>{memberObj.role}</s.Role>
+          <s.LinkBox>
+            {memberObj.profilelink.map((links, index) => {
               if (links.icon == 'instargram') {
                 return (
                   <Instargram
-                    key={links.link}
+                    key={links.link + index}
                     onClick={() => {
                       window.open(links.link);
                     }}
@@ -32,7 +29,7 @@ export default function Introduction() {
                 );
               }
             })}
-          </div>
+          </s.LinkBox>
         </s.Profile>
       ))}
     </s.Section>

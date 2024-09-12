@@ -19,7 +19,7 @@ export default function Footer() {
       <s.MidSection>
         <s.Div>
           <s.DividingLine>지금.lab</s.DividingLine>
-          <span>대표 남우진</span>
+          <p>대표 남우진</p>
         </s.Div>
         <s.Div>
           <s.DividingLine>부산광역시 부산진구 동천로 116, 3층</s.DividingLine>

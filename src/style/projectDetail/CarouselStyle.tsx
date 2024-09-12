@@ -3,15 +3,14 @@ import { ReactComponent as LeftButton } from '../../assets/svg/LeftButton.svg';
 import { ReactComponent as RightButton } from '../../assets/svg/RightButton.svg';
 
 export const Section = styled.section`
-  width: 780px;
-  height: 218px;
+  width: 100%;
+  height: 232px;
   position: relative;
 `;
 
 export const CarouselViewport = styled.section`
   width: 100%;
   height: 100%;
-  background-color: #f7f7f8;
   overflow: hidden;
 `;
 

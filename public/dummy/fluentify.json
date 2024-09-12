@@ -2,9 +2,11 @@
   "data": {
     "projectname": "fluentify",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "청각 장애 아동의 의사소통 문제를 해결하는 솔루션",
       "description": "개인화된 발음 피드백을 제공하여 의사소통에 대한 자신감을 높이고 사회적 포용성을 증진하는 것을 목표로 합니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -89,7 +93,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -100,10 +105,18 @@
             "img": "png/fluentify/fluentify-m1.png",
             "name": "강민서",
             "role": "Front-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -112,10 +125,18 @@
             "img": "png/fluentify/fluentify-m2.png",
             "name": "유회성",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -124,10 +145,18 @@
             "img": "png/fluentify/fluentify-m3.png",
             "name": "임채림",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -136,10 +165,18 @@
             "img": "png/fluentify/fluentify-m4.png",
             "name": "김주연",
             "role": "ML Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

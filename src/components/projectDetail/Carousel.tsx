@@ -4,17 +4,20 @@ import YouTube from 'react-youtube';
 import { useCallback, useContext, useEffect, useState } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 import * as s from '../../style/projectDetail/CarouselStyle';
+import { ZoomContext } from '../../context/ZoomContext';
+import ButtonBox from './ButtonBox';
 
 export default function Carousel() {
   const options: EmblaOptionsType = { align: 'center', loop: true, slidesToScroll: 2 };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const { data } = useContext(ProjectDetailContext);
+  const { setStartImg, setShowZoomComponent } = useContext(ZoomContext);
   const [currentImg, setCurrentImg] = useState<number>(0);
 
   const slides =
-    data.category.projectinfo.carousel.length <= 2
-      ? [...data.category.projectinfo.carousel, ...data.category.projectinfo.carousel]
-      : data.category.projectinfo.carousel;
+    data.menu.projectinfo.carousel.length <= 2
+      ? [...data.menu.projectinfo.carousel, ...data.menu.projectinfo.carousel]
+      : data.menu.projectinfo.carousel;
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -29,17 +32,13 @@ export default function Carousel() {
 
   return (
     <s.Section>
-      <s.PrevButton
-        onClick={() => {
-          emblaApi?.scrollPrev();
-        }}
-      />
+      <ButtonBox emblaApi={emblaApi} padding={20} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
-          {slides.map((carouselObj, key) => {
+          {slides.map((carouselObj, index) => {
             if (carouselObj.type == 'video') {
               return (
-                <s.CarouselSlide key={carouselObj.img + key}>
+                <s.CarouselSlide key={carouselObj.img + index}>
                   <YouTube
                     videoId={carouselObj.img}
                     opts={{
@@ -51,8 +50,17 @@ export default function Carousel() {
               );
             } else {
               return (
-                <s.CarouselSlide key={carouselObj.img + key}>
-                  <s.Img src={`/public/${carouselObj.img}`} alt="" $type={carouselObj.type} />
+                <s.CarouselSlide key={carouselObj.img + index}>
+                  <s.Img
+                    src={`/public/${carouselObj.img}`}
+                    alt=""
+                    $type={carouselObj.type}
+                    onClick={() => {
+                      setStartImg(index);
+                      setShowZoomComponent(true);
+                      document.body.style.overflow = 'hidden';
+                    }}
+                  />
                 </s.CarouselSlide>
               );
             }
@@ -75,11 +83,6 @@ export default function Carousel() {
           })}
         </s.ButtonSection>
       </s.CarouselViewport>
-      <s.NextButton
-        onClick={() => {
-          emblaApi?.scrollNext();
-        }}
-      />
     </s.Section>
   );
 }

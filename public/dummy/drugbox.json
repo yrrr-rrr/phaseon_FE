@@ -2,9 +2,11 @@
   "data": {
     "projectname": "Drug Box",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "의약품의 올바른 관리 및 폐기를 도와주는 솔루션",
       "description": "일반의약품과 처방약의 재고와 유통기한 관리 지침을 제공하며, 폐기 약물의 올바른 처리 방법을 안내해줘요. 우리 솔루션을 통해 부적절한 폐기 방법으로 인한 문제를 해결하고, 나아가 불필요한 의약품 사용을 줄여 개인과 환경의 건강을 증진시켜보세요!"
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -85,7 +89,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -96,10 +101,18 @@
             "img": "png/drugbox/drugbox-m1.png",
             "name": "김범준",
             "role": "AI Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -108,10 +121,18 @@
             "img": "png/drugbox/drugbox-m2.png",
             "name": "권보민",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -120,10 +141,18 @@
             "img": "png/drugbox/drugbox-m3.png",
             "name": "김도연",
             "role": "ios Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -132,10 +161,18 @@
             "img": "png/drugbox/drugbox-m4.png",
             "name": "김미주",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

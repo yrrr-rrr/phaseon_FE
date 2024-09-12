@@ -16,9 +16,9 @@ export default function Header({ TopRef }: { TopRef?: React.RefObject<HTMLDivEle
             }}
           >
             <ProjectIcon />
-            <span>프로젝트</span>
+            <p>프로젝트</p>
           </s.IconBox>
-          <span>아티클</span>
+          <p>아티클</p>
         </s.Nav>
       </s.NavigationBox>
       <s.NavigationBox width={214}>

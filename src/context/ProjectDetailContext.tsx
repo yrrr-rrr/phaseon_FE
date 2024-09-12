@@ -1,20 +1,26 @@
-import { createContext, useMemo } from 'react';
+import { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
 import { DetailDataType } from '../interface';
 
 interface ContextType {
   data: DetailDataType;
   updateData: Updater<DetailDataType>;
+  showShare: boolean;
+  setShowShare: React.Dispatch<SetStateAction<boolean>>;
 }
 
 const initialDetailData: DetailDataType = {
   projectname: '',
   star: 0,
+  notification: 0,
+  category: [''],
   floatmenu: {
     view: 0,
-    category: '',
+    phase: '',
     buttons: [],
     releasenote: '',
+    isLiked: false,
+    isNotified: false,
   },
   intro: {
     banner: '',
@@ -22,7 +28,7 @@ const initialDetailData: DetailDataType = {
     projectbrief: '',
     description: '',
   },
-  category: {
+  menu: {
     projectinfo: {
       carousel: [],
       mainfeatures: {
@@ -48,10 +54,13 @@ const initialDetailData: DetailDataType = {
 export const ProjectDetailContext = createContext<ContextType>({
   data: initialDetailData,
   updateData: () => {},
+  showShare: false,
+  setShowShare: () => {},
 });
 
 export function ProjectDetailProvider({ children }: { children: React.ReactNode }) {
   const [data, updateData] = useImmer<DetailDataType>(initialDetailData);
-  const value = useMemo(() => ({ data, updateData }), [data, updateData]);
+  const [showShare, setShowShare] = useState(false);
+  const value = useMemo(() => ({ data, updateData, showShare, setShowShare }), [data, showShare]);
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;
 }

@@ -2,9 +2,11 @@
   "data": {
     "projectname": "Space Dog",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "청각장애인을 위한 반려견 케어 지원 솔루션",
       "description": "Space Dog은 반려견의 짖음이나 이상 행동을 감지하여 청각장애인에게 알림을 제공하는 애플리케이션입니다. 위치 추적 기능을 통해 반려견의 탈출 시에도 안전하게 관리할 수 있도록 돕습니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -93,7 +97,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -104,10 +109,18 @@
             "img": "png/spacedog/spacedog-m1.png",
             "name": "이지수",
             "role": "FE / DB / Design",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -116,10 +129,18 @@
             "img": "png/spacedog/spacedog-m2.png",
             "name": "장혜정",
             "role": "BE/ DB / AI",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -128,10 +149,18 @@
             "img": "png/spacedog/spacedog-m3.png",
             "name": "유채림",
             "role": "Circuit Design",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -140,10 +169,18 @@
             "img": "png/spacedog/spacedog-m4.png",
             "name": "양지훈",
             "role": "3D Modeling",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

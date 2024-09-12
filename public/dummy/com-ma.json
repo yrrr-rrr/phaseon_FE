@@ -2,9 +2,11 @@
   "data": {
     "projectname": "COM-MA",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "청각 장애 부모와 자녀(CODA)를 위한 AI 카메라 기반 수화 교육 플랫폼 ",
       "description": "AI 카메라로 수화를 인식하고 학습 자료로 변환하여, CODA가 자신감을 가지고 부모와 소통할 수 있도록 지원해요."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -93,7 +97,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -104,10 +109,18 @@
             "img": "png/com-ma/com-ma-m1.png",
             "name": "정수미",
             "role": "AI Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -116,10 +129,18 @@
             "img": "png/com-ma/com-ma-m2.png",
             "name": "송은나래",
             "role": "PM / Designer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -128,10 +149,18 @@
             "img": "png/com-ma/com-ma-m3.png",
             "name": "서묘진",
             "role": "Android Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -140,10 +169,18 @@
             "img": "png/com-ma/com-ma-m4.png",
             "name": "송하연",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

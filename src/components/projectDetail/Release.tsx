@@ -6,7 +6,7 @@ export default function Release() {
   const { data } = useContext(ProjectDetailContext);
   return (
     <s.Section>
-      {data.category.release.releaseversion.map((releaseObj, index) => (
+      {data.menu.release.releaseversion.map((releaseObj, index) => (
         <s.ReleaseBox key={index}>
           <s.Title>{`Release ${releaseObj.version}`}</s.Title>
           <s.ShortDescription>{releaseObj.date}</s.ShortDescription>

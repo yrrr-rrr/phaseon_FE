@@ -2,9 +2,11 @@
   "data": {
     "projectname": "Say Better",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "뇌 손상 장애 아동을 위한 편리한 비대면 언어 치료 솔루션",
       "description": "Say Better는 뇌 손상 장애를 가진 아동들이 그림 기호를 통해 언어 치료를 받을 수 있도록 돕는 솔루션이에요. 이 서비스는 교육자들이 인공지능의 도움을 받아 치료 계획을 쉽게 세울 수 있게 해주고, 아동들은 치료가 끝난 후에도 배운 기호로 소통할 수 있습니다. Say Better는 모든 아동이 언어 교육을 받을 수 있도록 지원하며, 그들이 자신감을 갖고 의사소통할 수 있도록 도와주는 친구 같은 존재랍니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -93,7 +97,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -104,10 +109,18 @@
             "img": "png/saybetter/saybetter-m1.png",
             "name": "지영인",
             "role": "PM",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -116,10 +129,18 @@
             "img": "png/saybetter/saybetter-m2.png",
             "name": "이채원",
             "role": "Educator App Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -128,10 +149,18 @@
             "img": "png/saybetter/saybetter-m3.png",
             "name": "고현철",
             "role": "Learner App Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -140,10 +169,18 @@
             "img": "png/saybetter/saybetter-m4.png",
             "name": "한지윤",
             "role": "UI/UX Designer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -152,10 +189,18 @@
             "img": "png/saybetter/saybetter-m5.png",
             "name": "최선규",
             "role": "Service Server Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -164,10 +209,18 @@
             "img": "png/saybetter/saybetter-m6.png",
             "name": "김태규",
             "role": "ML Server Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -176,10 +229,18 @@
             "img": "png/saybetter/saybetter-m7.png",
             "name": "이지호",
             "role": "Service Server Enginner",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -188,10 +249,18 @@
             "img": "png/saybetter/saybetter-m8.png",
             "name": "이은미",
             "role": "Service Server Engineer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]

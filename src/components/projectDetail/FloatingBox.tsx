@@ -1,11 +1,13 @@
 import { useContext } from 'react';
 import { ProjectDetailContext } from '../../context/ProjectDetailContext';
+import { CategoryContext } from '../../context/CategoryContext';
 import { ReactComponent as Coffee } from '../../assets/svg/Coffee.svg';
+import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
+import { ReactComponent as View } from '../../assets/svg/View.svg';
 import StarButton from '../common/StarButon';
 import ShareButton from '../common/ShareButton';
+import NotificationButton from '../common/NotificationButton';
 import * as s from '../../style/projectDetail/FloatingBoxStyle';
-import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
-import { CategoryContext } from '../../context/CategoryContext';
 
 export default function FloatingBox() {
   const { data } = useContext(ProjectDetailContext);
@@ -15,13 +17,14 @@ export default function FloatingBox() {
     introRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
-  // console.log(data.category.performance.certifiedaward[0]);
-
   return (
-    <s.Section>
+    <s.Section $buttonNum={data.floatmenu.buttons.length}>
       <s.ViewCategoryBox>
-        <s.Category>{data.floatmenu.category}</s.Category>
-        <s.View>{`조회수 ${data.floatmenu.view}`}</s.View>
+        <s.Category>{`phase ${data.floatmenu.phase}`}</s.Category>
+        <s.ViewBox>
+          <View />
+          <s.View>{data.floatmenu.view}</s.View>
+        </s.ViewBox>
       </s.ViewCategoryBox>
       <s.PromotionBox>
         {data.floatmenu.buttons.map((buttonObj, index) => (
@@ -48,7 +51,7 @@ export default function FloatingBox() {
         <s.Title>주요 성과</s.Title>
         <div>
           {(() => {
-            switch (data.category.performance.certifiedaward[0]?.badge) {
+            switch (data.menu.performance.certifiedaward[0]?.badge) {
               case 'Top3':
                 return <s.Top3 width={40} height={40} />;
                 break;
@@ -78,14 +81,13 @@ export default function FloatingBox() {
       <s.ImgBox>
         <s.Title>제작자</s.Title>
         <div>
-          {data.category.introduction.members.map((memberObj, index) => {
+          {data.menu.introduction.members.map((memberObj, index) => {
             if (index < 6) {
               if (memberObj.img == null) {
-                return <s.PersonSvg width="40" height="40" />;
+                return <s.PersonSvg width="40" height="40" key={index} />;
               } else {
-                return <s.Img src={`/public/${memberObj.img}`} alt="" />;
+                return <s.Img src={`/public/${memberObj.img}`} alt="" key={index} />;
               }
-              // return <s.Img key={index} src={`/public/${memberObj.img}`} alt="" />;
             }
           })}
         </div>
@@ -98,8 +100,11 @@ export default function FloatingBox() {
         </s.MoreContent>
       </s.ImgBox>
       <s.ButtonBox>
-        <StarButton width={103} height={32} />
-        <ShareButton width={103} height={32} />
+        <s.Div>
+          <StarButton width={90} height={32} />
+          <NotificationButton width={90} height={32} />
+        </s.Div>
+        <ShareButton width={188} height={32} />
       </s.ButtonBox>
     </s.Section>
   );

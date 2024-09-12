@@ -32,9 +32,13 @@ export default function ProjectCollection({ TopRef }: { TopRef: React.RefObject<
 }
 
 async function getProjects(updateProject: Updater<ProjectGalleryData>) {
-  const response = await fetch('dummy/projectCollection.json');
-  const data = await response.json();
-  updateProject((obj) => {
-    Object.assign(obj, data);
-  });
+  try {
+    const response = await fetch('dummy/projectCollection.json');
+    const data = await response.json();
+    updateProject((obj) => {
+      Object.assign(obj, data);
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }

@@ -5,7 +5,7 @@ import { ReactComponent as RegisterIcon } from '../../assets/svg/Register.svg';
 import { ReactComponent as UserIcon } from '../../assets/svg/Person.svg';
 
 export const Header = styled.header`
-  padding: 0 170px 0 170px;
+  padding: 0 min(170px, calc(70px + ((100vw - 1200px) / 2)));
   width: 100%;
   height: 66px;
   box-sizing: border-box;

@@ -2,9 +2,11 @@
   "data": {
     "projectname": "PathPal",
     "star": 3,
+    "notification": 3,
+    "category": ["건강 및 피트니스", "접근성"],
     "floatmenu": {
       "view": 0,
-      "category": "IT / App",
+      "phase": 0,
       "buttons": [
         {
           "icon": "https://via.placeholder.com/16",
@@ -12,7 +14,9 @@
           "link": "https://www.instargram.com/yrrrr_rrrrr/"
         }
       ],
-      "releasenote": "No releases published"
+      "releasenote": "No releases published",
+      "isLiked": false,
+      "isNotified": false
     },
     "intro": {
       "banner": "img",
@@ -20,7 +24,7 @@
       "projectbrief": "시각 장애인을 위한 안전한 보행을 지원하는 AI 기반 내비게이션 서비스",
       "description": "PathPal은 ‘안전한 길을 안내하다’라는 슬로건 아래, 시각 장애인이 편안하게 길을 찾을 수 있도록 돕는 솔루션이에요! AI 기술을 활용해 주변 환경을 인식하고, 음성과 진동으로 사용자에게 실시간 정보를 제공하여 안전하게 목적지에 도착할 수 있도록 지원합니다."
     },
-    "category": {
+    "menu": {
       "projectinfo": {
         "carousel": [
           {
@@ -97,7 +101,8 @@
         "certifiedaward": [
           {
             "badge": "Top100",
-            "award": "Google Solution Challenge TOP 100"
+            "award": "Google Solution Challenge TOP 100",
+            "certifyingAgency": "예시"
           }
         ],
         "accomplishment": ["Google Solution Challenge TOP 100"]
@@ -108,10 +113,18 @@
             "img": "png/pathpal/pathpal-m1.png",
             "name": "이수지",
             "role": "Pm / ios",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -120,10 +133,18 @@
             "img": "png/pathpal/pathpal-m2.png",
             "name": "신은빈",
             "role": "AL / ML",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -132,10 +153,18 @@
             "img": "png/pathpal/pathpal-m3.png",
             "name": "홍승택",
             "role": "Back-End Developer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
@@ -144,10 +173,18 @@
             "img": "png/pathpal/pathpal-m4.png",
             "name": "김여원",
             "role": "Designer",
-            "email": "ooo@naver.com",
+
             "profilelink": [
               {
-                "icon": "none",
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
+                "link": ""
+              },
+              {
+                "icon": "instargram",
                 "link": ""
               }
             ]
