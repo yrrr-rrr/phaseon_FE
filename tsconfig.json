@@ -23,7 +23,11 @@
   "include": [
     "src",
     "svg.d.ts",
+<<<<<<< HEAD
     ".eslintrc.cjs"
+=======
+    "eslint.config.js"
+>>>>>>> 0aa3439 (refactor: eslint 룰 재정의)
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
