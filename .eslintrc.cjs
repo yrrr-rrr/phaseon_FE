@@ -20,6 +20,9 @@ module.exports = {
   plugins: ['react', 'react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'react/require-default-props': 'off',
+    'no-param-reassign': 'off',
+    'no-plusplus': 'off',
     'react/no-array-index-key': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'consistent-return': 'off',
