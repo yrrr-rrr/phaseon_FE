@@ -22,8 +22,10 @@ export default function AllProjectView() {
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(0);
   const [sortOption, setSortOption] = useState('recently');
-  const isFetching = useRef<boolean>(false);
   const [showMoreButton, setShowMoreButton] = useState(false);
+  const [isPageUpdate, setIsPageUpdate] = useState(false);
+  const isFetching = useRef<boolean>(false);
+
   const icons = [AllProject, Ai, SocialMedia, Coperation, Life, Trip, SocialEffect, Entertament, PersonalBranding];
   const iconWithFill = [0, 2, 3, 4, 5, 6, 8];
   const IconComponent = icons[currentCategory];
@@ -40,7 +42,7 @@ export default function AllProjectView() {
     const observer = new IntersectionObserver(handleObserver, {
       threshold: 0.5,
     });
-    if (showMoreButton) return;
+    if (showMoreButton || isPageUpdate) return;
     const observerTarget = document.getElementById('observer');
     if (observerTarget) {
       observer.observe(observerTarget);
@@ -48,15 +50,16 @@ export default function AllProjectView() {
     return () => {
       if (observerTarget) observer.unobserve(observerTarget);
     };
-  }, [showMoreButton]);
+  }, [showMoreButton, isPageUpdate]);
 
   useEffect(() => {
     if (page % 10 === 0 && page !== 0) {
       setShowMoreButton(true);
     }
     if (page === 0 && !isFetching.current) return;
-    getProjects(setIsLoading, updateProject, showMoreButton, isFetching);
-  }, [page, updateProject]);
+
+    getProjects(setIsLoading, updateProject, showMoreButton, isFetching, setIsPageUpdate);
+  }, [page, updateProject, showMoreButton]);
 
   useEffect(() => {
     setPage(0);
@@ -132,6 +135,8 @@ export default function AllProjectView() {
         <s.MoreButton
           onClick={() => {
             setShowMoreButton(false);
+            setIsPageUpdate(true);
+            setPage((prev) => prev + 1);
           }}
         >
           <Loading width={20} height={20} fill="white" />
@@ -153,6 +158,7 @@ async function getProjects(
   updateProject: Updater<ProjectGalleryData>,
   showMoreButton: boolean,
   isFetching: { current: boolean },
+  setIsPageUpdate: React.Dispatch<SetStateAction<boolean>>,
 ) {
   setIsLoading(true);
   try {
@@ -171,4 +177,5 @@ async function getProjects(
   }
   setIsLoading(false);
   isFetching.current = false;
+  setIsPageUpdate(false);
 }

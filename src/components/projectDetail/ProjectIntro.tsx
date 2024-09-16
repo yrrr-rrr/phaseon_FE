@@ -14,7 +14,7 @@ export default function ProjectIntro() {
   useEffect(() => {
     if (!projectName) return;
     getData(updateData, projectName);
-  }, [projectName]);
+  }, [projectName, updateData]);
 
   return (
     <s.Section ref={introRef}>

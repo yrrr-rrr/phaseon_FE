@@ -70,14 +70,14 @@ export const SortButton = styled.button<{ $current: string; $buttonName: string 
   justify-content: center;
   align-items: center;
   box-shadow: ${({ $current, $buttonName }) =>
-    $current == $buttonName
+    $current === $buttonName
       ? '0px 1px 2px 0px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.08),0px 0px 1px 0px rgba(0, 0, 0, 0.08)'
       : 'none'};
-  background: ${({ $current, $buttonName }) => ($current == $buttonName ? 'white' : '#f7f7f8')};
+  background: ${({ $current, $buttonName }) => ($current === $buttonName ? 'white' : '#f7f7f8')};
   outline: none;
   cursor: pointer;
 
-  color: ${({ $current, $buttonName }) => ($current == $buttonName ? '#47484C' : '#DFDFE0')};
+  color: ${({ $current, $buttonName }) => ($current === $buttonName ? '#47484C' : '#DFDFE0')};
   font-size: 15px;
   font-weight: 500;
   line-height: 146.7%;

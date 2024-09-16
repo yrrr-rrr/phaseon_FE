@@ -1,18 +1,22 @@
 import { useNavigate } from 'react-router-dom';
 import * as s from '../../style/common/HeaderStyle';
-import { ReactComponent as ProjectIcon } from '../../assets/svg/ProjectIcon.svg';
+import { ReactComponent as ProjectIcon } from '../../assets/svg/SmallProjectIcon.svg';
 
-export default function Header({ TopRef }: { TopRef?: React.RefObject<HTMLDivElement> }) {
+export default function Header() {
   const navigate = useNavigate();
   return (
-    <s.Header ref={TopRef}>
+    <s.Header>
       <s.NavigationBox width={353}>
-        <s.Logo />
+        <s.Logo
+          onClick={() => {
+            navigate('/');
+          }}
+        />
         <s.Nav>
           <s.IconBox
             color="#69ACFF"
             onClick={() => {
-              navigate('/project');
+              navigate('/');
             }}
           >
             <ProjectIcon />

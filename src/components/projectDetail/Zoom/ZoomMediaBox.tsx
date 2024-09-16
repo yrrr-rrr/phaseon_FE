@@ -59,7 +59,20 @@ export default function ZoomMediaBox() {
       document.removeEventListener('mousemove', MouseMoveFunction);
       document.removeEventListener('mouseup', MouseUpFunction);
     };
-  }, [drag, startPos, isZoomed, dragDirection]);
+  }, [
+    drag,
+    startPos,
+    isZoomed,
+    dragDirection,
+    updateStartPos,
+    updateTransform,
+    zoomCount,
+    transform,
+    dragNextImg,
+    setStartImg,
+    carouselImgs,
+    dragAndDrop,
+  ]);
 
   const getLeftPosition = (direction: string) => {
     switch (direction) {

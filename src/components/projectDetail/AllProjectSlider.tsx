@@ -11,7 +11,13 @@ import ButtonBox from './ButtonBox';
 export default function AllProjectSlider() {
   const option = { loop: true, slidesToScroll: 2 };
   const [emblaRef, emblaApi] = useEmblaCarousel(option, [AutoScroll({ speed: 1 })]);
-  const [data, updateData] = useImmer<ProjectGalleryData>({ data: [] });
+  const [data, updateData] = useImmer<ProjectGalleryData>({
+    data: {
+      allproject: 0,
+      allpeople: 0,
+      projects: [],
+    },
+  });
   const [currentImg, setCurrentImg] = useState<number>(0);
   const navigate = useNavigate();
 
@@ -36,21 +42,21 @@ export default function AllProjectSlider() {
         <s.Title>다른 프로젝트도 함께 구경하세요!</s.Title>
         <s.MoreContent
           onClick={() => {
-            navigate('/project');
+            navigate('/');
           }}
         >
           전체보기
         </s.MoreContent>
       </s.TextBox>
-      <ButtonBox emblaApi={emblaApi} startScroll={startScroll} padding={40} />
+      <ButtonBox emblaApi={emblaApi} padding={40} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
-          {data.data.map((dataObj, index) => (
+          {data.data.projects.map((dataObj, index) => (
             <s.CarouselSlide
               key={index}
               onClick={() => {
                 if (!emblaApi) return;
-                navigate(`/project/${dataObj.param}`);
+                navigate(`/${dataObj.param}`);
                 window.scrollTo({
                   top: 0,
                   behavior: 'smooth',
@@ -65,8 +71,8 @@ export default function AllProjectSlider() {
           ))}
         </s.CarouselContainer>
         <s.ButtonSection>
-          {data.data.map((_carouselObj, index) => {
-            if (index < data.data.length / 2) {
+          {data.data.projects.map((_carouselObj, index) => {
+            if (index < data.data.projects.length / 2) {
               return (
                 <s.SlideButton
                   aria-label="btn"

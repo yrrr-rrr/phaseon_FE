@@ -61,6 +61,6 @@ export const ProjectDetailContext = createContext<ContextType>({
 export function ProjectDetailProvider({ children }: { children: React.ReactNode }) {
   const [data, updateData] = useImmer<DetailDataType>(initialDetailData);
   const [showShare, setShowShare] = useState(false);
-  const value = useMemo(() => ({ data, updateData, showShare, setShowShare }), [data, showShare]);
+  const value = useMemo(() => ({ data, updateData, showShare, setShowShare }), [data, showShare, updateData]);
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;
 }
