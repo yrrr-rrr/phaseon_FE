@@ -1,4 +1,5 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import React, { SetStateAction, useContext, useEffect, useRef, useState } from 'react';
+import { Updater } from 'use-immer';
 import { MainContext } from '../../context/MainContext';
 import * as s from '../../style/main/AllProjectViewStyle';
 import AllProjects from './AllProjects';
@@ -14,26 +15,28 @@ import { ReactComponent as Trip } from '../../assets/svg/Trip.svg';
 import { ReactComponent as SocialEffect } from '../../assets/svg/SocialEffect.svg';
 import { ReactComponent as Entertament } from '../../assets/svg/Entertament.svg';
 import { ReactComponent as PersonalBranding } from '../../assets/svg/PersonalBranding.svg';
+import { ProjectGalleryData } from '../../interface';
 
 export default function AllProjectView() {
   const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(0);
   const [sortOption, setSortOption] = useState('recently');
-  const isFetching = useRef(false);
+  const isFetching = useRef<boolean>(false);
   const [showMoreButton, setShowMoreButton] = useState(false);
   const icons = [AllProject, Ai, SocialMedia, Coperation, Life, Trip, SocialEffect, Entertament, PersonalBranding];
   const iconWithFill = [0, 2, 3, 4, 5, 6, 8];
   const IconComponent = icons[currentCategory];
 
-  useEffect(() => {
-    function handleObserver(entries: IntersectionObserverEntry[]) {
-      const target = entries[0];
-      if (target.isIntersecting && !isFetching.current) {
-        isFetching.current = true;
-        setPage((prevPage) => prevPage + 1);
-      }
+  function handleObserver(entries: IntersectionObserverEntry[]) {
+    const target = entries[0];
+    if (target.isIntersecting && !isFetching.current) {
+      isFetching.current = true;
+      setPage((prevPage) => prevPage + 1);
     }
+  }
+
+  useEffect(() => {
     const observer = new IntersectionObserver(handleObserver, {
       threshold: 0.5,
     });
@@ -48,31 +51,11 @@ export default function AllProjectView() {
   }, [showMoreButton]);
 
   useEffect(() => {
-    async function getProjects() {
-      setIsLoading(true);
-      try {
-        // const response = await fetch(`https://name.store:8443/api/project?page=${page}`);
-        const response = await fetch('dummy/projectCollection.json');
-        const data = await response.json();
-        updateProject((draft) => {
-          if (!showMoreButton) {
-            draft.data.projects = [...draft.data.projects, ...data.data.projects];
-            draft.data.allproject = data.data.allproject;
-            draft.data.allpeople = data.data.allpeople;
-          }
-        });
-      } catch (err) {
-        console.log(err);
-      }
-      setIsLoading(false);
-      isFetching.current = false;
-    }
-
     if (page % 10 === 0 && page !== 0) {
       setShowMoreButton(true);
     }
     if (page === 0 && !isFetching.current) return;
-    getProjects();
+    getProjects(setIsLoading, updateProject, showMoreButton, isFetching);
   }, [page, updateProject]);
 
   useEffect(() => {
@@ -163,4 +146,29 @@ export default function AllProjectView() {
       <div id="observer" />
     </s.Section>
   );
+}
+
+async function getProjects(
+  setIsLoading: React.Dispatch<SetStateAction<boolean>>,
+  updateProject: Updater<ProjectGalleryData>,
+  showMoreButton: boolean,
+  isFetching: { current: boolean },
+) {
+  setIsLoading(true);
+  try {
+    // const response = await fetch(`https://name.store:8443/api/project?page=${page}`);
+    const response = await fetch('dummy/projectCollection.json');
+    const data = await response.json();
+    updateProject((draft) => {
+      if (!showMoreButton) {
+        draft.data.projects = [...draft.data.projects, ...data.data.projects];
+        draft.data.allproject = data.data.allproject;
+        draft.data.allpeople = data.data.allpeople;
+      }
+    });
+  } catch (err) {
+    console.log(err);
+  }
+  setIsLoading(false);
+  isFetching.current = false;
 }
