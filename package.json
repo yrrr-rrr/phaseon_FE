@@ -24,12 +24,8 @@
     "use-immer": "^0.10.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-=======
-    "@eslint/js": "^8.56.0",
->>>>>>> 0aa3439 (refactor: eslint 룰 재정의)
     "@svgr/rollup": "^8.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -45,12 +41,9 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-<<<<<<< HEAD
     "eslint-plugin-react-refresh": "^0.4.11",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-=======
->>>>>>> 0aa3439 (refactor: eslint 룰 재정의)
     "prettier": "^3.3.3",
     "typescript": "^5.2.2",
     "typescript-eslint": "^8.5.0",
