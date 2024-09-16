@@ -10,7 +10,6 @@ interface ContextType {
   project: ProjectGalleryData;
   updateProject: Updater<ProjectGalleryData>;
   category: MainCategoryType;
-  updateCategory: Updater<MainCategoryType>;
 }
 
 export const MainContext = createContext<ContextType>({
@@ -30,36 +29,38 @@ export const MainContext = createContext<ContextType>({
     categorytext: [],
     categoryicon: [],
   },
-  updateCategory: () => {},
 });
 
 export function MainProvider({ children }: { children: React.ReactNode }) {
   const [currentCategory, setCurrentCategory] = useState(0);
   const [isSorted, setIsSorted] = useState(false);
-  const [category, updateCategory] = useImmer<MainCategoryType>({
-    categorytext: [
-      '전체보기',
-      '인공지능',
-      '소셜 미디어',
-      '협업 ・ 생산성',
-      '건강 ・ 의료',
-      '여행',
-      '소셜 이펙트',
-      '엔터테이먼트',
-      '퍼스널 브랜딩',
-    ],
-    categoryicon: [
-      'allProject',
-      'ai',
-      'socialMedia',
-      'coperation',
-      'life',
-      'trip',
-      'socialEffect',
-      'entertament',
-      'personalbranding',
-    ],
-  });
+  const category = useMemo(
+    () => ({
+      categorytext: [
+        '전체보기',
+        '인공지능',
+        '소셜 미디어',
+        '협업 ・ 생산성',
+        '건강 ・ 의료',
+        '여행',
+        '소셜 이펙트',
+        '엔터테이먼트',
+        '퍼스널 브랜딩',
+      ],
+      categoryicon: [
+        'allProject',
+        'ai',
+        'socialMedia',
+        'coperation',
+        'life',
+        'trip',
+        'socialEffect',
+        'entertament',
+        'personalbranding',
+      ],
+    }),
+    [],
+  );
   const [project, updateProject] = useImmer<ProjectGalleryData>({
     data: {
       allproject: 0,
@@ -76,9 +77,8 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
       project,
       updateProject,
       category,
-      updateCategory,
     }),
-    [currentCategory, setCurrentCategory, isSorted, setIsSorted, project, updateProject, category, updateCategory],
+    [currentCategory, isSorted, project, updateProject, category],
   );
 
   return <MainContext.Provider value={value}>{children}</MainContext.Provider>;
