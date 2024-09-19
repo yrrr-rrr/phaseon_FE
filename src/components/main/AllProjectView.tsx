@@ -5,6 +5,8 @@ import { MainContext } from '@/context/MainContext';
 import * as s from '@/style/main/AllProjectViewStyle';
 import { Icon } from '@/components/common/Icon';
 import { ProjectGalleryData } from '@/interface';
+import { getStroke } from '@/utils/getStroke';
+import { getFill } from '@/utils/getFill';
 
 export default function AllProjectView() {
   const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
@@ -83,26 +85,6 @@ export default function AllProjectView() {
     });
   }, [currentCategory, setIsSorted, updateProject]);
 
-  function getStroke(idx: number) {
-    if (!iconWithFill.includes(idx)) {
-      if (currentCategory === idx) {
-        return '#247BFF';
-      }
-      return '#47484C';
-    }
-    return 'none';
-  }
-
-  function getFill(idx: number) {
-    if (iconWithFill.includes(idx)) {
-      if (currentCategory === idx) {
-        return '#247BFF';
-      }
-      return '#47484C';
-    }
-    return 'none';
-  }
-
   return (
     <s.Section>
       <s.TopSection>
@@ -110,8 +92,8 @@ export default function AllProjectView() {
           <s.Title>
             <Icon
               name={iconName}
-              stroke={getStroke(currentCategory)}
-              fill={getFill(currentCategory)}
+              stroke={getStroke(currentCategory, iconWithFill, currentCategory)}
+              fill={getFill(currentCategory, iconWithFill, currentCategory)}
               width={32}
               height={33}
             />
