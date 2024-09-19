@@ -1,6 +1,6 @@
 import React, { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
-import { MainCategoryType, ProjectGalleryData } from '../interface';
+import { MainCategoryType, ProjectGalleryData } from '@/interface';
 
 interface ContextType {
   currentCategory: number;

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import * as s from '../../style/common/HeaderStyle';
+import * as s from '@/style/common/HeaderStyle';
 import { ReactComponent as ProjectIcon } from '../../assets/svg/SmallProjectIcon.svg';
 
 export default function Header() {

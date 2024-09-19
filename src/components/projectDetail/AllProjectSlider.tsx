@@ -4,9 +4,9 @@ import AutoScroll from 'embla-carousel-auto-scroll';
 import { useCallback, useEffect, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
 import { useNavigate } from 'react-router-dom';
-import { ProjectGalleryData } from '../../interface';
-import * as s from '../../style/projectDetail/AllProjectSliderStyle';
-import ButtonBox from './ButtonBox';
+import { ProjectGalleryData } from '@/interface';
+import * as s from '@/style/projectDetail/AllProjectSliderStyle';
+import ButtonBox from '@/components/projectDetail/ButtonBox';
 
 export default function AllProjectSlider() {
   const option = { loop: true, slidesToScroll: 2 };

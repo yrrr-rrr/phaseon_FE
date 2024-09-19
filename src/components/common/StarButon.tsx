@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/common/ButtonStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/common/ButtonStyle';
 import { ReactComponent as EmptyStar } from '../../assets/svg/EmptyStar.svg';
 import { ReactComponent as FillStar } from '../../assets/svg/FillStar.svg';
 

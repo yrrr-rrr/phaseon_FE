@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { MainContext } from '@/context/MainContext';
+import * as s from '@/style/main/AllProjectsStyle';
 import { ReactComponent as Star } from '../../assets/svg/FillStar.svg';
 import { ReactComponent as Medal } from '../../assets/svg/Medal.svg';
 import { ReactComponent as Member } from '../../assets/svg/Member.svg';
-import { MainContext } from '../../context/MainContext';
-import * as s from '../../style/main/AllProjectsStyle';
 
 export default function AllProjects() {
   const { project } = useContext(MainContext);

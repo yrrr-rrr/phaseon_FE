@@ -1,8 +1,8 @@
 import React, { SetStateAction, useContext, useEffect, useRef, useState } from 'react';
 import { Updater } from 'use-immer';
-import { MainContext } from '../../context/MainContext';
-import * as s from '../../style/main/AllProjectViewStyle';
-import AllProjects from './AllProjects';
+import AllProjects from '@/components/main/AllProjects';
+import { MainContext } from '@/context/MainContext';
+import * as s from '@/style/main/AllProjectViewStyle';
 
 import { ReactComponent as Swap } from '../../assets/svg/Swap.svg';
 import { ReactComponent as Loading } from '../../assets/svg/Loading.svg';

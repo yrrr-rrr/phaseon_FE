@@ -1,10 +1,10 @@
 import { useContext, useEffect } from 'react';
 import { Updater } from 'use-immer';
 import { useParams } from 'react-router-dom';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ProjectIntroStyle';
-import { DetailDataType } from '../../interface';
-import { CategoryContext } from '../../context/CategoryContext';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { CategoryContext } from '@/context/CategoryContext';
+import { DetailDataType } from '@/interface';
+import * as s from '@/style/projectDetail/ProjectIntroStyle';
 import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
 
 export default function ProjectIntro() {

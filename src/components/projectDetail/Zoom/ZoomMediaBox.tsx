@@ -1,10 +1,10 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { useImmer } from 'use-immer';
-import { ProjectDetailContext } from '../../../context/ProjectDetailContext';
-import { ZoomContext } from '../../../context/ZoomContext';
-import * as s from '../../../style/ZoomStyle/ZoomMediaStyle';
-import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '../../../utils/ZoomFunction';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { ZoomContext } from '@/context/ZoomContext';
+import * as s from '@/style/ZoomStyle/ZoomMediaStyle';
+import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '@/utils/ZoomFunction';
 
 export default function ZoomMediaBox() {
   const { data } = useContext(ProjectDetailContext);

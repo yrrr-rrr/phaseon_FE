@@ -1,6 +1,6 @@
 import { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
-import { DetailDataType } from '../interface';
+import { DetailDataType } from '@/interface';
 
 interface ContextType {
   data: DetailDataType;

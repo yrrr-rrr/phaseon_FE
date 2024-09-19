@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/IntroductionStyle';
-import { ReactComponent as Instargram } from '../../assets/svg/Instargram.svg';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/IntroductionStyle';
+import { ReactComponent as Instargram } from '@/assets/svg/Instargram.svg';
 
 export default function Introduction() {
   const { data } = useContext(ProjectDetailContext);

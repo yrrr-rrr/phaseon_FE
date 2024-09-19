@@ -1,5 +1,5 @@
 import React, { createContext, useMemo, useRef, useState } from 'react';
-import { CategoryContextType } from '../interface';
+import { CategoryContextType } from '@/interface';
 
 export const CategoryContext = createContext<CategoryContextType>({
   currentCategory: '',

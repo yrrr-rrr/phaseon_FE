@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/PerformanceStyle';
-import News from './News';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/PerformanceStyle';
+import News from '@/components/projectDetail/News';
 
 export default function Performance() {
   const { data } = useContext(ProjectDetailContext);

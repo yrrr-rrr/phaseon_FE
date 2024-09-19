@@ -1,5 +1,5 @@
 import { EmblaCarouselType } from 'embla-carousel';
-import * as s from '../../style/projectDetail/ButtonBoxStyle';
+import * as s from '@/style/projectDetail/ButtonBoxStyle';
 
 export default function ButtonBox({ emblaApi, padding }: { emblaApi: EmblaCarouselType | undefined; padding: number }) {
   return (

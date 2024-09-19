@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Pretendard_Variable from './font/PretendardJPVariable.ttf';
+import Pretendard_Variable from '@/style/font/PretendardJPVariable.ttf';
 
 export const GlobalStyle = createGlobalStyle`
 @font-face {

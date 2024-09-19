@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ProjectInfoStyle';
-import Carousel from './Carousel';
-import { ZoomContext } from '../../context/ZoomContext';
-import ZoomContainer from './Zoom/ZoomContainer';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { ZoomContext } from '@/context/ZoomContext';
+import ZoomContainer from '@/components/projectDetail/Zoom/ZoomContainer';
+import Carousel from '@/components/projectDetail/Carousel';
+import * as s from '@/style/projectDetail/ProjectInfoStyle';
 
 export default function ProjectInfo() {
   const { data } = useContext(ProjectDetailContext);

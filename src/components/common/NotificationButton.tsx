@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/common/ButtonStyle';
 import { ReactComponent as EmptyNotification } from '../../assets/svg/EmptyNotification.svg';
 import { ReactComponent as FillNotification } from '../../assets/svg/FillNotification.svg';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/common/ButtonStyle';
 
 export default function NotificationButton({
   width,

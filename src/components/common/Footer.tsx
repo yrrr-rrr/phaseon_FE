@@ -1,5 +1,5 @@
-import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
-import * as s from '../../style/common/FooterStyle';
+import { ReactComponent as Logo } from '@/assets/svg/Logo.svg';
+import * as s from '@/style/common/FooterStyle';
 
 export default function Footer() {
   return (

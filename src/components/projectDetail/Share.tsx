@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ShareStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/ShareStyle';
 
 export default function Share() {
   const { setShowShare } = useContext(ProjectDetailContext);

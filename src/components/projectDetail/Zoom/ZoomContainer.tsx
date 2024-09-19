@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../../context/ProjectDetailContext';
-import { ZoomContext } from '../../../context/ZoomContext';
-import HandleBox from './HandleBox';
-import ZoomMediaBox from './ZoomMediaBox';
-import * as s from '../../../style/ZoomStyle/ZoomContainerStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { ZoomContext } from '@/context/ZoomContext';
+import HandleBox from '@/components/projectDetail/Zoom/HandleBox';
+import ZoomMediaBox from '@/components/projectDetail/Zoom/ZoomMediaBox';
+import * as s from '@/style/ZoomStyle/ZoomContainerStyle';
 
 export default function ZoomContainer() {
   const { data } = useContext(ProjectDetailContext);

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import * as s from '../../style/projectDetail/common/ButtonStyle';
+import * as s from '@/style/projectDetail/common/ButtonStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import { ReactComponent as Share } from '../../assets/svg/Share.svg';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
 
 export default function ShareButton({ width, height }: { width: number; height: number }) {
   const { setShowShare } = useContext(ProjectDetailContext);

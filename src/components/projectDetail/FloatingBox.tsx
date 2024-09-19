@@ -1,13 +1,13 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import { CategoryContext } from '../../context/CategoryContext';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { CategoryContext } from '@/context/CategoryContext';
+import StarButton from '@/components/common/StarButon';
+import ShareButton from '@/components/common/ShareButton';
+import NotificationButton from '@/components/common/NotificationButton';
+import * as s from '@/style/projectDetail/FloatingBoxStyle';
 import { ReactComponent as Coffee } from '../../assets/svg/Coffee.svg';
 import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
 import { ReactComponent as View } from '../../assets/svg/View.svg';
-import StarButton from '../common/StarButon';
-import ShareButton from '../common/ShareButton';
-import NotificationButton from '../common/NotificationButton';
-import * as s from '../../style/projectDetail/FloatingBoxStyle';
 
 export default function FloatingBox() {
   const { data } = useContext(ProjectDetailContext);
