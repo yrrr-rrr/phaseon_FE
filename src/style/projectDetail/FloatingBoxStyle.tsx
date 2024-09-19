@@ -1,10 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Top3Icon } from '../../assets/svg/Top3.svg';
-import { ReactComponent as Top10Icon } from '../../assets/svg/Top10.svg';
-import { ReactComponent as Top100Icon } from '../../assets/svg/Top100.svg';
-import { ReactComponent as Top50Icon } from '../../assets/svg/Top50.svg';
-import { ReactComponent as PeoPleChoiceIcon } from '../../assets/svg/PeopleChoice.svg';
-import { ReactComponent as Person } from '../../assets/svg/Person.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section<{ $buttonNum: number }>`
   padding: 16px 16px 8px 16px;
@@ -171,19 +166,7 @@ export const ImgBox = styled.div`
   gap: 8px;
 `;
 
-export const Top3 = styled(Top3Icon)`
-  margin-right: -10px;
-`;
-export const Top10 = styled(Top10Icon)`
-  margin-right: -10px;
-`;
-export const Top50 = styled(Top50Icon)`
-  margin-right: -10px;
-`;
-export const Top100 = styled(Top100Icon)`
-  margin-right: -10px;
-`;
-export const PeopleChoice = styled(PeoPleChoiceIcon)`
+export const SvgIcon = styled(Icon)`
   margin-right: -10px;
 `;
 
@@ -218,7 +201,7 @@ export const Div = styled.div`
   gap: 8px;
 `;
 
-export const PersonSvg = styled(Person)`
+export const PersonSvg = styled(Icon)`
   margin-right: -10px;
   border-radius: 100%;
   background-color: white;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Loading } from '../../assets/svg/Loading.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
   margin-bottom: 104px;
@@ -91,7 +91,7 @@ export const LoadingBox = styled.div`
   justify-content: center;
 `;
 
-export const LoadingImg = styled(Loading)`
+export const LoadingImg = styled(Icon)`
   animation: loading 1s infinite;
 
   @keyframes loading {

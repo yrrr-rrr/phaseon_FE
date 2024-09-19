@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Person } from '../../assets/svg/Person.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
   padding: 32px 20px;
@@ -28,7 +28,7 @@ export const Img = styled.img`
   border-radius: 100%;
 `;
 
-export const PersonSvg = styled(Person)`
+export const PersonSvg = styled(Icon)`
   margin-bottom: 12px;
 `;
 

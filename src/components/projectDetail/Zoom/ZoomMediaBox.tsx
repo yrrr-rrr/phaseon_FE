@@ -98,6 +98,7 @@ export default function ZoomMediaBox() {
         >
           <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].type}>
             <s.LeftButton
+              name="LeftButton"
               onClick={() => {
                 setStartImg((prev) => {
                   if (prev === 0) {
@@ -132,6 +133,7 @@ export default function ZoomMediaBox() {
               }}
             />
             <s.RightButton
+              name="RightButton"
               onClick={() => {
                 setStartImg((prev) => {
                   if (prev === carouselImgs.length - 1) {

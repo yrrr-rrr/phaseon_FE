@@ -8,19 +8,19 @@ export default function Performance() {
   function getBadge(award: string) {
     switch (award) {
       case 'Top3':
-        return <s.Top3 width={56} height={56} />;
+        return <s.SvgIcon name="Top3" width={56} height={56} />;
         break;
       case 'Top10':
-        return <s.Top10 width={56} height={56} />;
+        return <s.SvgIcon name="Top10" width={56} height={56} />;
         break;
       case 'Top50':
-        return <s.Top50 width={56} height={56} />;
+        return <s.SvgIcon name="Top50" width={56} height={56} />;
         break;
       case 'Top100':
-        return <s.Top100 width={56} height={56} />;
+        return <s.SvgIcon name="Top100" width={56} height={56} />;
         break;
       case 'PeopleChoice':
-        return <s.PeopleChoice width={56} height={56} />;
+        return <s.SvgIcon name="PeopleChoice" width={56} height={56} />;
         break;
     }
   }

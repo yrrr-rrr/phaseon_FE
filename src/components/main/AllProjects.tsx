@@ -1,10 +1,8 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MainContext } from '@/context/MainContext';
 import * as s from '@/style/main/AllProjectsStyle';
-import { ReactComponent as Star } from '../../assets/svg/FillStar.svg';
-import { ReactComponent as Medal } from '../../assets/svg/Medal.svg';
-import { ReactComponent as Member } from '../../assets/svg/Member.svg';
+import { MainContext } from '@/context/MainContext';
+import { Icon } from '@/components/common/Icon';
 
 export default function AllProjects() {
   const { project } = useContext(MainContext);
@@ -28,15 +26,15 @@ export default function AllProjects() {
               <s.ProjectName>Project Name</s.ProjectName>
               <s.InpoBox>
                 <s.IconBox>
-                  <Star fill="#FFCC00" />
+                  <Icon name="FillStar" fill="#FFCC00" />
                   <p>{projectObj.star}</p>
                 </s.IconBox>
                 <s.IconBox>
-                  <Medal />
+                  <Icon name="Medal" />
                   <p>{projectObj.performance}</p>
                 </s.IconBox>
                 <s.IconBox>
-                  <Member fill="#69ACFF" width={16} height={12} />
+                  <Icon name="Member" fill="#69ACFF" width={16} height={12} />
                   <p>{projectObj.member}</p>
                 </s.IconBox>
               </s.InpoBox>

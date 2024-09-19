@@ -5,7 +5,7 @@ import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import { CategoryContext } from '@/context/CategoryContext';
 import { DetailDataType } from '@/interface';
 import * as s from '@/style/projectDetail/ProjectIntroStyle';
-import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
+import { Icon } from '@/components/common/Icon';
 
 export default function ProjectIntro() {
   const { data, updateData } = useContext(ProjectDetailContext);
@@ -27,7 +27,7 @@ export default function ProjectIntro() {
         <s.CategoryBox>
           {data.category.map((text, index) => (
             <s.Category key={index}>
-              <Temp />
+              <Icon name="TempImg" />
               <p>{text}</p>
             </s.Category>
           ))}

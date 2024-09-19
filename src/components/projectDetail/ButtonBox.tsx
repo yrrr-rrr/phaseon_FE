@@ -5,25 +5,23 @@ export default function ButtonBox({ emblaApi, padding }: { emblaApi: EmblaCarous
   return (
     <s.ButtonBox $padding={padding}>
       <s.PrevButton
+        name="LeftButton"
         onClick={() => {
           if (!emblaApi) return;
           emblaApi.scrollPrev();
           emblaApi.plugins().autoScroll.stop();
           startScroll(emblaApi);
         }}
-      >
-        prev
-      </s.PrevButton>
+      />
       <s.NextButton
+        name="RightButton"
         onClick={() => {
           if (!emblaApi) return;
           emblaApi.scrollNext();
           emblaApi.plugins().autoScroll.stop();
           startScroll(emblaApi);
         }}
-      >
-        next
-      </s.NextButton>
+      />
     </s.ButtonBox>
   );
 }

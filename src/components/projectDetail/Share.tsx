@@ -11,6 +11,7 @@ export default function Share() {
     <s.Section $scroll={window.pageYOffset}>
       <s.QRcodeBox>
         <s.CloseButton
+          name="Close"
           fill="black"
           onClick={() => {
             setShowShare(false);
@@ -22,7 +23,7 @@ export default function Share() {
           <s.Description>아래의 QR 또는 링크를 복사하여 공유해보세요!</s.Description>
           <s.QRCodeStyle value={window.location.href} />
           <s.DownloadBox>
-            <s.DownloadButton onClick={HandleDownload} />
+            <s.DownloadButton name="Download" onClick={HandleDownload} />
             <s.DownloadText onClick={HandleDownload}>다운로드</s.DownloadText>
           </s.DownloadBox>
           <s.CopyBox>

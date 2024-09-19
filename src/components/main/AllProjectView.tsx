@@ -3,19 +3,8 @@ import { Updater } from 'use-immer';
 import AllProjects from '@/components/main/AllProjects';
 import { MainContext } from '@/context/MainContext';
 import * as s from '@/style/main/AllProjectViewStyle';
-
-import { ReactComponent as Swap } from '../../assets/svg/Swap.svg';
-import { ReactComponent as Loading } from '../../assets/svg/Loading.svg';
-import { ReactComponent as AllProject } from '../../assets/svg/BigProjectIcon.svg';
-import { ReactComponent as Ai } from '../../assets/svg/Ai.svg';
-import { ReactComponent as SocialMedia } from '../../assets/svg/Member.svg';
-import { ReactComponent as Coperation } from '../../assets/svg/Coperation.svg';
-import { ReactComponent as Life } from '../../assets/svg/Life.svg';
-import { ReactComponent as Trip } from '../../assets/svg/Trip.svg';
-import { ReactComponent as SocialEffect } from '../../assets/svg/SocialEffect.svg';
-import { ReactComponent as Entertament } from '../../assets/svg/Entertament.svg';
-import { ReactComponent as PersonalBranding } from '../../assets/svg/PersonalBranding.svg';
-import { ProjectGalleryData } from '../../interface';
+import { Icon } from '@/components/common/Icon';
+import { ProjectGalleryData } from '@/interface';
 
 export default function AllProjectView() {
   const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
@@ -26,9 +15,31 @@ export default function AllProjectView() {
   const [isPageUpdate, setIsPageUpdate] = useState(false);
   const isFetching = useRef<boolean>(false);
 
-  const icons = [AllProject, Ai, SocialMedia, Coperation, Life, Trip, SocialEffect, Entertament, PersonalBranding];
+  const icons = [
+    'BigProjectIcon',
+    'Ai',
+    'Member',
+    'Coperation',
+    'Life',
+    'Trip',
+    'SocialEffect',
+    'Entertament',
+    'PersonalBranding',
+  ] as const;
+  interface IconProps {
+    name:
+      | 'BigProjectIcon'
+      | 'Ai'
+      | 'Member'
+      | 'Coperation'
+      | 'Life'
+      | 'Trip'
+      | 'SocialEffect'
+      | 'Entertament'
+      | 'PersonalBranding';
+  }
   const iconWithFill = [0, 2, 3, 4, 5, 6, 8];
-  const IconComponent = icons[currentCategory];
+  const iconName = icons[currentCategory] as IconProps['name'];
 
   function handleObserver(entries: IntersectionObserverEntry[]) {
     const target = entries[0];
@@ -97,7 +108,13 @@ export default function AllProjectView() {
       <s.TopSection>
         <s.TitleBox>
           <s.Title>
-            <IconComponent stroke={getStroke(currentCategory)} fill={getFill(currentCategory)} width={32} height={33} />
+            <Icon
+              name={iconName}
+              stroke={getStroke(currentCategory)}
+              fill={getFill(currentCategory)}
+              width={32}
+              height={33}
+            />
             <p>{category.categorytext[currentCategory]}</p>
           </s.Title>
           <s.SubTitle>
@@ -105,7 +122,7 @@ export default function AllProjectView() {
           </s.SubTitle>
         </s.TitleBox>
         <s.SortButtonBox>
-          <Swap />
+          <Icon name="Swap" />
           <s.ButtonWrapper>
             <s.SortButton
               $current={sortOption}
@@ -139,13 +156,13 @@ export default function AllProjectView() {
             setPage((prev) => prev + 1);
           }}
         >
-          <Loading width={20} height={20} fill="white" />
+          <Icon name="Loading" width={20} height={20} fill="white" />
           더보기
         </s.MoreButton>
       )}
       {isLoading && (
         <s.LoadingBox>
-          <s.LoadingImg width={36} height={37} fill="#69ACFF" />
+          <s.LoadingImg name="Loading" width={36} height={37} fill="#69ACFF" />
         </s.LoadingBox>
       )}
       <div id="observer" />
