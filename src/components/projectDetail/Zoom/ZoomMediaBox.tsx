@@ -1,10 +1,10 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import { useImmer } from 'use-immer';
-import { ProjectDetailContext } from '../../../context/ProjectDetailContext';
-import { ZoomContext } from '../../../context/ZoomContext';
-import * as s from '../../../style/ZoomStyle/ZoomMediaStyle';
-import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '../../../utils/ZoomFunction';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { ZoomContext } from '@/context/ZoomContext';
+import * as s from '@/style/ZoomStyle/ZoomMediaStyle';
+import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '@/utils/ZoomFunction';
 
 export default function ZoomMediaBox() {
   const { data } = useContext(ProjectDetailContext);
@@ -59,7 +59,20 @@ export default function ZoomMediaBox() {
       document.removeEventListener('mousemove', MouseMoveFunction);
       document.removeEventListener('mouseup', MouseUpFunction);
     };
-  }, [drag, startPos, isZoomed, dragDirection]);
+  }, [
+    drag,
+    startPos,
+    isZoomed,
+    dragDirection,
+    updateStartPos,
+    updateTransform,
+    zoomCount,
+    transform,
+    dragNextImg,
+    setStartImg,
+    carouselImgs,
+    dragAndDrop,
+  ]);
 
   const getLeftPosition = (direction: string) => {
     switch (direction) {
@@ -85,6 +98,7 @@ export default function ZoomMediaBox() {
         >
           <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].type}>
             <s.LeftButton
+              name="LeftButton"
               onClick={() => {
                 setStartImg((prev) => {
                   if (prev === 0) {
@@ -119,6 +133,7 @@ export default function ZoomMediaBox() {
               }}
             />
             <s.RightButton
+              name="RightButton"
               onClick={() => {
                 setStartImg((prev) => {
                   if (prev === carouselImgs.length - 1) {

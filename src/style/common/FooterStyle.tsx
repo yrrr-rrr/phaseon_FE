@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as InstargramIcon } from '../../assets/svg/InstargramNoneColor.svg';
-import { ReactComponent as LinkedInIcon } from '../../assets/svg/LinkedIn.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Footer = styled.footer`
   padding: 40px min(170px, calc(70px + ((100vw - 1200px) / 2))) 24px min(170px, calc(70px + ((100vw - 1200px) / 2)));
@@ -88,10 +87,10 @@ export const BottomSection = styled.section`
   align-items: end;
 `;
 
-export const Instargram = styled(InstargramIcon)`
+export const Instargram = styled(Icon)`
   margin-right: 16px;
   cursor: pointer;
 `;
-export const LinkedIn = styled(LinkedInIcon)`
+export const LinkedIn = styled(Icon)`
   cursor: pointer;
 `;

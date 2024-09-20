@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ActionPanelStyle';
-import StarButton from '../common/StarButon';
-import NotificationButton from '../common/NotificationButton';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/ActionPanelStyle';
+import StarButton from '@/components/common/StarButon';
+import NotificationButton from '@/components/common/NotificationButton';
 
 export default function ActionPanel() {
   const { data } = useContext(ProjectDetailContext);

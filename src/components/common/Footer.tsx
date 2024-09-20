@@ -1,12 +1,12 @@
-import { ReactComponent as Logo } from '../../assets/svg/Logo.svg';
-import * as s from '../../style/common/FooterStyle';
+import * as s from '@/style/common/FooterStyle';
+import { Icon } from '@/components/common/Icon';
 
 export default function Footer() {
   return (
     <s.Footer>
       <s.TopSection>
         <s.ServiceInfo>
-          <Logo />
+          <Icon name="Logo" />
           <p>링크 하나로 시작하는 프로젝트 홍보 첫 발 내딛기</p>
         </s.ServiceInfo>
         <s.FooterMenu>
@@ -30,8 +30,8 @@ export default function Footer() {
       <s.BottomSection>
         <p>© 2024 지금.lab</p>
         <div>
-          <s.Instargram />
-          <s.LinkedIn />
+          <s.Instargram name="Instargram" />
+          <s.LinkedIn name="LinkedIn" />
         </div>
       </s.BottomSection>
     </s.Footer>

@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as LogoIcon } from '../../assets/svg/Logo.svg';
-import { ReactComponent as SearchIcon } from '../../assets/svg/Search.svg';
-import { ReactComponent as RegisterIcon } from '../../assets/svg/Register.svg';
-import { ReactComponent as UserIcon } from '../../assets/svg/Person.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Header = styled.header`
   padding: 0 min(170px, calc(70px + ((100vw - 1200px) / 2)));
@@ -22,16 +19,7 @@ export const NavigationBox = styled.section<{ width: number }>`
   align-items: center;
 `;
 
-export const Logo = styled(LogoIcon)`
-  cursor: pointer;
-`;
-export const Search = styled(SearchIcon)`
-  cursor: pointer;
-`;
-export const Register = styled(RegisterIcon)`
-  cursor: pointer;
-`;
-export const User = styled(UserIcon)`
+export const SvgIcon = styled(Icon)`
   cursor: pointer;
 `;
 

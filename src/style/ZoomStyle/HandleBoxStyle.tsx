@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as CloseButton } from '../../assets/svg/Close.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const HandelBox = styled.section`
   padding: 0 20px;
@@ -15,6 +15,6 @@ export const HandelBox = styled.section`
   z-index: 6;
 `;
 
-export const Close = styled(CloseButton)`
+export const Close = styled(Icon)`
   cursor: pointer;
 `;

@@ -6,6 +6,7 @@ import { MainProvider } from '@/context/MainContext';
 import * as s from '@/style/main/MainStyle';
 import Category from '@/components/main/Category';
 
+
 export default function Main() {
   return (
     <>

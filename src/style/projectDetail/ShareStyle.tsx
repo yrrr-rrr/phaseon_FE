@@ -1,7 +1,6 @@
 import { QRCodeCanvas } from 'qrcode.react';
 import styled from 'styled-components';
-import { ReactComponent as Close } from '../../assets/svg/Close.svg';
-import { ReactComponent as Download } from '../../assets/svg/Download.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section<{ $scroll: number }>`
   width: 100vw;
@@ -30,7 +29,7 @@ export const QRcodeBox = styled.section`
   background-color: white;
 `;
 
-export const CloseButton = styled(Close)`
+export const CloseButton = styled(Icon)`
   cursor: pointer;
 `;
 
@@ -72,7 +71,7 @@ export const DownloadBox = styled.section`
   align-items: center;
 `;
 
-export const DownloadButton = styled(Download)`
+export const DownloadButton = styled(Icon)`
   margin-right: 4px;
   cursor: pointer;
 `;

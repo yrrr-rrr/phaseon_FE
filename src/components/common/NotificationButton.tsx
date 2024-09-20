@@ -1,8 +1,7 @@
 import { useContext, useState } from 'react';
-import { ReactComponent as EmptyNotification } from '../../assets/svg/EmptyNotification.svg';
-import { ReactComponent as FillNotification } from '../../assets/svg/FillNotification.svg';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/common/ButtonStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/common/ButtonStyle';
+import { Icon } from '@/components/common/Icon';
 
 export default function NotificationButton({
   width,
@@ -35,7 +34,7 @@ export default function NotificationButton({
         });
       }}
     >
-      {isNotified ? <FillNotification /> : <EmptyNotification />}
+      {isNotified ? <Icon name="FillNotification" /> : <Icon name="EmptyNotification" />}
       {children}
       <p>{data.notification}</p>
     </s.Button>

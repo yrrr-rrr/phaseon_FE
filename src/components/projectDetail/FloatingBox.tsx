@@ -1,13 +1,11 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import { CategoryContext } from '../../context/CategoryContext';
-import { ReactComponent as Coffee } from '../../assets/svg/Coffee.svg';
-import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
-import { ReactComponent as View } from '../../assets/svg/View.svg';
-import StarButton from '../common/StarButon';
-import ShareButton from '../common/ShareButton';
-import NotificationButton from '../common/NotificationButton';
-import * as s from '../../style/projectDetail/FloatingBoxStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { CategoryContext } from '@/context/CategoryContext';
+import StarButton from '@/components/common/StarButon';
+import ShareButton from '@/components/common/ShareButton';
+import NotificationButton from '@/components/common/NotificationButton';
+import * as s from '@/style/projectDetail/FloatingBoxStyle';
+import { Icon } from '@/components/common/Icon';
 
 export default function FloatingBox() {
   const { data } = useContext(ProjectDetailContext);
@@ -22,7 +20,7 @@ export default function FloatingBox() {
       <s.ViewCategoryBox>
         <s.Category>{`phase ${data.floatmenu.phase}`}</s.Category>
         <s.ViewBox>
-          <View />
+          <Icon name="View" />
           <s.View>{data.floatmenu.view}</s.View>
         </s.ViewBox>
       </s.ViewCategoryBox>
@@ -34,12 +32,12 @@ export default function FloatingBox() {
               window.open(buttonObj.link);
             }}
           >
-            <Temp />
+            <Icon name="TempImg" />
             <s.ButtonText>{buttonObj.buttontext}</s.ButtonText>
           </s.PromotionButton>
         ))}
         <s.CoffeeChatButton>
-          <Coffee />
+          <Icon name="Coffee" />
           <s.CoffeeChatText>커피챗 요청하기</s.CoffeeChatText>
         </s.CoffeeChatButton>
       </s.PromotionBox>
@@ -53,19 +51,19 @@ export default function FloatingBox() {
           {(() => {
             switch (data.menu.performance.certifiedaward[0]?.badge) {
               case 'Top3':
-                return <s.Top3 width={40} height={40} />;
+                return <s.SvgIcon name="Top3" width={40} height={40} />;
                 break;
               case 'Top10':
-                return <s.Top10 width={40} height={40} />;
+                return <s.SvgIcon name="Top10" width={40} height={40} />;
                 break;
               case 'Top50':
-                return <s.Top50 width={40} height={40} />;
+                return <s.SvgIcon name="Top50" width={40} height={40} />;
                 break;
               case 'Top100':
-                return <s.Top100 width={40} height={40} />;
+                return <s.SvgIcon name="Top100" width={40} height={40} />;
                 break;
               case 'PeopleChoice':
-                return <s.PeopleChoice width={40} height={40} />;
+                return <s.SvgIcon name="PeopleChoice" width={40} height={40} />;
                 break;
             }
           })()}
@@ -84,7 +82,7 @@ export default function FloatingBox() {
           {data.menu.introduction.members.map((memberObj, index) => {
             if (index < 6) {
               if (memberObj.img == null) {
-                return <s.PersonSvg width="40" height="40" key={index} />;
+                return <s.PersonSvg key={index} name="DefaultUserImg" width={40} height={40} />;
               }
               return <s.Img src={`/public/${memberObj.img}`} alt="" key={index} />;
             }

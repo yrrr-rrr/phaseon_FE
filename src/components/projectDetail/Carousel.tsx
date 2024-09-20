@@ -2,10 +2,10 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { EmblaOptionsType } from 'embla-carousel';
 import YouTube from 'react-youtube';
 import { useCallback, useContext, useEffect, useState } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/CarouselStyle';
-import { ZoomContext } from '../../context/ZoomContext';
-import ButtonBox from './ButtonBox';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/CarouselStyle';
+import { ZoomContext } from '@/context/ZoomContext';
+import ButtonBox from '@/components/projectDetail/ButtonBox';
 
 export default function Carousel() {
   const options: EmblaOptionsType = { align: 'center', loop: true, slidesToScroll: 2 };
