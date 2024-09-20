@@ -20,7 +20,7 @@ export default function Header() {
               navigate('/');
             }}
           >
-            <Icon name="SmallProjectIcon" />
+            <Icon name="SmallProjectIcon" fill="#69ACFF" />
             <p>프로젝트</p>
           </s.IconBox>
           <p>아티클</p>
