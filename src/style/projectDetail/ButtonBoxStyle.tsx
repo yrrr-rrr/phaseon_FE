@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Left } from '../../assets/svg/LeftButton.svg';
-import { ReactComponent as Right } from '../../assets/svg/RightButton.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const ButtonBox = styled.div<{ $padding: number }>`
   padding: 10px ${({ $padding }) => $padding}px;
@@ -14,12 +13,12 @@ export const ButtonBox = styled.div<{ $padding: number }>`
   pointer-events: none;
 `;
 
-export const PrevButton = styled(Left)`
+export const PrevButton = styled(Icon)`
   pointer-events: auto;
   cursor: pointer;
 `;
 
-export const NextButton = styled(Right)`
+export const NextButton = styled(Icon)`
   pointer-events: auto;
   cursor: pointer;
 `;

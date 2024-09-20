@@ -1,41 +1,33 @@
 import { EmblaCarouselType } from 'embla-carousel';
-import * as s from '../../style/projectDetail/ButtonBoxStyle';
+import * as s from '@/style/projectDetail/ButtonBoxStyle';
 
-export default function ButtonBox({
-  emblaApi,
-  startScroll,
-  padding,
-}: {
-  emblaApi: EmblaCarouselType | undefined;
-  startScroll?: (emblaApi: EmblaCarouselType) => void;
-  padding: number;
-}) {
+export default function ButtonBox({ emblaApi, padding }: { emblaApi: EmblaCarouselType | undefined; padding: number }) {
   return (
     <s.ButtonBox $padding={padding}>
       <s.PrevButton
+        name="LeftButton"
         onClick={() => {
           if (!emblaApi) return;
           emblaApi.scrollPrev();
           emblaApi.plugins().autoScroll.stop();
-          if (startScroll) {
-            startScroll(emblaApi);
-          }
+          startScroll(emblaApi);
         }}
-      >
-        prev
-      </s.PrevButton>
+      />
       <s.NextButton
+        name="RightButton"
         onClick={() => {
           if (!emblaApi) return;
           emblaApi.scrollNext();
           emblaApi.plugins().autoScroll.stop();
-          if (startScroll) {
-            startScroll(emblaApi);
-          }
+          startScroll(emblaApi);
         }}
-      >
-        next
-      </s.NextButton>
+      />
     </s.ButtonBox>
   );
+}
+
+function startScroll(emblaApi: EmblaCarouselType) {
+  setTimeout(() => {
+    emblaApi.plugins().autoScroll.play();
+  }, 3000);
 }

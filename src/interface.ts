@@ -143,10 +143,18 @@ export interface Projects {
   param: string;
   projectname: string;
   description: string;
+  star: number;
+  performance: number;
+  member: number;
+  category: string[];
 }
 
 export interface ProjectGalleryData {
-  data: Projects[];
+  data: {
+    allproject: number;
+    allpeople: number;
+    projects: Projects[];
+  };
 }
 
 export interface HandelDoubleClickType {
@@ -206,4 +214,9 @@ export interface HandleMouseUpType {
   setDragAndDrop: React.Dispatch<SetStateAction<boolean>>;
   setDragOffSet: React.Dispatch<SetStateAction<number>>;
   setDragDirection: React.Dispatch<SetStateAction<string>>;
+}
+
+export interface MainCategoryType {
+  categorytext: string[];
+  categoryicon: string[];
 }

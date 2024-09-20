@@ -1,15 +1,15 @@
 import { useContext } from 'react';
-import * as s from '../../style/projectDetail/ProjectDashboardStyle';
-import { CategoryContext } from '../../context/CategoryContext';
-import ProjectInfo from './ProjectInfo';
-import Performance from './Performance';
-import Introduction from './Introduction';
-import Release from './Release';
-import ActionPanel from './ActionPanel';
-import { ZoomImgProvider } from '../../context/ZoomContext';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import Share from './Share';
-import AllProjectSlider from './AllProjectSlider';
+import { CategoryContext } from '@/context/CategoryContext';
+import { ZoomImgProvider } from '@/context/ZoomContext';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import ProjectInfo from '@/components/projectDetail/ProjectInfo';
+import Performance from '@/components/projectDetail//Performance';
+import Introduction from '@/components/projectDetail//Introduction';
+import Release from '@/components/projectDetail//Release';
+import ActionPanel from '@/components/projectDetail//ActionPanel';
+import Share from '@/components/projectDetail//Share';
+import AllProjectSlider from '@/components/projectDetail/AllProjectSlider';
+import * as s from '@/style/projectDetail/ProjectDashboardStyle';
 
 export default function ProjectDashboard() {
   const { showShare } = useContext(ProjectDetailContext);

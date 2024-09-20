@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ReleaseStyle';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import * as s from '@/style/projectDetail/ReleaseStyle';
 
 export default function Release() {
   const { data } = useContext(ProjectDetailContext);

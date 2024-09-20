@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Left } from '../../assets/svg/LeftButton.svg';
-import { ReactComponent as Right } from '../../assets/svg/RightButton.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const ImgWrapper = styled.div<{ $type: string }>`
   width: 100%;
@@ -40,13 +39,13 @@ export const Img = styled.img<{
   cursor: ${({ $drag }) => ($drag ? 'grabbing' : 'grab')};
 `;
 
-export const LeftButton = styled(Left)`
+export const LeftButton = styled(Icon)`
   position: absolute;
   left: 20px;
   z-index: 5;
   cursor: pointer;
 `;
-export const RightButton = styled(Right)`
+export const RightButton = styled(Icon)`
   position: absolute;
   right: 20px;
   z-index: 5;

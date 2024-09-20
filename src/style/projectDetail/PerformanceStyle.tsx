@@ -1,9 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as Top3Badge } from '../../assets/svg/Top3.svg';
-import { ReactComponent as Top10Badge } from '../../assets/svg/Top10.svg';
-import { ReactComponent as Top50Badge } from '../../assets/svg/Top50.svg';
-import { ReactComponent as Top100Badge } from '../../assets/svg/Top100.svg';
-import { ReactComponent as PeopleChoiceBadge } from '../../assets/svg/PeopleChoice.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
   padding-top: 32px;
@@ -64,19 +60,7 @@ export const ShortDescription = styled.p`
   letter-spacing: 0.203px;
 `;
 
-export const Top3 = styled(Top3Badge)`
-  width: 80px;
-`;
-export const Top10 = styled(Top10Badge)`
-  width: 80px;
-`;
-export const Top50 = styled(Top50Badge)`
-  width: 80px;
-`;
-export const Top100 = styled(Top100Badge)`
-  width: 80px;
-`;
-export const PeopleChoice = styled(PeopleChoiceBadge)`
+export const SvgIcon = styled(Icon)`
   width: 80px;
 `;
 

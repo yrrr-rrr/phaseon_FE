@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width: 100vw;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-left: calc(-50vw + 50%);
+`;
+
+export const TempBanner = styled.div`
+  width: 1100px;
+  height: 160px;
+  background-color: #f7f7f8;
 `;
 
 export const TextBox = styled.div`

@@ -1,5 +1,5 @@
-import { NewsItem } from '../../interface';
-import * as s from '../../style/projectDetail/NewsStyle';
+import { NewsItem } from '@/interface';
+import * as s from '@/style/projectDetail/NewsStyle';
 
 export default function News({ data, projectName }: { data: NewsItem[]; projectName: string }) {
   return (

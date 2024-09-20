@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as LeftButton } from '../../assets/svg/LeftButton.svg';
-import { ReactComponent as RightButton } from '../../assets/svg/RightButton.svg';
+import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
   width: 100%;
@@ -51,7 +50,7 @@ export const SlideButton = styled.button<{ $bgColor: string }>`
   cursor: pointer;
 `;
 
-export const PrevButton = styled(LeftButton)`
+export const PrevButton = styled(Icon)`
   position: absolute;
   top: 93px;
   left: 20px;
@@ -60,7 +59,7 @@ export const PrevButton = styled(LeftButton)`
   z-index: 2;
 `;
 
-export const NextButton = styled(RightButton)`
+export const NextButton = styled(Icon)`
   position: absolute;
   top: 93px;
   right: 20px;

@@ -49,7 +49,7 @@ export function ZoomImgProvider({ children }: { children: React.ReactNode }) {
       transform,
       updateTransform,
     }),
-    [showZoomComponent, startImg, isZoomed, zoomCount, transform],
+    [showZoomComponent, startImg, isZoomed, zoomCount, transform, updateTransform],
   );
 
   return <ZoomContext.Provider value={value}>{children}</ZoomContext.Provider>;

@@ -1,11 +1,11 @@
 import { useContext, useEffect } from 'react';
 import { Updater } from 'use-immer';
 import { useParams } from 'react-router-dom';
-import { ProjectDetailContext } from '../../context/ProjectDetailContext';
-import * as s from '../../style/projectDetail/ProjectIntroStyle';
-import { DetailDataType } from '../../interface';
-import { CategoryContext } from '../../context/CategoryContext';
-import { ReactComponent as Temp } from '../../assets/svg/TempImg.svg';
+import { ProjectDetailContext } from '@/context/ProjectDetailContext';
+import { CategoryContext } from '@/context/CategoryContext';
+import { DetailDataType } from '@/interface';
+import * as s from '@/style/projectDetail/ProjectIntroStyle';
+import { Icon } from '@/components/common/Icon';
 
 export default function ProjectIntro() {
   const { data, updateData } = useContext(ProjectDetailContext);
@@ -14,7 +14,7 @@ export default function ProjectIntro() {
   useEffect(() => {
     if (!projectName) return;
     getData(updateData, projectName);
-  }, [projectName]);
+  }, [projectName, updateData]);
 
   return (
     <s.Section ref={introRef}>
@@ -27,7 +27,7 @@ export default function ProjectIntro() {
         <s.CategoryBox>
           {data.category.map((text, index) => (
             <s.Category key={index}>
-              <Temp />
+              <Icon name="TempImg" />
               <p>{text}</p>
             </s.Category>
           ))}
