@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
-  padding-top: 32px;
-  width: 780px;
+  padding-top: 24px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
@@ -15,12 +15,13 @@ export const AwardBox = styled.section`
   width: 800px;
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 `;
 
 export const Award = styled.section`
-  margin: 0 16px 24px 0;
-  width: auto;
-  height: 116px;
+  margin-bottom: 8px;
+  width: 256px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,6 +29,7 @@ export const Award = styled.section`
 `;
 
 export const AwardName = styled.p`
+  margin-bottom: 4px;
   color: #171719;
   font-size: 14px;
   font-weight: 500;
@@ -45,7 +47,7 @@ export const Agency = styled.p`
 
 export const Title = styled.p`
   margin-bottom: 4px;
-  color: #1464e5;
+  color: #247bff;
   font-size: 22px;
   font-weight: 600;
   line-height: 136.4%;
@@ -61,6 +63,7 @@ export const ShortDescription = styled.p`
 `;
 
 export const SvgIcon = styled(Icon)`
+  margin-bottom: 16px;
   width: 80px;
 `;
 
@@ -71,18 +74,19 @@ export const Uncertifiedaward = styled.ul`
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
+  gap: 4px;
 `;
 
 export const Li = styled.li`
   text-indent: 10px;
-  margin-bottom: 10px;
   width: 100%;
-  height: 24px;
+  height: 26px;
   box-sizing: border-box;
   color: #47484c;
   display: flex;
   align-items: center;
   position: relative;
+
   &&::after {
     content: '';
     width: 3px;

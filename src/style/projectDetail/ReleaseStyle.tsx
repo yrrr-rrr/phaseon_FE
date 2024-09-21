@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding-top: 32px;
-  width: 780px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
@@ -10,8 +10,8 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.p`
-  margin-bottom: 4px;
-  color: #1464e5;
+  margin-bottom: 8px;
+  color: #247bff;
   font-size: 22px;
   font-weight: 600;
   line-height: 136.4%;
@@ -19,6 +19,7 @@ export const Title = styled.p`
 `;
 
 export const ShortDescription = styled.p`
+  margin-bottom: 12px;
   color: #858588;
   font-size: 14px;
   font-weight: 400;
@@ -27,7 +28,7 @@ export const ShortDescription = styled.p`
 `;
 
 export const ReleaseBox = styled.section`
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   padding: 0 20px;
   width: 740px;
   display: flex;
@@ -40,6 +41,7 @@ export const ReleaseTextBox = styled.section`
 `;
 
 export const ExtraFeature = styled.p`
+  margin-bottom: 8px;
   color: #000;
   font-size: 18px;
   font-weight: 600;
