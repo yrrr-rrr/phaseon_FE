@@ -24,6 +24,7 @@ export default function AllProjects() {
             <s.Img src={projectObj.img} alt="" />
             <div>
               <s.ProjectName>Project Name</s.ProjectName>
+              <s.Description>{projectObj.description}</s.Description>
               <s.InpoBox>
                 <s.IconBox>
                   <Icon name="FillStar" fill="#FFCC00" />
