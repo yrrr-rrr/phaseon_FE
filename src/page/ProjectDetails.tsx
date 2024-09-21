@@ -19,7 +19,7 @@ export default function ProjectDetails() {
       <Main $overflow="none">
         <ProjectDetailProvider>
           <CategoryProvider>
-            <s.Div>
+            <s.Div className="sticky-road">
               <FloatingBox setShowModal={setShowModal} />
             </s.Div>
             <ProjectIntro />
