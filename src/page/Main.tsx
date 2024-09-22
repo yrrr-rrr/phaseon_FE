@@ -11,7 +11,7 @@ export default function Main() {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {showModal && <ComingSoonModal setShowModal={setShowModal} />}
+      {showModal && <ComingSoonModal setShowModal={setShowModal} showModal={showModal} />}
       <Header setShowModal={setShowModal} />
       <s.MainStyle>
         <MainProvider>

@@ -14,12 +14,12 @@ export default function ProjectDetails() {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {showModal && <ComingSoonModal setShowModal={setShowModal} />}
+      {showModal && <ComingSoonModal setShowModal={setShowModal} showModal={showModal} />}
       <Header setShowModal={setShowModal} />
       <Main $overflow="none">
         <ProjectDetailProvider>
           <CategoryProvider>
-            <s.Div className="sticky-road">
+            <s.Div>
               <FloatingBox setShowModal={setShowModal} />
             </s.Div>
             <ProjectIntro />

@@ -1,29 +1,13 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import * as s from '@/style/projectDetail/ShareStyle';
+import { usePreventScroll } from '@/utils/usePreventScroll';
 
 export default function Share() {
-  const { setShowShare } = useContext(ProjectDetailContext);
-  const floatBox = document.querySelector('.sticky-road') as HTMLElement;
-  const header = document.querySelector('header');
-  const main = document.querySelector('main');
+  const { setShowShare, showShare } = useContext(ProjectDetailContext);
 
-  useEffect(() => {
-    if (floatBox) {
-      const defaultPosition = parseInt(window.getComputedStyle(floatBox).right, 10);
-      floatBox.style.right = `${defaultPosition + 3.5}px`;
-    }
-    if (header) {
-      const defaultHeaderPadding = parseInt(window.getComputedStyle(header).paddingRight, 10);
-      header.style.paddingRight = `${defaultHeaderPadding + 3.5}px`;
-    }
-    if (main) {
-      const defaultMainPadding = parseInt(window.getComputedStyle(main).paddingRight, 10);
-      main.style.paddingRight = `${defaultMainPadding + 3.5}px`;
-    }
+  usePreventScroll(showShare);
 
-    document.body.style.overflow = 'hidden';
-  }, [floatBox, main, header]);
   return (
     <s.Section $scroll={window.pageYOffset}>
       <s.QRcodeBox>
@@ -32,16 +16,6 @@ export default function Share() {
           fill="black"
           onClick={() => {
             setShowShare(false);
-            if (floatBox) {
-              floatBox.style.right = '';
-            }
-            if (header) {
-              header.style.paddingRight = '';
-            }
-            if (main) {
-              main.style.paddingRight = '';
-            }
-            document.body.style.overflow = 'scroll';
           }}
         />
         <s.Div>
