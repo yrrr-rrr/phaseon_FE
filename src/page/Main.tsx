@@ -5,6 +5,7 @@ import AllProjectView from '@/components/main/AllProjectView';
 import MainBanner from '@/components/main/MainBanner';
 import { MainProvider } from '@/context/MainContext';
 import * as s from '@/style/main/MainStyle';
+import Category from '@/components/main/Category';
 import ComingSoonModal from '@/components/common/ComingSoonModal';
 
 export default function Main() {
@@ -17,6 +18,9 @@ export default function Main() {
         <MainProvider>
           <MainBanner />
           <s.Section>
+            <s.StickyRoad>
+              <Category />
+            </s.StickyRoad>
             <AllProjectView />
           </s.Section>
         </MainProvider>
