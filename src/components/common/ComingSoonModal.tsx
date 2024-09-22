@@ -28,7 +28,12 @@ export default function ComingSoonModal({
         <s.Headline>곧 런칭 예정!</s.Headline>
         <s.Description>페이즈온은 10월 중 정식 런칭 예정에 있어요.</s.Description>
         <s.Description> 잠시 후 훌륭한 서비스로 다시 찾아올게요!</s.Description>
-        <s.CheckButton type="button">
+        <s.CheckButton
+          type="button"
+          onClick={() => {
+            setShowModal(false);
+          }}
+        >
           <Icon name="Check" />
           <p>확인 완료</p>
         </s.CheckButton>
