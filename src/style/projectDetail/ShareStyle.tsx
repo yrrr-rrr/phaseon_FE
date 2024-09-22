@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section<{ $scroll: number }>`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
