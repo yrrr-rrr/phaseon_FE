@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { MainContext } from '@/context/MainContext';
-import * as s from '@/style/ProjectGallery/CategoryStyle';
+import * as s from '@/style/main/CategoryStyle';
 import { getFill } from '@/utils/getFill';
 import { getStroke } from '@/utils/getStroke';
 import { Icon } from '../common/Icon';
