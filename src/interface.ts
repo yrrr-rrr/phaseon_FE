@@ -35,102 +35,68 @@ export interface Button {
 }
 
 export interface CarouselItem {
-  img: string;
-  type: string;
-}
-
-export interface MainFeature {
-  title: string;
-  description: string;
-}
-
-export interface ReleaseVersion {
-  version: number;
-  date: string;
-  extrafeature: ExtraFeatur[];
-}
-
-export interface ExtraFeatur {
-  feature: string;
-  description: string;
-}
-
-export interface CertifiedAward {
-  badge: string;
-  award: string;
-  certifyingAgency: string;
-}
-
-export interface NewsItem {
-  img: string;
-  title: string;
-  content: string;
-  link: string;
+  url: string;
+  mediaType: string;
+  order: number;
 }
 
 export interface ProfileLink {
-  icon: string;
-  link: string;
+  linkType: string;
+  url: string;
 }
 
 export interface Member {
-  img: string | null;
-  name: string;
-  role: string;
-  email: string;
-  profilelink: ProfileLink[];
+  users: [
+    {
+      userPicture: string;
+      username: string;
+      userRole: string;
+      links: ProfileLink[];
+    },
+  ];
 }
 
-export interface MainProjectInfo {
-  carousel: CarouselItem[];
-  mainfeatures: {
-    shortdescription: string;
-    feature: MainFeature[];
-  };
-  techstack: string[];
+export interface ReleaseType {
+  releases: string;
 }
 
-export interface FloatMenu {
-  phase: string;
-  view: number;
-  buttons: Button[];
-  releasenote: string;
+export interface AccomplishmentObj {
+  title: string;
+  description: string;
+  publisher: string;
+  thumbnail: string;
+  link: string;
+  type: string;
+}
+
+export interface Accomplishment {
+  accomplishments: AccomplishmentObj[];
+}
+
+export interface Link {
+  link: string;
+  type: string;
+}
+
+export interface ProjectInfo {
+  id: number;
+  title: string;
+  summary: string;
+  shortDescription: string;
+  description: string;
+  thumbnail: string;
+  banner: string;
+  categories: string[];
+  status: string;
+  projectMedia: CarouselItem[];
+  links: Link[];
+  viewCount: number;
+  likeCount: number;
+  notificationCount: number;
   isLiked: boolean;
   isNotified: boolean;
-}
-
-export interface Intro {
-  banner: string;
-  projectimg: string;
-  projectbrief: string;
-  description: string;
-}
-
-export interface Performance {
-  certifiedaward: CertifiedAward[];
-  accomplishment: string[];
-  news: NewsItem[];
-}
-
-export interface Introduction {
-  members: Member[];
-}
-
-export interface DetailDataType {
-  projectname: string;
-  star: number;
-  notification: number;
-  category: string[];
-  floatmenu: FloatMenu;
-  intro: Intro;
-  menu: {
-    projectinfo: MainProjectInfo;
-    release: {
-      releaseversion: ReleaseVersion[];
-    };
-    performance: Performance;
-    introduction: Introduction;
-  };
+  createdAt: number;
+  updatedAt: number;
 }
 export interface CategoryContextType {
   currentCategory: string;
