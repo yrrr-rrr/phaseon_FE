@@ -18,7 +18,7 @@ export default function AllProjects() {
                 top: 0,
                 behavior: 'smooth',
               });
-              navigate(projectObj.param.toLowerCase());
+              navigate(projectObj.projectname.toLowerCase());
             }}
           >
             <s.Img src={projectObj.img} alt="" />
