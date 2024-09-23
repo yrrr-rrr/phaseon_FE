@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { SetStateAction, useContext } from 'react';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import { CategoryContext } from '@/context/CategoryContext';
 import StarButton from '@/components/common/StarButon';
@@ -7,7 +7,7 @@ import NotificationButton from '@/components/common/NotificationButton';
 import * as s from '@/style/projectDetail/FloatingBoxStyle';
 import { Icon } from '@/components/common/Icon';
 
-export default function FloatingBox() {
+export default function FloatingBox({ setShowModal }: { setShowModal: React.Dispatch<SetStateAction<boolean>> }) {
   const { data } = useContext(ProjectDetailContext);
   const { setCurrentCategory, introRef } = useContext(CategoryContext);
   function changeCategory(category: string) {
@@ -36,7 +36,11 @@ export default function FloatingBox() {
             <s.ButtonText>{buttonObj.buttontext}</s.ButtonText>
           </s.PromotionButton>
         ))}
-        <s.CoffeeChatButton>
+        <s.CoffeeChatButton
+          onClick={() => {
+            setShowModal(true);
+          }}
+        >
           <Icon name="Coffee" />
           <s.CoffeeChatText>커피챗 요청하기</s.CoffeeChatText>
         </s.CoffeeChatButton>

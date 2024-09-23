@@ -1,12 +1,13 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import * as s from '@/style/projectDetail/ShareStyle';
+import { usePreventScroll } from '@/utils/usePreventScroll';
 
 export default function Share() {
-  const { setShowShare } = useContext(ProjectDetailContext);
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-  }, []);
+  const { setShowShare, showShare } = useContext(ProjectDetailContext);
+
+  usePreventScroll(showShare);
+
   return (
     <s.Section $scroll={window.pageYOffset}>
       <s.QRcodeBox>
@@ -15,7 +16,6 @@ export default function Share() {
           fill="black"
           onClick={() => {
             setShowShare(false);
-            document.body.style.overflow = 'scroll';
           }}
         />
         <s.Div>
