@@ -11,8 +11,8 @@ import { getFill } from '@/utils/getFill';
 export default function AllProjectView() {
   const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
   const [isLoading, setIsLoading] = useState(false);
-  const [page, setPage] = useState(0);
-  const [sortOption, setSortOption] = useState('recently');
+  const [page, setPage] = useState(-1);
+  const [sortOption, setSortOption] = useState('updatedAt');
   const [showMoreButton, setShowMoreButton] = useState(false);
   const [isPageUpdate, setIsPageUpdate] = useState(false);
   const isFetching = useRef<boolean>(false);
@@ -69,13 +69,22 @@ export default function AllProjectView() {
     if (page % 10 === 0 && page !== 0) {
       setShowMoreButton(true);
     }
-    if (page === 0 && !isFetching.current) return;
+    if (page === -1 && !isFetching.current) return;
 
-    getProjects(setIsLoading, updateProject, showMoreButton, isFetching, setIsPageUpdate);
-  }, [page, updateProject, showMoreButton]);
+    getProjects(
+      setIsLoading,
+      updateProject,
+      showMoreButton,
+      isFetching,
+      setIsPageUpdate,
+      category.categoryicon[currentCategory],
+      page,
+      sortOption,
+    );
+  }, [page, updateProject, showMoreButton, currentCategory, category.categoryicon, sortOption]);
 
   useEffect(() => {
-    setPage(0);
+    setPage(-1);
     setIsSorted(false);
     isFetching.current = false;
     updateProject((draft) => {
@@ -110,7 +119,7 @@ export default function AllProjectView() {
               $current={sortOption}
               $buttonName="recently"
               onClick={() => {
-                setSortOption('recently');
+                setSortOption('updatedAt');
                 setIsSorted(false);
               }}
             >
@@ -120,7 +129,7 @@ export default function AllProjectView() {
               $current={sortOption}
               $buttonName="popularity"
               onClick={() => {
-                setSortOption('popularity');
+                setSortOption('likeCount&sort=viewCount');
                 setIsSorted(true);
               }}
             >
@@ -158,14 +167,22 @@ async function getProjects(
   showMoreButton: boolean,
   isFetching: { current: boolean },
   setIsPageUpdate: React.Dispatch<SetStateAction<boolean>>,
+  currentCategory: string,
+  page: number,
+  sortOption: string,
 ) {
   setIsLoading(true);
   try {
-    // const response = await fetch(`https://name.store:8443/api/project?page=${page}`);
-    const response = await fetch('dummy/projectCollection.json');
+    let response = await fetch(`https://name.store:8443/api/project?page=${page}&sort=${sortOption}`);
+    if (currentCategory !== 'ALLPROJECT') {
+      response = await fetch(
+        `https://name.store:8443/api/projects?page=${page}&size=10&sort=${sortOption}&category=${currentCategory}`,
+      );
+    }
+    // const response = await fetch('dummy/projectCollection.json');
     const data = await response.json();
     updateProject((draft) => {
-      if (!showMoreButton) {
+      if (!showMoreButton && data.data.projects.length) {
         draft.data.projects = [...draft.data.projects, ...data.data.projects];
         draft.data.totalProjects = data.data.allproject;
         draft.data.totalMembers = data.data.allpeople;
