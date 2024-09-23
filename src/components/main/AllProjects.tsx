@@ -18,24 +18,24 @@ export default function AllProjects() {
                 top: 0,
                 behavior: 'smooth',
               });
-              navigate(projectObj.projectname.toLowerCase());
+              navigate(projectObj.title.toLowerCase());
             }}
           >
-            <s.Img src={projectObj.img} alt="" />
+            <s.Img src={projectObj.thumbnail} alt="" />
             <div>
               <s.ProjectName>Project Name</s.ProjectName>
               <s.InpoBox>
                 <s.IconBox>
                   <Icon name="FillStar" fill="#FFCC00" />
-                  <p>{projectObj.star}</p>
+                  <p>{projectObj.likeCount}</p>
                 </s.IconBox>
                 <s.IconBox>
                   <Icon name="Medal" />
-                  <p>{projectObj.performance}</p>
+                  <p>{projectObj.awardCount}</p>
                 </s.IconBox>
                 <s.IconBox>
                   <Icon name="Member" fill="#69ACFF" width={16} height={12} />
-                  <p>{projectObj.member}</p>
+                  <p>{projectObj.memberCount}</p>
                 </s.IconBox>
               </s.InpoBox>
               <s.CategoryBox>

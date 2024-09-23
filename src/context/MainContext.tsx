@@ -19,9 +19,23 @@ export const MainContext = createContext<ContextType>({
   setIsSorted: () => {},
   project: {
     data: {
-      allproject: 0,
-      allpeople: 0,
-      projects: [],
+      projects: [
+        {
+          id: 1,
+          thumbnail: '',
+          title: '',
+          summary: '',
+          likeCount: 0,
+          awardCount: 0,
+          memberCount: 0,
+          viewCount: 0,
+          createdAt: '',
+          category: [],
+        },
+      ],
+      totalProjects: 0,
+      totalMembers: 0,
+      category: null,
     },
   },
   updateProject: () => {},
@@ -63,9 +77,23 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
   );
   const [project, updateProject] = useImmer<ProjectGalleryData>({
     data: {
-      allproject: 0,
-      allpeople: 0,
-      projects: [],
+      projects: [
+        {
+          id: 1,
+          thumbnail: '',
+          title: '',
+          summary: '',
+          likeCount: 0,
+          awardCount: 0,
+          memberCount: 0,
+          viewCount: 0,
+          createdAt: '',
+          category: [],
+        },
+      ],
+      totalProjects: 0,
+      totalMembers: 0,
+      category: null,
     },
   });
   const value = useMemo(

@@ -105,21 +105,24 @@ export interface CategoryContextType {
 }
 
 export interface Projects {
-  img: string;
-  param: string;
-  projectname: string;
-  description: string;
-  star: number;
-  performance: number;
-  member: number;
+  id: number;
+  thumbnail: string;
+  title: string;
+  summary: string;
+  likeCount: number;
+  awardCount: number;
+  memberCount: number;
+  viewCount: number;
   category: string[];
+  createdAt: string;
 }
 
 export interface ProjectGalleryData {
   data: {
-    allproject: number;
-    allpeople: number;
     projects: Projects[];
+    totalProjects: number;
+    totalMembers: number;
+    category: string | null;
   };
 }
 

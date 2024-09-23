@@ -79,8 +79,8 @@ export default function AllProjectView() {
     setIsSorted(false);
     isFetching.current = false;
     updateProject((draft) => {
-      draft.data.allpeople = 0;
-      draft.data.allproject = 0;
+      draft.data.totalMembers = 0;
+      draft.data.totalProjects = 0;
       draft.data.projects = [];
     });
   }, [currentCategory, setIsSorted, updateProject]);
@@ -100,7 +100,7 @@ export default function AllProjectView() {
             <p>{category.categorytext[currentCategory]}</p>
           </s.Title>
           <s.SubTitle>
-            <b>{project.data.allproject}</b>개의 프로젝트 ・ <b>{project.data.allpeople}</b>명 활동 중
+            <b>{project.data.totalProjects}</b>개의 프로젝트 ・ <b>{project.data.totalMembers}</b>명 활동 중
           </s.SubTitle>
         </s.TitleBox>
         <s.SortButtonBox>
@@ -167,8 +167,8 @@ async function getProjects(
     updateProject((draft) => {
       if (!showMoreButton) {
         draft.data.projects = [...draft.data.projects, ...data.data.projects];
-        draft.data.allproject = data.data.allproject;
-        draft.data.allpeople = data.data.allpeople;
+        draft.data.totalProjects = data.data.allproject;
+        draft.data.totalMembers = data.data.allpeople;
       }
     });
   } catch (err) {
