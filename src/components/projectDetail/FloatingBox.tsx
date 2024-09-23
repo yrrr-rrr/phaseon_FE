@@ -45,10 +45,6 @@ export default function FloatingBox({ setShowModal }: { setShowModal: React.Disp
           <s.CoffeeChatText>커피챗 요청하기</s.CoffeeChatText>
         </s.CoffeeChatButton>
       </s.PromotionBox>
-      <s.ReleaseBox>
-        <s.Title>출시 노트</s.Title>
-        <s.ReleaseDescription>{data.floatmenu.releasenote}</s.ReleaseDescription>
-      </s.ReleaseBox>
       <s.ImgBox>
         <s.Title>주요 성과</s.Title>
         <div>

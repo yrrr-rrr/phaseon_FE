@@ -13,7 +13,7 @@ export const ProjectBox = styled.section`
   margin-bottom: 16px;
   padding: 16px;
   width: 820px;
-  height: 125px;
+  height: 152px;
   box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid rgba(207, 235, 255, 0.7);
@@ -28,8 +28,8 @@ export const ProjectBox = styled.section`
 `;
 
 export const Img = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 4px;
   box-shadow:
     0px 1px 2px 0px rgba(0, 0, 0, 0.12),
@@ -46,8 +46,17 @@ export const ProjectName = styled.p`
   letter-spacing: -0.004px;
 `;
 
+export const Description = styled.p`
+  color: #47484c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.091px;
+`;
+
 export const InpoBox = styled.div`
-  margin-bottom: 19px;
+  margin: 8px 0;
+  width: 120px;
   height: 20px;
   display: flex;
   justify-content: space-between;

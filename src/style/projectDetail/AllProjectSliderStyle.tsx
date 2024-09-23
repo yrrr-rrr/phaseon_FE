@@ -19,7 +19,7 @@ export const TextBox = styled.section`
 `;
 
 export const Title = styled.p`
-  color: #69acff;
+  color: #247bff;
   font-size: 22px;
   font-weight: 600;
   line-height: 136.4%;
@@ -41,14 +41,6 @@ export const CarouselViewport = styled.section`
   height: 100%;
   overflow: hidden;
 `;
-
-// export const Div = styled.div`
-//   height: 70%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   background-color: yellowgreen;
-// `;
 
 export const CarouselContainer = styled.div`
   margin: 20px 0;

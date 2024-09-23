@@ -129,4 +129,11 @@ export const MoreButton = styled.button`
   font-weight: 600;
   line-height: 150%;
   letter-spacing: 0.091px;
+
+  &&:hover {
+    background-color: #63a1ee;
+  }
+  &&:active {
+    background-color: #5a91d6;
+  }
 `;

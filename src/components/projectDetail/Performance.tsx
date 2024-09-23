@@ -28,7 +28,7 @@ export default function Performance() {
     <s.Section>
       <section>
         <s.Title>수상 및 인증 이력</s.Title>
-        <s.ShortDescription>Phase On 공식 인증 성과</s.ShortDescription>
+        <s.ShortDescription>프로젝트 주요 성과</s.ShortDescription>
       </section>
       <s.AwardBox>
         {data.menu.performance.certifiedaward.map((awardObj, index) => (
@@ -44,7 +44,7 @@ export default function Performance() {
           ))}
         </s.Uncertifiedaward>
       </s.AwardBox>
-      {data.menu.performance.news && <News data={data.menu.performance.news} projectName={data.projectname} />}
+      {data.menu.performance.news && <News data={data.menu.performance.news} />}
     </s.Section>
   );
 }

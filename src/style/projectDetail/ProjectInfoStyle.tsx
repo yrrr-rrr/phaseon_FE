@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 32px 0;
-  width: 780px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
@@ -12,7 +12,6 @@ export const Section = styled.section`
 export const Carousel = styled.section`
   width: 780px;
   height: 218px;
-  background-color: violet;
 `;
 
 export const MainFeatureBox = styled.section`
@@ -37,7 +36,7 @@ export const MarginBox = styled.section`
 
 export const Title = styled.p`
   margin-bottom: 4px;
-  color: #1464e5;
+  color: #247bff;
   font-size: 22px;
   font-weight: 600;
   line-height: 136.4%;

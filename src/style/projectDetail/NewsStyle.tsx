@@ -23,12 +23,12 @@ export const ShortDescription = styled.p`
 
 export const PaddingBox = styled.section`
   padding: 0 20px;
-  width: 740px;
+  width: 800px;
 `;
 
 export const NewsBox = styled.section`
   margin-bottom: 24px;
-  width: 740px;
+  width: 800px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -41,13 +41,13 @@ export const NewsImg = styled.img`
 `;
 
 export const NewsTextBox = styled.section`
-  width: 628px;
+  width: 688px;
   height: 100%;
 `;
 
 export const NewsTitle = styled.p`
   margin-bottom: 8px;
-  color: #222228;
+  color: #47484c;
   font-size: 18px;
   font-weight: 600;
   line-height: 144.5%;
@@ -60,7 +60,7 @@ export const NewsTitle = styled.p`
 `;
 
 export const NewsContent = styled.p`
-  color: #525662;
+  color: #858588;
   font-size: 12px;
   font-weight: 400;
   line-height: 133.4%;
