@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "data": {
+    "releases": "## Release 1.1\n>2024.07.12\n\n### ~~기능 추가\n 기능 추가"
+  },
+  "error": {
+    "code": "string",
+    "message": "string",
+    "properties": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  }
+}

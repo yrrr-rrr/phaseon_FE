@@ -11,153 +11,42 @@
       "banner": "https://namju.store:84438080/images/default-banner.png",
       "categories": ["AI", "ENTERTAINMENT", "HEALTH"],
       "status": "PHASE_0",
-      "projectImages": [
+      "projectMedia": [
         {
-          "img": "0Y95Mzpib4I",
-          "type": "video"
+          "url": "0Y95Mzpib4I",
+          "mediaType": "video",
+          "order": 0
         },
         {
-          "img": "png/atti/atti-carousel1.png",
-          "type": "row"
+          "url": "png/atti/atti-carousel1.png",
+          "mediaType": "row",
+          "order": 0
         },
         {
-          "img": "png/atti/atti-carousel2.png",
-          "type": "row"
+          "url": "png/atti/atti-carousel2.png",
+          "mediaType": "row",
+          "order": 0
         },
         {
-          "img": "png/atti/atti-carousel3.png",
-          "type": "row"
+          "url": "png/atti/atti-carousel3.png",
+          "mediaType": "row",
+          "order": 0
         },
         {
-          "img": "png/atti/atti-carousel4.png",
-          "type": "row"
+          "url": "png/atti/atti-carousel4.png",
+          "mediaType": "row",
+          "order": 0
         },
         {
-          "img": "png/atti/atti-carousel5.png",
-          "type": "row"
-        }
-      ],
-      "members": [
-        {
-          "memberId": 4,
-          "img": "png/atti/atti-m2.png",
-          "name": "박수정",
-          "role": "DEVELOPER_BACKEND",
-          "profilelink": [
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            }
-          ]
-        },
-        {
-          "memberId": 1,
-          "img": "png/atti/atti-m2.png",
-          "name": "박수정",
-          "role": "DEVELOPER_BACKEND",
-          "profilelink": [
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            }
-          ]
-        },
-        {
-          "memberId": 2,
-          "img": "png/atti/atti-m2.png",
-          "name": "박수정",
-          "role": "DEVELOPER_BACKEND",
-          "profilelink": [
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            }
-          ]
-        },
-        {
-          "memberId": 3,
-          "img": "png/atti/atti-m2.png",
-          "name": "박수정",
-          "role": "DEVELOPER_BACKEND",
-          "profilelink": [
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            },
-            {
-              "icon": "instargram",
-              "link": ""
-            }
-          ]
-        }
-      ],
-      "releases": "## Release 1.1\n>2024.07.12\n\n### ~~기능 추가\n 기능 추가",
-      "accomplishments": [
-        {
-          "title": "Accomplishment 4",
-          "description": "Accomplishment 4 Description",
-          "publisher": "Google",
-          "thumbnail": "Top3",
-          "link": "https://www.google.com",
-          "type": "REWARD"
-        },
-        {
-          "title": "Accomplishment 1",
-          "description": "Accomplishment 1 Description",
-          "publisher": "Google",
-          "thumbnail": "Top10",
-          "link": "https://www.google.com",
-          "type": "ACHIEVEMENT"
-        },
-        {
-          "title": "NEWS 2",
-          "description": "Accomplishment 2 Description",
-          "publisher": "Google",
-          "thumbnail": "/images/accomplishment2.jpg",
-          "link": "https://www.google.com",
-          "type": "NEWS"
-        },
-        {
-          "title": "CERTIFICATE 3",
-          "description": "Accomplishment 3 Description",
-          "publisher": "Google",
-          "thumbnail": "Top3",
-          "link": "https://www.google.com",
-          "type": "CERTIFICATE"
+          "url": "png/atti/atti-carousel5.png",
+          "mediaType": "row",
+          "order": 0
         }
       ],
       "links": [
         {
           "link": "www.facebook.com",
-          "type": "INSTAGRAM"
+          "type": "INSTARGRAM"
         },
         {
           "link": "www.github.com",
@@ -175,6 +64,8 @@
       "viewCount": 0,
       "likeCount": 0,
       "notificationCount": 0,
+      "isLiked": false,
+      "isNotified": false,
       "createdAt": 1704110400,
       "updatedAt": 1704110400
     }

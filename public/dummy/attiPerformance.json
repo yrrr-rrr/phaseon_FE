@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "data": {
+    "accomplishments": [
+      {
+        "title": "Accomplishment 4",
+        "description": "Accomplishment 4 Description",
+        "publisher": "Google",
+        "thumbnail": "Top3",
+        "link": "https://www.google.com",
+        "type": "REWARD"
+      },
+      {
+        "title": "Accomplishment 1",
+        "description": "Accomplishment 1 Description",
+        "publisher": "Google",
+        "thumbnail": "Top10",
+        "link": "https://www.google.com",
+        "type": "ACHIEVEMENT"
+      },
+      {
+        "title": "NEWS 2",
+        "description": "Accomplishment 2 Description",
+        "publisher": "Google",
+        "thumbnail": "/images/accomplishment2.jpg",
+        "link": "https://www.google.com",
+        "type": "NEWS"
+      },
+      {
+        "title": "CERTIFICATE 3",
+        "description": "Accomplishment 3 Description",
+        "publisher": "Google",
+        "thumbnail": "Top3",
+        "link": "https://www.google.com",
+        "type": "CERTIFICATE"
+      }
+    ]
+  },
+  "error": {
+    "code": "string",
+    "message": "string",
+    "properties": {
+      "additionalProp1": {},
+      "additionalProp2": {},
+      "additionalProp3": {}
+    }
+  }
+}
