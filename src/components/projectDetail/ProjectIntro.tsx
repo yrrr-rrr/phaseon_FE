@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { Updater } from 'use-immer';
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import { CategoryContext } from '@/context/CategoryContext';
 import { Accomplishment, Member, ProjectInfo } from '@/interface';
@@ -13,8 +13,7 @@ export default function ProjectIntro() {
   const { projectInfo, updateProjectInfo, updateMemberInfo, updateAccomplishmentInfo } =
     useContext(ProjectDetailContext);
   const { introRef } = useContext(CategoryContext);
-  const { projectName } = useParams();
-
+  const id = useLocation().pathname.replace('/', '');
   interface IconProps {
     name:
       | 'AI'
@@ -39,17 +38,16 @@ export default function ProjectIntro() {
   const iconWithFill = [2, 3, 4, 5, 6, 8];
 
   useEffect(() => {
-    if (!projectName) return;
-    getData(updateProjectInfo, projectName);
-    getMember(updateMemberInfo, projectName);
-    getAccomplishment(updateAccomplishmentInfo);
-  }, [projectName, updateProjectInfo, updateMemberInfo, updateAccomplishmentInfo]);
+    getData(updateProjectInfo, id);
+    getMember(updateMemberInfo, id);
+    getAccomplishment(updateAccomplishmentInfo, id);
+  }, [id, updateProjectInfo, updateMemberInfo, updateAccomplishmentInfo]);
 
   return (
     <s.Section ref={introRef}>
       <s.TempBanner />
       <s.IntroSection>
-        <s.MainImg src={`/public/png/${projectName}.png`} alt="" />
+        <s.MainImg src={`/public/png/${projectInfo.title}.png`} alt="" />
         <s.ProjectName>{projectInfo.title}</s.ProjectName>
         <s.ProjectBrief>{projectInfo.summary}</s.ProjectBrief>
         <s.Description>{projectInfo.shortDescription}</s.Description>
@@ -57,7 +55,6 @@ export default function ProjectIntro() {
           {projectInfo.categories.map((text, index) => {
             const currenticon = text as IconProps['name'];
             if (currenticon) {
-              // console.log(currenticon);
               return (
                 <s.Category key={index}>
                   <Icon
@@ -78,9 +75,10 @@ export default function ProjectIntro() {
   );
 }
 
-async function getData(updateData: Updater<ProjectInfo>, projectName: string) {
+async function getData(updateData: Updater<ProjectInfo>, id: string) {
   try {
-    const response = await fetch(`/public/dummy/${projectName}2.json`);
+    const response = await fetch(`https://name.store:8443/api/project/${id}`);
+    // const response = await fetch('/public/dummy/atti2.json');
     const data = await response.json();
     updateData((obj) => {
       Object.assign(obj, data.data[0]);
@@ -90,9 +88,10 @@ async function getData(updateData: Updater<ProjectInfo>, projectName: string) {
   }
 }
 
-async function getMember(updateData: Updater<Member>, projectName: string) {
+async function getMember(updateData: Updater<Member>, id: string) {
   try {
-    const response = await fetch(`/dummy/${projectName}Member.json`);
+    const response = await fetch(`https://name.store:8443/api/project/${id}/members`);
+    // const response = await fetch('/dummy/attiMember.json');
     const data = await response.json();
     updateData((obj) => {
       Object.assign(obj, data.data);
@@ -102,9 +101,10 @@ async function getMember(updateData: Updater<Member>, projectName: string) {
   }
 }
 
-async function getAccomplishment(updateAccomplishmentInfo: Updater<Accomplishment>) {
+async function getAccomplishment(updateAccomplishmentInfo: Updater<Accomplishment>, id: string) {
   try {
-    const response = await fetch('dummy/attiPerformance.json');
+    const response = await fetch(`https://name.store:8443/api/project/${id}/accomplishments`);
+    // const response = await fetch('dummy/attiPerformance.json');
     const data = await response.json();
     updateAccomplishmentInfo((draft) => {
       Object.assign(draft, data.data);

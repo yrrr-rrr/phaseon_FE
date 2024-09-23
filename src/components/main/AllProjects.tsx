@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
 import * as s from '@/style/main/AllProjectsStyle';
 import { MainContext } from '@/context/MainContext';
 import { Icon } from '@/components/common/Icon';
+import { useNavigate } from 'react-router-dom';
 
 export default function AllProjects() {
   const { project } = useContext(MainContext);
@@ -18,7 +18,7 @@ export default function AllProjects() {
                 top: 0,
                 behavior: 'smooth',
               });
-              navigate(projectObj.title.toLowerCase());
+              navigate(`/${projectObj.id}`);
             }}
           >
             <s.Img src={projectObj.thumbnail} alt="" />
