@@ -4,7 +4,13 @@ import * as s from '@/style/projectDetail/PerformanceStyle';
 import News from '@/components/projectDetail/News';
 
 export default function Performance() {
-  const { data } = useContext(ProjectDetailContext);
+  const { projectInfo, accomplishmentInfo } = useContext(ProjectDetailContext);
+  const news = accomplishmentInfo.accomplishments.filter((obj) => obj.type === 'NEWS');
+  // const reward = accomplishmentInfo.accomplishments.filter((obj) => obj.type === 'REWARD');
+  const achievement = accomplishmentInfo.accomplishments.filter((obj) => obj.type === 'ACHIEVEMENT');
+  const certification = accomplishmentInfo.accomplishments.filter((obj) => obj.type === 'CERTIFICATE');
+
+  // 추후 일반 img로 변경 예정
   function getBadge(award: string) {
     switch (award) {
       case 'Top3':
@@ -31,20 +37,20 @@ export default function Performance() {
         <s.ShortDescription>Phase On 공식 인증 성과</s.ShortDescription>
       </section>
       <s.AwardBox>
-        {data.menu.performance.certifiedaward.map((awardObj, index) => (
+        {certification.map((awardObj, index) => (
           <s.Award key={index}>
-            {getBadge(awardObj.badge)}
-            <s.AwardName>{awardObj.award}</s.AwardName>
-            <s.Agency>{awardObj.certifyingAgency}</s.Agency>
+            {getBadge(awardObj.thumbnail)}
+            <s.AwardName>{awardObj.title}</s.AwardName>
+            <s.Agency>{awardObj.publisher}</s.Agency>
           </s.Award>
         ))}
         <s.Uncertifiedaward>
-          {data.menu.performance.certifiedaward.map((awardObj, index) => (
-            <s.Li key={awardObj.award + index}>{awardObj.award}</s.Li>
+          {achievement.map((awardObj, index) => (
+            <s.Li key={index + awardObj.title}>{awardObj.title}</s.Li>
           ))}
         </s.Uncertifiedaward>
       </s.AwardBox>
-      {data.menu.performance.news && <News data={data.menu.performance.news} projectName={data.projectname} />}
+      {news.length && <News data={news} projectName={projectInfo.title} />}
     </s.Section>
   );
 }

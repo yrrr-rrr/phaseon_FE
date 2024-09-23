@@ -1,7 +1,7 @@
-import { NewsItem } from '@/interface';
+import { AccomplishmentObj } from '@/interface';
 import * as s from '@/style/projectDetail/NewsStyle';
 
-export default function News({ data, projectName }: { data: NewsItem[]; projectName: string }) {
+export default function News({ data, projectName }: { data: AccomplishmentObj[]; projectName: string }) {
   return (
     <s.PaddingBox>
       <s.TitleBox>
@@ -15,10 +15,10 @@ export default function News({ data, projectName }: { data: NewsItem[]; projectN
             window.open(newsObj.link);
           }}
         >
-          <s.NewsImg src={newsObj.img} alt="" />
+          <s.NewsImg src={newsObj.thumbnail} alt="" />
           <s.NewsTextBox>
             <s.NewsTitle>{newsObj.title}</s.NewsTitle>
-            <s.NewsContent>{newsObj.content}</s.NewsContent>
+            <s.NewsContent>{newsObj.description}</s.NewsContent>
           </s.NewsTextBox>
         </s.NewsBox>
       ))}

@@ -1,34 +1,47 @@
 import { useContext } from 'react';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import * as s from '@/style/projectDetail/IntroductionStyle';
-import { Icon } from '@/components/common/Icon';
 
 export default function Introduction() {
-  const { data } = useContext(ProjectDetailContext);
+  const { memberInfo } = useContext(ProjectDetailContext);
+
+  function getIcon(platform: string, key: string) {
+    switch (platform) {
+      case 'GITHUB':
+        return <s.SvgIcon key={key} name="GITHUB" width={24} height={24} fill="black" />;
+        break;
+      case 'LINKEDIN':
+        return <s.SvgIcon key={key} name="LINKEDINCOLOR" />;
+        break;
+      case 'TWITTER':
+        return <s.SvgIcon key={key} name="TWITTER" width={24} height={24} fill="#00acee" />;
+        break;
+      case 'FACEBOOK':
+        return <s.SvgIcon key={key} name="FACEBOOKCOLOR" />;
+        break;
+      case 'INSTARGRAM':
+        return <s.SvgIcon key={key} name="INSTARGRAMCOLOR" />;
+        break;
+      case 'YOUTUBE':
+        return <s.SvgIcon key={key} name="YOUTUBECOLOR" />;
+        return;
+      case 'BLOG':
+        return <s.SvgIcon key={key} name="BLOGCOLOR" />;
+      default:
+        return <s.SvgIcon key={key} name="OTHER" width={24} height={24} fill="black" />;
+    }
+  }
+
   return (
     <s.Section>
-      {data.menu.introduction.members.map((memberObj, index) => (
+      {memberInfo.users.map((memberObj, index) => (
         <s.Profile key={index}>
-          {memberObj.img == null ? (
-            <s.PersonSvg name="DefaultUserImg" width={56} height={56} />
-          ) : (
-            <s.Img src={`/public/${memberObj.img}`} alt="" />
-          )}
-          <s.Name>{memberObj.name}</s.Name>
-          <s.Role>{memberObj.role}</s.Role>
+          <s.Img src={`/public/${memberObj.userPicture}`} alt="" />
+          <s.Name>{memberObj.username}</s.Name>
+          <s.Role>{memberObj.userRole}</s.Role>
           <s.LinkBox>
-            {memberObj.profilelink.map((links, memberIndex) => {
-              if (links.icon === 'instargram') {
-                return (
-                  <Icon
-                    name="Instargram"
-                    key={links.link + memberIndex}
-                    onClick={() => {
-                      window.open(links.link);
-                    }}
-                  />
-                );
-              }
+            {memberObj.links.map((linkObj) => {
+              return getIcon(linkObj.linkType, linkObj.url);
             })}
           </s.LinkBox>
         </s.Profile>

@@ -12,8 +12,8 @@ export default function StarButton({
   height: number;
   children?: React.ReactNode;
 }) {
-  const { data, updateData } = useContext(ProjectDetailContext);
-  const [isLiked, setIsLiked] = useState(data.floatmenu.isLiked);
+  const { projectInfo, updateProjectInfo } = useContext(ProjectDetailContext);
+  const [isLiked, setIsLiked] = useState(projectInfo.isLiked);
   return (
     <s.Button
       $width={width}
@@ -23,19 +23,19 @@ export default function StarButton({
       $type="star"
       onClick={() => {
         setIsLiked((prev) => !prev);
-        updateData((update) => {
+        updateProjectInfo((update) => {
           if (isLiked) {
-            update.star--;
+            update.likeCount--;
           } else {
-            update.star++;
+            update.likeCount++;
           }
-          update.floatmenu.isLiked = isLiked;
+          update.isLiked = isLiked;
         });
       }}
     >
       {isLiked ? <Icon name="FillStar" fill="white" /> : <Icon name="EmptyStar" />}
       {children}
-      <p>{data.star}</p>
+      <p>{projectInfo.likeCount}</p>
     </s.Button>
   );
 }

@@ -7,7 +7,7 @@ import * as s from '@/style/ZoomStyle/ZoomMediaStyle';
 import { handleDoubleClick, handleMouseDown, handleMouseMove, handleMouseUp } from '@/utils/ZoomFunction';
 
 export default function ZoomMediaBox() {
-  const { data } = useContext(ProjectDetailContext);
+  const { projectInfo } = useContext(ProjectDetailContext);
   const { startImg, setIsZoomed, isZoomed, zoomCount, setZoomCount, transform, updateTransform, setStartImg } =
     useContext(ZoomContext);
   const imgRef = useRef<HTMLImageElement | null>(null);
@@ -18,7 +18,7 @@ export default function ZoomMediaBox() {
   const [dragNextImg, updateDragNextImg] = useImmer<{ x: number; y: number }>({ x: 0, y: 0 });
   const [dragOffSet, setDragOffSet] = useState(0);
   const [dragDirection, setDragDirection] = useState('none');
-  const carouselImgs = data.menu.projectinfo.carousel;
+  const carouselImgs = projectInfo.projectMedia;
 
   useEffect(() => {
     const MouseMoveFunction = (e: MouseEvent) => {
@@ -88,15 +88,14 @@ export default function ZoomMediaBox() {
 
   return (
     <>
-      {carouselImgs[startImg].type !== 'video' && (
+      {carouselImgs[startImg].mediaType !== 'video' && (
         <s.ImgWrapper
           ref={imgWrapperRef}
-          $type={carouselImgs[startImg].type}
           onDoubleClick={() => {
             handleDoubleClick({ setIsZoomed, isZoomed, setZoomCount, updateTransform });
           }}
         >
-          <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].type}>
+          <s.Div $zoomCount={zoomCount} $type={carouselImgs[startImg].mediaType}>
             <s.LeftButton
               name="LeftButton"
               onClick={() => {
@@ -109,10 +108,9 @@ export default function ZoomMediaBox() {
               }}
             />
             <s.Img
-              src={`/public/${carouselImgs[startImg].img}`}
+              src={`/public/${carouselImgs[startImg].url}`}
               alt=""
               ref={imgRef}
-              $type={carouselImgs[startImg].type}
               $zoomCount={zoomCount}
               $drag={drag}
               $dragOffSet={dragOffSet}
@@ -146,14 +144,38 @@ export default function ZoomMediaBox() {
           </s.Div>
         </s.ImgWrapper>
       )}
-      {carouselImgs[startImg].type === 'video' && (
-        <YouTube
-          videoId={carouselImgs[0].img}
-          opts={{
-            width: '1200px',
-            height: '700px',
-          }}
-        />
+      {carouselImgs[startImg].mediaType === 'video' && (
+        <s.Div $zoomCount={1} $type="row">
+          <s.LeftButton
+            name="LeftButton"
+            onClick={() => {
+              setStartImg((prev) => {
+                if (prev === 0) {
+                  return carouselImgs.length - 1;
+                }
+                return prev - 1;
+              });
+            }}
+          />
+          <YouTube
+            videoId={carouselImgs[0].url}
+            opts={{
+              width: '1200px',
+              height: '700px',
+            }}
+          />{' '}
+          <s.RightButton
+            name="RightButton"
+            onClick={() => {
+              setStartImg((prev) => {
+                if (prev === carouselImgs.length - 1) {
+                  return 0;
+                }
+                return prev + 1;
+              });
+            }}
+          />
+        </s.Div>
       )}
     </>
   );

@@ -1,25 +1,32 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { ProjectDetailContext } from '@/context/ProjectDetailContext';
 import * as s from '@/style/projectDetail/ReleaseStyle';
+import { ReleaseType } from '@/interface';
+import { Updater } from 'use-immer';
 
 export default function Release() {
-  const { data } = useContext(ProjectDetailContext);
+  const { releaseInfo, updateReleaseInfo } = useContext(ProjectDetailContext);
+
+  useEffect(() => {
+    getRelease(updateReleaseInfo);
+  }, [updateReleaseInfo]);
+
   return (
     <s.Section>
-      {data.menu.release.releaseversion.map((releaseObj, index) => (
-        <s.ReleaseBox key={index}>
-          <s.Title>{`Release ${releaseObj.version}`}</s.Title>
-          <s.ShortDescription>{releaseObj.date}</s.ShortDescription>
-          {releaseObj.extrafeature.map((extraFeatureObj, extraFeatureIndex) => (
-            <s.ReleaseTextBox key={extraFeatureObj.feature + extraFeatureIndex}>
-              <s.ExtraFeature>{`${extraFeatureObj.feature}기능 추가`}</s.ExtraFeature>
-              {extraFeatureObj.description.split('<br/>').map((text, textindex) => (
-                <s.Description key={text + textindex}>{text}</s.Description>
-              ))}
-            </s.ReleaseTextBox>
-          ))}
-        </s.ReleaseBox>
-      ))}
+      <s.ReleaseInformation>{releaseInfo.releases}</s.ReleaseInformation>
     </s.Section>
   );
+}
+
+async function getRelease(updateReleaseInfo: Updater<ReleaseType>) {
+  try {
+    const response = await fetch('dummy/attiRelease.json');
+    const data = await response.json();
+
+    updateReleaseInfo((draft) => {
+      Object.assign(draft, data.data);
+    });
+  } catch (e) {
+    console.log(e);
+  }
 }

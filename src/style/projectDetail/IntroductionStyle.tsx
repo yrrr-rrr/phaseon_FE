@@ -7,7 +7,6 @@ export const Section = styled.section`
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 `;
 
@@ -57,4 +56,8 @@ export const LinkBox = styled.div`
   height: 24px;
   display: flex;
   justify-content: center;
+`;
+
+export const SvgIcon = styled(Icon)`
+  cursor: pointer;
 `;

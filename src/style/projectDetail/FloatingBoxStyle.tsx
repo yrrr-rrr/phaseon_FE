@@ -148,14 +148,6 @@ export const Title = styled.p`
   letter-spacing: 0.06px;
 `;
 
-export const ReleaseDescription = styled.p`
-  color: #858588;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0.06px;
-`;
-
 export const ImgBox = styled.div`
   padding: 8px 0;
   width: 188px;
