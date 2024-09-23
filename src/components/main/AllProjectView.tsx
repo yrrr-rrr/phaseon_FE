@@ -19,26 +19,26 @@ export default function AllProjectView() {
 
   const icons = [
     'BigProjectIcon',
-    'Ai',
-    'Member',
-    'Coperation',
-    'Life',
-    'Trip',
-    'SocialEffect',
-    'Entertament',
-    'PersonalBranding',
+    'AI',
+    'SOCIAL_MEDIA',
+    'PRODUCTIVITY',
+    'HEALTH',
+    'TRAVEL',
+    'SOCIAL_EFFECT',
+    'ENTERTAINMENT',
+    'PERSONAL_BRANDING',
   ] as const;
   interface IconProps {
     name:
       | 'BigProjectIcon'
-      | 'Ai'
-      | 'Member'
-      | 'Coperation'
-      | 'Life'
-      | 'Trip'
-      | 'SocialEffect'
-      | 'Entertament'
-      | 'PersonalBranding';
+      | 'AI'
+      | 'SOCIAL_MEDIA'
+      | 'PRODUCTIVITY'
+      | 'HEALTH'
+      | 'TRAVEL'
+      | 'SOCIAL_EFFECT'
+      | 'ENTERTAINMENT'
+      | 'PERSONAL_BRANDING';
   }
   const iconWithFill = [0, 2, 3, 4, 5, 6, 8];
   const iconName = icons[currentCategory] as IconProps['name'];
