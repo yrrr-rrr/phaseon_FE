@@ -29,10 +29,6 @@ export default function Footer() {
       </s.MidSection>
       <s.BottomSection>
         <p>© 2024 지금.lab</p>
-        <div>
-          <s.Instargram name="Instargram" />
-          <s.LinkedIn name="LinkedIn" />
-        </div>
       </s.BottomSection>
     </s.Footer>
   );
