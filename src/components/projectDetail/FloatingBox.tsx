@@ -17,6 +17,18 @@ export default function FloatingBox() {
     introRef.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  const linkObj: { [key: string]: string } = {
+    GITHUB: 'GitHub',
+    LINKEDIN: '링크드인',
+    TWITTER: '트위터',
+    FACEBOOK: '페이스북',
+    INSTARGRAM: '인스타그램',
+    YOUTUBE: '유튜브',
+    BLOG: '블로그',
+    WEBSITE: '웹사이트',
+    OTHER: '그 외',
+  };
+
   return (
     <s.Section $buttonNum={projectInfo.links.length}>
       <s.ViewCategoryBox>
@@ -40,7 +52,7 @@ export default function FloatingBox() {
               height={16}
               fill="#69acff"
             />
-            <s.ButtonText>{buttonObj.type}</s.ButtonText>
+            <s.ButtonText>{linkObj[buttonObj.type] || '그 외'}</s.ButtonText>
           </s.PromotionButton>
         ))}
         <s.CoffeeChatButton>
