@@ -36,7 +36,7 @@ export default function Introduction() {
     <s.Section>
       {memberInfo.users.map((memberObj, index) => (
         <s.Profile key={index}>
-          <s.Img src={`/public/${memberObj.userPicture}`} alt="" />
+          <s.Img src={memberObj.userPicture} alt="" />
           <s.Name>{memberObj.username}</s.Name>
           <s.Role>{memberObj.userRole}</s.Role>
           <s.LinkBox>

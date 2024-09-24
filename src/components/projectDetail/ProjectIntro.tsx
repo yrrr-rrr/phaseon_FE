@@ -45,9 +45,9 @@ export default function ProjectIntro() {
 
   return (
     <s.Section ref={introRef}>
-      <s.TempBanner />
+      <s.Banner src={projectInfo.banner} alt="" />
       <s.IntroSection>
-        <s.MainImg src={`/public/png/${projectInfo.title}.png`} alt="" />
+        <s.MainImg src={projectInfo.thumbnail} alt="" />
         <s.ProjectName>{projectInfo.title}</s.ProjectName>
         <s.ProjectBrief>{projectInfo.summary}</s.ProjectBrief>
         <s.Description>{projectInfo.shortDescription}</s.Description>

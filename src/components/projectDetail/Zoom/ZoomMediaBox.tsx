@@ -108,7 +108,7 @@ export default function ZoomMediaBox() {
               }}
             />
             <s.Img
-              src={`/public/${carouselImgs[startImg].url}`}
+              src={carouselImgs[startImg].url}
               alt=""
               ref={imgRef}
               $zoomCount={zoomCount}
@@ -158,7 +158,7 @@ export default function ZoomMediaBox() {
             }}
           />
           <YouTube
-            videoId={carouselImgs[0].url}
+            videoId={carouselImgs[startImg].url}
             opts={{
               width: '1200px',
               height: '700px',

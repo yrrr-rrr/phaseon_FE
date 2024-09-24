@@ -65,7 +65,7 @@ export default function Carousel() {
             return (
               <s.CarouselSlide key={carouselObj.url + index}>
                 <s.Img
-                  src={`/public/${carouselObj.url}`}
+                  src={carouselObj.url}
                   alt=""
                   $type={imgDirection}
                   onClick={() => {

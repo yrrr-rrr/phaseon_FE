@@ -78,7 +78,7 @@ export default function AllProjectSlider() {
                 startScroll(emblaApi);
               }}
             >
-              <s.Img src={`/public/${dataObj.thumbnail}`} alt="" />
+              <s.Img src={dataObj.thumbnail} alt="" />
               <s.ProjectName>{dataObj.title}</s.ProjectName>
               <s.Description>{dataObj.summary}</s.Description>
             </s.CarouselSlide>
