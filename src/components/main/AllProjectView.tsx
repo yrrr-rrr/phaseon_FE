@@ -9,7 +9,7 @@ import { getStroke } from '@/utils/getStroke';
 import { getFill } from '@/utils/getFill';
 
 export default function AllProjectView() {
-  const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
+  const { project, updateProject, currentCategory, category } = useContext(MainContext);
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(-1);
   const [sortOption, setSortOption] = useState('updatedAt');
@@ -85,14 +85,13 @@ export default function AllProjectView() {
 
   useEffect(() => {
     setPage(-1);
-    setIsSorted(false);
     isFetching.current = false;
     updateProject((draft) => {
       draft.data.totalMembers = 0;
       draft.data.totalProjects = 0;
       draft.data.projects = [];
     });
-  }, [currentCategory, setIsSorted, updateProject]);
+  }, [currentCategory, updateProject]);
 
   return (
     <s.Section>
@@ -120,7 +119,6 @@ export default function AllProjectView() {
               $buttonName="recently"
               onClick={() => {
                 setSortOption('updatedAt');
-                setIsSorted(false);
               }}
             >
               최신
@@ -130,7 +128,6 @@ export default function AllProjectView() {
               $buttonName="popularity"
               onClick={() => {
                 setSortOption('likeCount&sort=viewCount');
-                setIsSorted(true);
               }}
             >
               인기

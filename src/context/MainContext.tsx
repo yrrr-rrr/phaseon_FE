@@ -5,8 +5,6 @@ import { MainCategoryType, ProjectGalleryData } from '@/interface';
 interface ContextType {
   currentCategory: number;
   setCurrentCategory: React.Dispatch<SetStateAction<number>>;
-  isSorted: boolean;
-  setIsSorted: React.Dispatch<SetStateAction<boolean>>;
   project: ProjectGalleryData;
   updateProject: Updater<ProjectGalleryData>;
   category: MainCategoryType;
@@ -15,8 +13,6 @@ interface ContextType {
 export const MainContext = createContext<ContextType>({
   currentCategory: 0,
   setCurrentCategory: () => {},
-  isSorted: false,
-  setIsSorted: () => {},
   project: {
     data: {
       projects: [
@@ -47,7 +43,6 @@ export const MainContext = createContext<ContextType>({
 
 export function MainProvider({ children }: { children: React.ReactNode }) {
   const [currentCategory, setCurrentCategory] = useState(0);
-  const [isSorted, setIsSorted] = useState(false);
   const category = useMemo(
     () => ({
       categorytext: [
@@ -100,13 +95,11 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
     () => ({
       currentCategory,
       setCurrentCategory,
-      isSorted,
-      setIsSorted,
       project,
       updateProject,
       category,
     }),
-    [currentCategory, isSorted, project, updateProject, category],
+    [currentCategory, project, updateProject, category],
   );
 
   return <MainContext.Provider value={value}>{children}</MainContext.Provider>;
