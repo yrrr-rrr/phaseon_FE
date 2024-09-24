@@ -12,7 +12,7 @@ export default function NotificationButton({
   height: number;
   children?: React.ReactNode;
 }) {
-  const { data, updateData } = useContext(ProjectDetailContext);
+  const { data, updateData, setShowModal } = useContext(ProjectDetailContext);
   const [isNotified, setIsNotified] = useState(data.floatmenu.isNotified);
 
   return (
@@ -23,6 +23,9 @@ export default function NotificationButton({
       $color="#69acff"
       $type="notification"
       onClick={() => {
+        setShowModal(true);
+        return;
+        // 모달창 사라지면 다시 활성화 예정
         setIsNotified((prev) => !prev);
         updateData((update) => {
           if (isNotified) {

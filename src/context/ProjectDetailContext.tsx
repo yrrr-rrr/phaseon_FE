@@ -1,4 +1,4 @@
-import { createContext, SetStateAction, useMemo, useState } from 'react';
+import React, { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
 import { DetailDataType } from '@/interface';
 
@@ -7,6 +7,7 @@ interface ContextType {
   updateData: Updater<DetailDataType>;
   showShare: boolean;
   setShowShare: React.Dispatch<SetStateAction<boolean>>;
+  setShowModal: React.Dispatch<SetStateAction<boolean>>;
 }
 
 const initialDetailData: DetailDataType = {
@@ -56,11 +57,21 @@ export const ProjectDetailContext = createContext<ContextType>({
   updateData: () => {},
   showShare: false,
   setShowShare: () => {},
+  setShowModal: () => {},
 });
 
-export function ProjectDetailProvider({ children }: { children: React.ReactNode }) {
+export function ProjectDetailProvider({
+  children,
+  setShowModal,
+}: {
+  children: React.ReactNode;
+  setShowModal: React.Dispatch<SetStateAction<boolean>>;
+}) {
   const [data, updateData] = useImmer<DetailDataType>(initialDetailData);
   const [showShare, setShowShare] = useState(false);
-  const value = useMemo(() => ({ data, updateData, showShare, setShowShare }), [data, showShare, updateData]);
+  const value = useMemo(
+    () => ({ data, updateData, showShare, setShowShare, setShowModal }),
+    [data, showShare, updateData, setShowModal],
+  );
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;
 }
