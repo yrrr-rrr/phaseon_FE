@@ -13,7 +13,7 @@ export default function ComingSoonModal({
   usePreventScroll(showModal);
 
   return (
-    <s.Div $scroll={window.pageYOffset}>
+    <s.Div $scroll={window.scrollY}>
       <s.ModalBox>
         <s.Close
           name="Close"
