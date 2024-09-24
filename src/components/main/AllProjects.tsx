@@ -11,7 +11,7 @@ export default function AllProjects() {
     <s.ProjectContainer>
       {project &&
         project.data.projects.map((projectObj, idx) => {
-          const param = projectObj.title.toLowerCase().replace(' ', '_');
+          const param = projectObj.title.toLowerCase().replace(' ', '_').replace('&', 'and');
           return (
             <s.ProjectBox
               key={idx}
