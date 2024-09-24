@@ -181,8 +181,8 @@ async function getProjects(
     updateProject((draft) => {
       if (!showMoreButton && data.data.projects.length) {
         draft.data.projects = [...draft.data.projects, ...data.data.projects];
-        draft.data.totalProjects = data.data.allproject;
-        draft.data.totalMembers = data.data.allpeople;
+        draft.data.totalProjects = data.data.totalProjects;
+        draft.data.totalMembers = data.data.totalMembers;
       }
     });
   } catch (err) {
