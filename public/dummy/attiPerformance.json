@@ -3,36 +3,33 @@
   "data": {
     "accomplishments": [
       {
-        "title": "Accomplishment 4",
-        "description": "Accomplishment 4 Description",
-        "publisher": "Google",
-        "thumbnail": "Top3",
-        "link": "https://www.google.com",
-        "type": "REWARD"
-      },
-      {
+        "id": "85a0fda6-9ef2-4ac6-847a-033e68d40bdb",
         "title": "Accomplishment 1",
-        "description": "Accomplishment 1 Description",
         "publisher": "Google",
-        "thumbnail": "Top10",
-        "link": "https://www.google.com",
-        "type": "ACHIEVEMENT"
-      },
+        "thumbnail": "/images/accomplishment1.jpg"
+      }
+    ],
+    "certifications": [
       {
+        "id": "a82636af-e5a5-4314-ad1e-8cfe79793392",
+        "title": "CERTIFICATE 3",
+        "thumbnail": "/images/accomplishment3.jpg"
+      }
+    ],
+    "news": [
+      {
+        "id": "bb179aab-5b40-4300-b50f-4402846f50d5",
         "title": "NEWS 2",
         "description": "Accomplishment 2 Description",
-        "publisher": "Google",
-        "thumbnail": "/images/accomplishment2.jpg",
         "link": "https://www.google.com",
-        "type": "NEWS"
+        "thumbnail": "/images/accomplishment2.jpg"
       },
       {
-        "title": "CERTIFICATE 3",
-        "description": "Accomplishment 3 Description",
-        "publisher": "Google",
-        "thumbnail": "Top3",
+        "id": "498c35fa-84b4-435a-b8e4-91f770577bec",
+        "title": "news 4",
+        "description": "Accomplishment 4 Description",
         "link": "https://www.google.com",
-        "type": "CERTIFICATE"
+        "thumbnail": "/images/accomplishment4.jpg"
       }
     ]
   },
