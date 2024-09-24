@@ -102,7 +102,7 @@ export interface Link {
 }
 
 export interface ProjectInfo {
-  id: number;
+  id: string;
   title: string;
   summary: string;
   shortDescription: string;

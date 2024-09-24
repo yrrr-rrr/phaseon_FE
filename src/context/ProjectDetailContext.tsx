@@ -16,7 +16,7 @@ interface ContextType {
 }
 
 const initialProjectInfo: ProjectInfo = {
-  id: 0,
+  id: '',
   title: '',
   summary: '',
   shortDescription: '',
