@@ -1,12 +1,12 @@
-import { AccomplishmentObj } from '@/interface';
+import { NewsObj } from '@/interface';
 import * as s from '@/style/projectDetail/NewsStyle';
 
-export default function News({ data, projectName }: { data: AccomplishmentObj[]; projectName: string }) {
+export default function News({ data }: { data: NewsObj[] }) {
   return (
     <s.PaddingBox>
       <s.TitleBox>
-        <s.Title>News</s.Title>
-        <s.ShortDescription>{`${projectName}의 보도자료`}</s.ShortDescription>
+        <s.Title>보도 자료</s.Title>
+        <s.ShortDescription>관련 기사 모음</s.ShortDescription>
       </s.TitleBox>
       {data.map((newsObj, index) => (
         <s.NewsBox

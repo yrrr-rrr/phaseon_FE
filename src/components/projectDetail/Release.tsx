@@ -11,11 +11,16 @@ export default function Release() {
 
   useEffect(() => {
     getRelease(updateReleaseInfo, id);
-  }, [updateReleaseInfo, id]);
+  }, [id, updateReleaseInfo]);
 
   return (
     <s.Section>
-      <s.ReleaseInformation>{releaseInfo.releases}</s.ReleaseInformation>
+      {releaseInfo.data.map((releaseObj, index) => (
+        <s.ReleaseBox key={index}>
+          <s.Title>{releaseObj.title}</s.Title>
+          <s.ReleaseInformation>{releaseObj.description}</s.ReleaseInformation>
+        </s.ReleaseBox>
+      ))}
     </s.Section>
   );
 }
@@ -25,9 +30,8 @@ async function getRelease(updateReleaseInfo: Updater<ReleaseType>, id: string) {
     const response = await fetch(`https://name.store:8443/api/project/${id}/release`);
     // const response = await fetch('dummy/attiRelease.json');
     const data = await response.json();
-
     updateReleaseInfo((draft) => {
-      Object.assign(draft, data.data);
+      Object.assign(draft, data);
     });
   } catch (e) {
     console.log(e);

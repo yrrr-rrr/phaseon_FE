@@ -11,7 +11,6 @@ import * as icons from '@/components/icon';
 export default function FloatingBox() {
   const { projectInfo, memberInfo, accomplishmentInfo } = useContext(ProjectDetailContext);
   const { setCurrentCategory, introRef } = useContext(CategoryContext);
-  const certification = accomplishmentInfo.accomplishments.filter((obj) => obj.type === 'CERTIFICATE');
 
   function changeCategory(category: string) {
     setCurrentCategory(category);
@@ -52,9 +51,9 @@ export default function FloatingBox() {
       <s.ImgBox>
         <s.Title>주요 성과</s.Title>
         <div>
-          {certification.map((awardObj, index) => {
+          {accomplishmentInfo.data.accomplishments.map((awardObj, index) => {
             if (index < 5) {
-              return <s.Img key={awardObj.link + index} src={awardObj.link} alt="" />;
+              return <s.Img key={awardObj.title + index} src={awardObj.thumbnail} alt="" />;
             }
           })}
         </div>

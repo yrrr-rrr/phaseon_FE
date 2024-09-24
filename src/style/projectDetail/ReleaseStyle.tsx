@@ -2,23 +2,30 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 export const Section = styled.section`
-  padding-bottom: 24px;
-  width: 780px;
+  padding: 0 20px 24px 20px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
   flex-direction: column;
 `;
 
+export const ReleaseBox = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Title = styled.h2`
+  margin-top: 24px;
+  color: #247bff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 136.4%;
+  letter-spacing: -0.427px;
+`;
+
 export const ReleaseInformation = styled(ReactMarkdown)`
-  h2 {
-    margin-top: 24px;
-    color: #247bff;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 136.4%;
-    letter-spacing: -0.427px;
-  }
   h3 {
     margin-bottom: 8px;
     color: #000;
