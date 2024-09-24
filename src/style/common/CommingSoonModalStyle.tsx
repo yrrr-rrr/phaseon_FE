@@ -1,15 +1,16 @@
 import { Icon } from '@/components/common/Icon';
 import styled from 'styled-components';
 
-export const Div = styled.div`
+export const Div = styled.div<{ $scroll: number }>`
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00000072;
   position: absolute;
-  top: 0;
+  top: ${({ $scroll }) => $scroll}px;
+  left: 0;
+  background-color: #00000072;
   z-index: 4;
 `;
 
