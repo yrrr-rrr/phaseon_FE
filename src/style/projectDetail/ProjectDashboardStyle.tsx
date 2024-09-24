@@ -8,7 +8,7 @@ export const Section = styled.section`
 
 export const CategoryBox = styled.section`
   padding: 0 20px;
-  width: 780px;
+  width: 840px;
   height: 34px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.7);

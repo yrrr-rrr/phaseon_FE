@@ -13,7 +13,7 @@ export default function ActionPanel() {
       <s.ShortDescription>{projectInfo.summary}</s.ShortDescription>
       <s.ButtonBox>
         <StarButton width={108} height={40}>
-          좋아요
+          빛내기
         </StarButton>
         <NotificationButton width={108} height={40}>
           알림

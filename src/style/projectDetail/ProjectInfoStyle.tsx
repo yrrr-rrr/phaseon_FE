@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 export const Section = styled.section`
   padding: 32px 0;
-  width: 780px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
@@ -13,7 +13,6 @@ export const Section = styled.section`
 export const Carousel = styled.section`
   width: 780px;
   height: 218px;
-  background-color: violet;
 `;
 
 export const ProjectInformation = styled(ReactMarkdown)`

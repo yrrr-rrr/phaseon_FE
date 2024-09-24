@@ -51,6 +51,7 @@ export default function AllProjects() {
             </s.ProjectBox>
           );
         })}
+
     </s.ProjectContainer>
   );
 }

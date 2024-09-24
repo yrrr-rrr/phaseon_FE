@@ -1,4 +1,5 @@
 export { ReactComponent as BigProjectIcon } from '@/assets/svg/BigProjectIcon.svg';
+export { ReactComponent as Check } from '@/assets/svg/Check.svg';
 export { ReactComponent as Close } from '@/assets/svg/Close.svg';
 export { ReactComponent as Coffee } from '@/assets/svg/Coffee.svg';
 export { ReactComponent as DefaultUserImg } from '@/assets/svg/DefaultUserImg.svg';
@@ -10,6 +11,7 @@ export { ReactComponent as FillStar } from '@/assets/svg/FillStar.svg';
 export { ReactComponent as LeftButton } from '@/assets/svg/LeftButton.svg';
 export { ReactComponent as Loading } from '@/assets/svg/Loading.svg';
 export { ReactComponent as Logo } from '@/assets/svg/Logo.svg';
+export { ReactComponent as LogoIcon } from '@/assets/svg/LogoIcon.svg';
 export { ReactComponent as MainBanner } from '@/assets/svg/MainBanner.svg';
 export { ReactComponent as Medal } from '@/assets/svg/Medal.svg';
 export { ReactComponent as Member } from '@/assets/svg/Member.svg';

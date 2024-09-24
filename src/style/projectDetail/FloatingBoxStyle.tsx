@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section<{ $buttonNum: number }>`
+  margin-bottom: 470px;
   padding: 16px 16px 8px 16px;
   width: 220px;
-  height: calc(475px + ${({ $buttonNum }) => $buttonNum * 32}px);
+  height: calc(406px + ${({ $buttonNum }) => $buttonNum * 36}px);
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow:
@@ -129,15 +130,6 @@ export const CoffeeChatText = styled.p`
   font-weight: 600;
   line-height: 138.5%;
   letter-spacing: 0.252px;
-`;
-
-export const ReleaseBox = styled.div`
-  padding: 8px 0;
-  width: 188px;
-  border-bottom: 1px solid #cfebff7f;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 `;
 
 export const Title = styled.p`

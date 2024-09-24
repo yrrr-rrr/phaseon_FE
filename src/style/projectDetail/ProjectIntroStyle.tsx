@@ -27,7 +27,7 @@ export const IntroSection = styled.section`
 export const MainImg = styled.img`
   margin-bottom: 24px;
   width: 160px;
-  border-radius: 4px;
+  border-radius: 12px;
   box-shadow:
     0px 5.405px 21.62px 0px rgba(0, 0, 0, 0.12),
     0px 2.702px 10.81px 0px rgba(0, 0, 0, 0.08),

@@ -2,19 +2,20 @@ import styled from 'styled-components';
 import { Icon } from '@/components/common/Icon';
 
 export const Section = styled.section`
-  padding: 32px 20px;
-  width: 780px;
+  padding: 24px 20px;
+  width: 840px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(207, 235, 255, 0.9);
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 `;
 
 export const Profile = styled.div`
   padding: 16px 0;
-  margin-bottom: 16px;
-  width: 178px;
-  height: auto;
+  margin-bottom: 8px;
+  width: 188px;
+  height: 148px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +35,7 @@ export const PersonSvg = styled(Icon)`
 export const Name = styled.p`
   margin-bottom: 4px;
   color: #171719;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
@@ -42,7 +43,7 @@ export const Name = styled.p`
 `;
 
 export const Role = styled.div`
-  color: rgba(55, 56, 60, 0.61);
+  color: #858588;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -56,6 +57,7 @@ export const LinkBox = styled.div`
   height: 24px;
   display: flex;
   justify-content: center;
+  gap: 8px;
 `;
 
 export const SvgIcon = styled(Icon)`
