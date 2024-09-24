@@ -56,21 +56,44 @@ export interface Member {
   ];
 }
 
+export interface ReleaseObj {
+  id: string;
+  title: string;
+  description: string;
+  createdAt: string;
+}
+
 export interface ReleaseType {
-  releases: string;
+  data: ReleaseObj[];
 }
 
 export interface AccomplishmentObj {
+  id: string;
   title: string;
-  description: string;
   publisher: string;
   thumbnail: string;
+}
+
+export interface CertificationObj {
+  id: string;
+  title: string;
+  thumbnail: string;
+}
+
+export interface NewsObj {
+  id: string;
+  title: string;
+  description: string;
   link: string;
-  type: string;
+  thumbnail: string;
 }
 
 export interface Accomplishment {
-  accomplishments: AccomplishmentObj[];
+  data: {
+    accomplishments: AccomplishmentObj[];
+    certifications: CertificationObj[];
+    news: NewsObj[];
+  };
 }
 
 export interface Link {
