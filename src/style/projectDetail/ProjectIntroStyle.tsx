@@ -13,13 +13,6 @@ export const Banner = styled.img`
   position: absolute;
 `;
 
-export const TempBanner = styled.div`
-  width: 100%;
-  height: 160px;
-  position: absolute;
-  background-color: #f7f7f8;
-`;
-
 export const IntroSection = styled.section`
   margin-top: 80px;
   padding: 0 20px;
