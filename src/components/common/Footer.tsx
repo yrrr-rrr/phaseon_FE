@@ -12,8 +12,20 @@ export default function Footer() {
         <s.FooterMenu>
           <s.Menu>제안하기</s.Menu>
           <s.Menu>서비스 소개</s.Menu>
-          <s.Menu>이용약관</s.Menu>
-          <s.Menu>개인정보 처리방침</s.Menu>
+          <s.Menu
+            onClick={() => {
+              window.open('https://fortune-warrior-5a1.notion.site/ce8c573989b1498c8d3247c4cdb75d32?pvs=4');
+            }}
+          >
+            이용약관
+          </s.Menu>
+          <s.Menu
+            onClick={() => {
+              window.open('https://fortune-warrior-5a1.notion.site/667ab06ca2244221accc43623eea0718?pvs=4');
+            }}
+          >
+            개인정보 처리방침
+          </s.Menu>
         </s.FooterMenu>
       </s.TopSection>
       <s.MidSection>
