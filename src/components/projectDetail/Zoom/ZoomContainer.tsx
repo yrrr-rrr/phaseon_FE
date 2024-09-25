@@ -6,9 +6,9 @@ import ZoomMediaBox from '@/components/projectDetail/Zoom/ZoomMediaBox';
 import * as s from '@/style/ZoomStyle/ZoomContainerStyle';
 
 export default function ZoomContainer() {
-  const { data } = useContext(ProjectDetailContext);
+  const { projectInfo } = useContext(ProjectDetailContext);
   const { showZoomComponent, setStartImg, startImg } = useContext(ZoomContext);
-  const carouselImgs = data.menu.projectinfo.carousel;
+  const carouselImgs = projectInfo.projectMedia;
 
   return (
     <s.Section $show={showZoomComponent}>

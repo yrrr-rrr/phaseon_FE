@@ -12,8 +12,8 @@ export default function NotificationButton({
   height: number;
   children?: React.ReactNode;
 }) {
-  const { data, updateData } = useContext(ProjectDetailContext);
-  const [isNotified, setIsNotified] = useState(data.floatmenu.isNotified);
+  const { projectInfo, updateProjectInfo } = useContext(ProjectDetailContext);
+  const [isNotified, setIsNotified] = useState(projectInfo.isNotified);
 
   return (
     <s.Button
@@ -24,19 +24,19 @@ export default function NotificationButton({
       $type="notification"
       onClick={() => {
         setIsNotified((prev) => !prev);
-        updateData((update) => {
+        updateProjectInfo((update) => {
           if (isNotified) {
-            update.notification--;
+            update.notificationCount--;
           } else {
-            update.notification++;
+            update.notificationCount++;
           }
-          update.floatmenu.isNotified = isNotified;
+          update.isNotified = isNotified;
         });
       }}
     >
       {isNotified ? <Icon name="FillNotification" /> : <Icon name="EmptyNotification" />}
       {children}
-      <p>{data.notification}</p>
+      <p>{projectInfo.notificationCount}</p>
     </s.Button>
   );
 }

@@ -1,66 +1,151 @@
 import { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
-import { DetailDataType } from '@/interface';
+import { Accomplishment, Member, ProjectInfo, ReleaseType } from '@/interface';
 
 interface ContextType {
-  data: DetailDataType;
-  updateData: Updater<DetailDataType>;
+  projectInfo: ProjectInfo;
+  updateProjectInfo: Updater<ProjectInfo>;
+  releaseInfo: ReleaseType;
+  updateReleaseInfo: Updater<ReleaseType>;
+  accomplishmentInfo: Accomplishment;
+  updateAccomplishmentInfo: Updater<Accomplishment>;
+  memberInfo: Member;
+  updateMemberInfo: Updater<Member>;
   showShare: boolean;
   setShowShare: React.Dispatch<SetStateAction<boolean>>;
 }
 
-const initialDetailData: DetailDataType = {
-  projectname: '',
-  star: 0,
-  notification: 0,
-  category: [''],
-  floatmenu: {
-    view: 0,
-    phase: '',
-    buttons: [],
-    releasenote: '',
-    isLiked: false,
-    isNotified: false,
-  },
-  intro: {
-    banner: '',
-    projectimg: '',
-    projectbrief: '',
-    description: '',
-  },
-  menu: {
-    projectinfo: {
-      carousel: [],
-      mainfeatures: {
-        shortdescription: '',
-        feature: [],
+const initialProjectInfo: ProjectInfo = {
+  id: '',
+  title: '',
+  summary: '',
+  shortDescription: '',
+  description: '',
+  thumbnail: '',
+  banner: '',
+  categories: [''],
+  status: '',
+  projectMedia: [
+    {
+      url: '',
+      mediaType: '',
+      order: 0,
+    },
+  ],
+  links: [
+    {
+      link: '',
+      type: '',
+    },
+  ],
+  viewCount: 0,
+  likeCount: 0,
+  notificationCount: 0,
+  isLiked: false,
+  isNotified: false,
+  createdAt: 0,
+  updatedAt: 0,
+};
+
+const initialReleaseInfo: ReleaseType = {
+  data: [
+    {
+      id: '',
+      title: '',
+      description: '',
+      createdAt: '',
+    },
+  ],
+};
+
+const initialAccomplishmentInfo: Accomplishment = {
+  data: {
+    accomplishments: [
+      {
+        id: '',
+        title: '',
+        publisher: '',
+        thumbnail: '',
       },
-      techstack: [],
-    },
-    release: {
-      releaseversion: [],
-    },
-    performance: {
-      certifiedaward: [],
-      accomplishment: [],
-      news: [],
-    },
-    introduction: {
-      members: [],
-    },
+    ],
+    certifications: [
+      {
+        id: '',
+        title: '',
+        thumbnail: '',
+      },
+    ],
+    news: [
+      {
+        id: '',
+        title: '',
+        description: '',
+        link: '',
+        thumbnail: '',
+      },
+    ],
   },
 };
 
+const initialMember: Member = {
+  users: [
+    {
+      userPicture: '',
+      username: '',
+      userRole: '',
+      links: [
+        {
+          linkType: '',
+          url: '',
+        },
+      ],
+    },
+  ],
+};
+
 export const ProjectDetailContext = createContext<ContextType>({
-  data: initialDetailData,
-  updateData: () => {},
+  projectInfo: initialProjectInfo,
+  updateProjectInfo: () => {},
+  releaseInfo: initialReleaseInfo,
+  updateReleaseInfo: () => {},
+  accomplishmentInfo: initialAccomplishmentInfo,
+  updateAccomplishmentInfo: () => {},
+  memberInfo: initialMember,
+  updateMemberInfo: () => {},
   showShare: false,
   setShowShare: () => {},
 });
 
 export function ProjectDetailProvider({ children }: { children: React.ReactNode }) {
-  const [data, updateData] = useImmer<DetailDataType>(initialDetailData);
+  const [projectInfo, updateProjectInfo] = useImmer(initialProjectInfo);
+  const [releaseInfo, updateReleaseInfo] = useImmer(initialReleaseInfo);
+  const [accomplishmentInfo, updateAccomplishmentInfo] = useImmer(initialAccomplishmentInfo);
+  const [memberInfo, updateMemberInfo] = useImmer(initialMember);
   const [showShare, setShowShare] = useState(false);
-  const value = useMemo(() => ({ data, updateData, showShare, setShowShare }), [data, showShare, updateData]);
+  const value = useMemo(
+    () => ({
+      projectInfo,
+      updateProjectInfo,
+      releaseInfo,
+      updateReleaseInfo,
+      accomplishmentInfo,
+      updateAccomplishmentInfo,
+      memberInfo,
+      updateMemberInfo,
+      showShare,
+      setShowShare,
+    }),
+    [
+      projectInfo,
+      updateProjectInfo,
+      releaseInfo,
+      updateReleaseInfo,
+      accomplishmentInfo,
+      updateAccomplishmentInfo,
+      memberInfo,
+      updateMemberInfo,
+      showShare,
+    ],
+  );
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;
 }

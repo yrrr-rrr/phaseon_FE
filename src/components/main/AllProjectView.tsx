@@ -9,36 +9,36 @@ import { getStroke } from '@/utils/getStroke';
 import { getFill } from '@/utils/getFill';
 
 export default function AllProjectView() {
-  const { setIsSorted, project, updateProject, currentCategory, category } = useContext(MainContext);
+  const { project, updateProject, currentCategory, category } = useContext(MainContext);
   const [isLoading, setIsLoading] = useState(false);
-  const [page, setPage] = useState(0);
-  const [sortOption, setSortOption] = useState('recently');
+  const [page, setPage] = useState(-1);
+  const [sortOption, setSortOption] = useState('updatedAt');
   const [showMoreButton, setShowMoreButton] = useState(false);
   const [isPageUpdate, setIsPageUpdate] = useState(false);
   const isFetching = useRef<boolean>(false);
 
   const icons = [
     'BigProjectIcon',
-    'Ai',
-    'Member',
-    'Coperation',
-    'Life',
-    'Trip',
-    'SocialEffect',
-    'Entertament',
-    'PersonalBranding',
+    'AI',
+    'SOCIAL_MEDIA',
+    'PRODUCTIVITY',
+    'HEALTH',
+    'TRAVEL',
+    'SOCIAL_EFFECT',
+    'ENTERTAINMENT',
+    'PERSONAL_BRANDING',
   ] as const;
   interface IconProps {
     name:
       | 'BigProjectIcon'
-      | 'Ai'
-      | 'Member'
-      | 'Coperation'
-      | 'Life'
-      | 'Trip'
-      | 'SocialEffect'
-      | 'Entertament'
-      | 'PersonalBranding';
+      | 'AI'
+      | 'SOCIAL_MEDIA'
+      | 'PRODUCTIVITY'
+      | 'HEALTH'
+      | 'TRAVEL'
+      | 'SOCIAL_EFFECT'
+      | 'ENTERTAINMENT'
+      | 'PERSONAL_BRANDING';
   }
   const iconWithFill = [0, 2, 3, 4, 5, 6, 8];
   const iconName = icons[currentCategory] as IconProps['name'];
@@ -69,21 +69,29 @@ export default function AllProjectView() {
     if (page % 10 === 0 && page !== 0) {
       setShowMoreButton(true);
     }
-    if (page === 0 && !isFetching.current) return;
+    if (page === -1 && !isFetching.current) return;
 
-    getProjects(setIsLoading, updateProject, showMoreButton, isFetching, setIsPageUpdate);
-  }, [page, updateProject, showMoreButton]);
+    getProjects(
+      setIsLoading,
+      updateProject,
+      showMoreButton,
+      isFetching,
+      setIsPageUpdate,
+      category.categoryicon[currentCategory],
+      page,
+      sortOption,
+    );
+  }, [page, updateProject, showMoreButton, currentCategory, category.categoryicon, sortOption]);
 
   useEffect(() => {
-    setPage(0);
-    setIsSorted(false);
+    setPage(-1);
     isFetching.current = false;
     updateProject((draft) => {
-      draft.data.allpeople = 0;
-      draft.data.allproject = 0;
+      draft.data.totalMembers = 0;
+      draft.data.totalProjects = 0;
       draft.data.projects = [];
     });
-  }, [currentCategory, setIsSorted, updateProject]);
+  }, [currentCategory, updateProject]);
 
   return (
     <s.Section>
@@ -100,7 +108,7 @@ export default function AllProjectView() {
             <p>{category.categorytext[currentCategory]}</p>
           </s.Title>
           <s.SubTitle>
-            <b>{project.data.allproject}</b>개의 프로젝트 ・ <b>{project.data.allpeople}</b>명 활동 중
+            <b>{project.data.totalProjects}</b>개의 프로젝트 ・ <b>{project.data.totalMembers}</b>명 활동 중
           </s.SubTitle>
         </s.TitleBox>
         <s.SortButtonBox>
@@ -110,8 +118,7 @@ export default function AllProjectView() {
               $current={sortOption}
               $buttonName="recently"
               onClick={() => {
-                setSortOption('recently');
-                setIsSorted(false);
+                setSortOption('updatedAt');
               }}
             >
               최신
@@ -120,8 +127,7 @@ export default function AllProjectView() {
               $current={sortOption}
               $buttonName="popularity"
               onClick={() => {
-                setSortOption('popularity');
-                setIsSorted(true);
+                setSortOption('likeCount&sort=viewCount');
               }}
             >
               인기
@@ -158,17 +164,25 @@ async function getProjects(
   showMoreButton: boolean,
   isFetching: { current: boolean },
   setIsPageUpdate: React.Dispatch<SetStateAction<boolean>>,
+  currentCategory: string,
+  page: number,
+  sortOption: string,
 ) {
   setIsLoading(true);
   try {
-    // const response = await fetch(`https://name.store:8443/api/project?page=${page}`);
-    const response = await fetch('dummy/projectCollection.json');
+    let response = await fetch(`https://name.store:8443/api/project?page=${page}&sort=${sortOption}`);
+    if (currentCategory !== 'ALLPROJECT') {
+      response = await fetch(
+        `https://name.store:8443/api/projects?page=${page}&size=10&sort=${sortOption}&category=${currentCategory}`,
+      );
+    }
+    // const response = await fetch('dummy/projectCollection.json');
     const data = await response.json();
     updateProject((draft) => {
-      if (!showMoreButton) {
+      if (!showMoreButton && data.data.projects.length) {
         draft.data.projects = [...draft.data.projects, ...data.data.projects];
-        draft.data.allproject = data.data.allproject;
-        draft.data.allpeople = data.data.allpeople;
+        draft.data.totalProjects = data.data.totalProjects;
+        draft.data.totalMembers = data.data.totalMembers;
       }
     });
   } catch (err) {

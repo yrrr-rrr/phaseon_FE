@@ -4,26 +4,7 @@ import * as s from '@/style/projectDetail/PerformanceStyle';
 import News from '@/components/projectDetail/News';
 
 export default function Performance() {
-  const { data } = useContext(ProjectDetailContext);
-  function getBadge(award: string) {
-    switch (award) {
-      case 'Top3':
-        return <s.SvgIcon name="Top3" width={56} height={56} />;
-        break;
-      case 'Top10':
-        return <s.SvgIcon name="Top10" width={56} height={56} />;
-        break;
-      case 'Top50':
-        return <s.SvgIcon name="Top50" width={56} height={56} />;
-        break;
-      case 'Top100':
-        return <s.SvgIcon name="Top100" width={56} height={56} />;
-        break;
-      case 'PeopleChoice':
-        return <s.SvgIcon name="PeopleChoice" width={56} height={56} />;
-        break;
-    }
-  }
+  const { accomplishmentInfo } = useContext(ProjectDetailContext);
   return (
     <s.Section>
       <section>
@@ -31,20 +12,20 @@ export default function Performance() {
         <s.ShortDescription>프로젝트 주요 성과</s.ShortDescription>
       </section>
       <s.AwardBox>
-        {data.menu.performance.certifiedaward.map((awardObj, index) => (
+        {accomplishmentInfo.data.accomplishments.map((awardObj, index) => (
           <s.Award key={index}>
-            {getBadge(awardObj.badge)}
-            <s.AwardName>{awardObj.award}</s.AwardName>
-            <s.Agency>{awardObj.certifyingAgency}</s.Agency>
+            <img src={awardObj.thumbnail} alt="" />
+            <s.AwardName>{awardObj.title}</s.AwardName>
+            <s.Agency>{awardObj.publisher}</s.Agency>
           </s.Award>
         ))}
         <s.Uncertifiedaward>
-          {data.menu.performance.certifiedaward.map((awardObj, index) => (
-            <s.Li key={awardObj.award + index}>{awardObj.award}</s.Li>
+          {accomplishmentInfo.data.certifications.map((awardObj, index) => (
+            <s.Li key={index + awardObj.title}>{awardObj.title}</s.Li>
           ))}
         </s.Uncertifiedaward>
       </s.AwardBox>
-      {data.menu.performance.news && <News data={data.menu.performance.news} />}
+      {accomplishmentInfo.data.news.length && <News data={accomplishmentInfo.data.news} />}
     </s.Section>
   );
 }

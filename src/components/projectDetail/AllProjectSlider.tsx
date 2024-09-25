@@ -13,9 +13,23 @@ export default function AllProjectSlider() {
   const [emblaRef, emblaApi] = useEmblaCarousel(option, [AutoScroll({ speed: 1 })]);
   const [data, updateData] = useImmer<ProjectGalleryData>({
     data: {
-      allproject: 0,
-      allpeople: 0,
-      projects: [],
+      projects: [
+        {
+          id: 0,
+          thumbnail: '',
+          title: '',
+          summary: '',
+          likeCount: 0,
+          awardCount: 0,
+          memberCount: 0,
+          viewCount: 0,
+          createdAt: '',
+          category: [],
+        },
+      ],
+      totalProjects: 0,
+      totalMembers: 0,
+      category: '',
     },
   });
   const [currentImg, setCurrentImg] = useState<number>(0);
@@ -56,7 +70,7 @@ export default function AllProjectSlider() {
               key={index}
               onClick={() => {
                 if (!emblaApi) return;
-                navigate(`/${dataObj.param}`);
+                navigate(`/${dataObj.id}`);
                 window.scrollTo({
                   top: 0,
                   behavior: 'smooth',
@@ -64,9 +78,9 @@ export default function AllProjectSlider() {
                 startScroll(emblaApi);
               }}
             >
-              <s.Img src={`/public/${dataObj.img}`} alt="" />
-              <s.ProjectName>{dataObj.projectname}</s.ProjectName>
-              <s.Description>{dataObj.description}</s.Description>
+              <s.Img src={dataObj.thumbnail} alt="" />
+              <s.ProjectName>{dataObj.title}</s.ProjectName>
+              <s.Description>{dataObj.summary}</s.Description>
             </s.CarouselSlide>
           ))}
         </s.CarouselContainer>
