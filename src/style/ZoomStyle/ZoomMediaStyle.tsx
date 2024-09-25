@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Icon } from '@/components/common/Icon';
 
-export const ImgWrapper = styled.div<{ $type: string }>`
+export const ImgWrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,7 +12,15 @@ export const ImgWrapper = styled.div<{ $type: string }>`
 `;
 
 export const Div = styled.div<{ $zoomCount: number; $type: string }>`
-  width: ${({ $zoomCount, $type }) => `${$type === 'row' ? 70 * $zoomCount : 40 * $zoomCount}%`};
+  width: ${({ $zoomCount, $type }) => {
+    if ($type === 'row') {
+      return 70 * $zoomCount;
+    }
+    if ($type === 'col') {
+      return 40 * $zoomCount;
+    }
+    return 100;
+  }}%;
   height: ${({ $type }) => ($type === 'row' ? '80%' : '75%')};
   position: relative;
   display: flex;
@@ -21,7 +29,6 @@ export const Div = styled.div<{ $zoomCount: number; $type: string }>`
 `;
 
 export const Img = styled.img<{
-  $type: string;
   $zoomCount: number;
   $drag: boolean;
   $dragDirection: string;

@@ -5,8 +5,6 @@ import { MainCategoryType, ProjectGalleryData } from '@/interface';
 interface ContextType {
   currentCategory: number;
   setCurrentCategory: React.Dispatch<SetStateAction<number>>;
-  isSorted: boolean;
-  setIsSorted: React.Dispatch<SetStateAction<boolean>>;
   project: ProjectGalleryData;
   updateProject: Updater<ProjectGalleryData>;
   category: MainCategoryType;
@@ -15,13 +13,25 @@ interface ContextType {
 export const MainContext = createContext<ContextType>({
   currentCategory: 0,
   setCurrentCategory: () => {},
-  isSorted: false,
-  setIsSorted: () => {},
   project: {
     data: {
-      allproject: 0,
-      allpeople: 0,
-      projects: [],
+      projects: [
+        {
+          id: 1,
+          thumbnail: '',
+          title: '',
+          summary: '',
+          likeCount: 0,
+          awardCount: 0,
+          memberCount: 0,
+          viewCount: 0,
+          createdAt: '',
+          category: [],
+        },
+      ],
+      totalProjects: 0,
+      totalMembers: 0,
+      category: null,
     },
   },
   updateProject: () => {},
@@ -33,7 +43,6 @@ export const MainContext = createContext<ContextType>({
 
 export function MainProvider({ children }: { children: React.ReactNode }) {
   const [currentCategory, setCurrentCategory] = useState(0);
-  const [isSorted, setIsSorted] = useState(false);
   const category = useMemo(
     () => ({
       categorytext: [
@@ -48,37 +57,49 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
         '퍼스널 브랜딩',
       ],
       categoryicon: [
-        'allProject',
-        'ai',
-        'socialMedia',
-        'coperation',
-        'life',
-        'trip',
-        'socialEffect',
-        'entertament',
-        'personalbranding',
+        'ALLPROJECT',
+        'AI',
+        'SOCIAL_MEDIA',
+        'PRODUCTIVITY',
+        'HEALTH',
+        'TRAVEL',
+        'SOCIAL_EFFECT',
+        'ENTERTAINMENT',
+        'PERSONAL_BRANDING',
       ],
     }),
     [],
   );
   const [project, updateProject] = useImmer<ProjectGalleryData>({
     data: {
-      allproject: 0,
-      allpeople: 0,
-      projects: [],
+      projects: [
+        {
+          id: 1,
+          thumbnail: '',
+          title: '',
+          summary: '',
+          likeCount: 0,
+          awardCount: 0,
+          memberCount: 0,
+          viewCount: 0,
+          createdAt: '',
+          category: [],
+        },
+      ],
+      totalProjects: 0,
+      totalMembers: 0,
+      category: null,
     },
   });
   const value = useMemo(
     () => ({
       currentCategory,
       setCurrentCategory,
-      isSorted,
-      setIsSorted,
       project,
       updateProject,
       category,
     }),
-    [currentCategory, isSorted, project, updateProject, category],
+    [currentCategory, project, updateProject, category],
   );
 
   return <MainContext.Provider value={value}>{children}</MainContext.Provider>;

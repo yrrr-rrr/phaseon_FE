@@ -59,3 +59,7 @@ export const LinkBox = styled.div`
   justify-content: center;
   gap: 8px;
 `;
+
+export const SvgIcon = styled(Icon)`
+  cursor: pointer;
+`;

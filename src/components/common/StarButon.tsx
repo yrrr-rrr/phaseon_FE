@@ -12,8 +12,9 @@ export default function StarButton({
   height: number;
   children?: React.ReactNode;
 }) {
-  const { data, updateData, setShowModal } = useContext(ProjectDetailContext);
-  const [isLiked, setIsLiked] = useState(data.floatmenu.isLiked);
+  const { projectInfo, updateProjectInfo } = useContext(ProjectDetailContext);
+  const [isLiked, setIsLiked] = useState(projectInfo.isLiked);
+
   return (
     <s.Button
       $width={width}
@@ -26,19 +27,19 @@ export default function StarButton({
         return;
         // 모달창 사라지면 다시 활성화 예정
         setIsLiked((prev) => !prev);
-        updateData((update) => {
+        updateProjectInfo((update) => {
           if (isLiked) {
-            update.star--;
+            update.likeCount--;
           } else {
-            update.star++;
+            update.likeCount++;
           }
-          update.floatmenu.isLiked = isLiked;
+          update.isLiked = isLiked;
         });
       }}
     >
       {isLiked ? <Icon name="FillStar" fill="white" /> : <Icon name="EmptyStar" />}
       {children}
-      <p>{data.star}</p>
+      <p>{projectInfo.likeCount}</p>
     </s.Button>
   );
 }

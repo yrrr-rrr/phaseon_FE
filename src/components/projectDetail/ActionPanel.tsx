@@ -5,12 +5,12 @@ import StarButton from '@/components/common/StarButon';
 import NotificationButton from '@/components/common/NotificationButton';
 
 export default function ActionPanel() {
-  const { data } = useContext(ProjectDetailContext);
+  const { projectInfo } = useContext(ProjectDetailContext);
 
   return (
     <s.Section>
-      <s.ProjectName>{data.projectname}</s.ProjectName>
-      <s.ShortDescription>{data.intro.projectbrief}</s.ShortDescription>
+      <s.ProjectName>{projectInfo.title}</s.ProjectName>
+      <s.ShortDescription>{projectInfo.summary}</s.ShortDescription>
       <s.ButtonBox>
         <StarButton width={108} height={40}>
           빛내기
