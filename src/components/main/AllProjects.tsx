@@ -18,6 +18,7 @@ export default function AllProjects() {
                 top: 0,
                 behavior: 'smooth',
               });
+              console.log(projectObj.id);
               navigate(`/${projectObj.id}`);
             }}
           >
