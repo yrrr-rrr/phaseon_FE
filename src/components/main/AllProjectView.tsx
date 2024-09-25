@@ -81,9 +81,9 @@ export default function AllProjectView() {
       showMoreButton,
       isFetching,
       setIsPageUpdate,
-      category.categoryicon[currentCategory],
-      page,
-      sortOption,
+      // category.categoryicon[currentCategory],
+      // page,
+      // sortOption,
     );
   }, [page, updateProject, showMoreButton, currentCategory, category.categoryicon, sortOption]);
 
@@ -168,19 +168,19 @@ async function getProjects(
   showMoreButton: boolean,
   isFetching: { current: boolean },
   setIsPageUpdate: React.Dispatch<SetStateAction<boolean>>,
-  currentCategory: string,
-  page: number,
-  sortOption: string,
+  // currentCategory: string,
+  // page: number,
+  // sortOption: string,
 ) {
   setIsLoading(true);
   try {
-    let response = await fetch(`https://name.store:8443/api/project?page=${page}&sort=${sortOption}`);
-    if (currentCategory !== 'ALLPROJECT') {
-      response = await fetch(
-        `https://name.store:8443/api/projects?page=${page}&size=10&sort=${sortOption}&category=${currentCategory}`,
-      );
-    }
-    // const response = await fetch('dummy/projectCollection.json');
+    // let response = await fetch(`https://name.store:8443/api/project?page=${page}&sort=${sortOption}`);
+    // if (currentCategory !== 'ALLPROJECT') {
+    //   response = await fetch(
+    //     `https://name.store:8443/api/projects?page=${page}&size=10&sort=${sortOption}&category=${currentCategory}`,
+    //   );
+    // }
+    const response = await fetch('dummy/projectCollection.json');
     const data = await response.json();
     updateProject((draft) => {
       if (!showMoreButton && data.data.projects.length) {

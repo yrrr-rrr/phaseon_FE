@@ -38,8 +38,8 @@ export default function ProjectIntro() {
   const iconWithFill = [2, 3, 4, 5, 6, 8];
 
   useEffect(() => {
-    getData(updateProjectInfo, id);
-    getMember(updateMemberInfo, id);
+    getData(updateProjectInfo);
+    getMember(updateMemberInfo);
     getAccomplishment(updateAccomplishmentInfo, id);
   }, [id, updateProjectInfo, updateMemberInfo, updateAccomplishmentInfo]);
 
@@ -75,10 +75,10 @@ export default function ProjectIntro() {
   );
 }
 
-async function getData(updateData: Updater<ProjectInfo>, id: string) {
+async function getData(updateData: Updater<ProjectInfo>) {
   try {
-    const response = await fetch(`https://name.store:8443/api/project/${id}`);
-    // const response = await fetch('/public/dummy/atti2.json');
+    // const response = await fetch(`https://name.store:8443/api/project/${id}`);
+    const response = await fetch('/public/dummy/atti2.json');
     const data = await response.json();
     updateData((obj) => {
       Object.assign(obj, data.data[0]);
@@ -88,10 +88,10 @@ async function getData(updateData: Updater<ProjectInfo>, id: string) {
   }
 }
 
-async function getMember(updateData: Updater<Member>, id: string) {
+async function getMember(updateData: Updater<Member>) {
   try {
-    const response = await fetch(`https://name.store:8443/api/project/${id}/members`);
-    // const response = await fetch('/dummy/attiMember.json');
+    // const response = await fetch(`https://name.store:8443/api/project/${id}/members`);
+    const response = await fetch('/dummy/attiMember.json');
     const data = await response.json();
     updateData((obj) => {
       Object.assign(obj, data.data);
