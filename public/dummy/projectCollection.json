@@ -2,7 +2,7 @@
   "data": {
     "projects": [
       {
-        "id": 1,
+        "id": "atti",
         "thumbnail": "png/atti.png",
         "title": "ATTI",
         "summary": "치매환자를 위한 기억의 회상과 기록 솔루션",
