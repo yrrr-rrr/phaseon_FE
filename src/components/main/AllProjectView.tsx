@@ -116,7 +116,7 @@ export default function AllProjectView() {
           <s.ButtonWrapper>
             <s.SortButton
               $current={sortOption}
-              $buttonName="recently"
+              $buttonName="updatedAt"
               onClick={() => {
                 setSortOption('updatedAt');
               }}
@@ -125,7 +125,7 @@ export default function AllProjectView() {
             </s.SortButton>
             <s.SortButton
               $current={sortOption}
-              $buttonName="popularity"
+              $buttonName="likeCount&sort=viewCount"
               onClick={() => {
                 setSortOption('likeCount&sort=viewCount');
               }}
