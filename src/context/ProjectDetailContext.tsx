@@ -1,4 +1,4 @@
-import { createContext, SetStateAction, useMemo, useState } from 'react';
+import React, { createContext, SetStateAction, useMemo, useState } from 'react';
 import { Updater, useImmer } from 'use-immer';
 import { Accomplishment, Member, ProjectInfo, ReleaseType } from '@/interface';
 
@@ -13,6 +13,7 @@ interface ContextType {
   updateMemberInfo: Updater<Member>;
   showShare: boolean;
   setShowShare: React.Dispatch<SetStateAction<boolean>>;
+  setShowModal: React.Dispatch<SetStateAction<boolean>>;
 }
 
 const initialProjectInfo: ProjectInfo = {
@@ -114,9 +115,16 @@ export const ProjectDetailContext = createContext<ContextType>({
   updateMemberInfo: () => {},
   showShare: false,
   setShowShare: () => {},
+  setShowModal: () => {},
 });
 
-export function ProjectDetailProvider({ children }: { children: React.ReactNode }) {
+export function ProjectDetailProvider({
+  children,
+  setShowModal,
+}: {
+  children: React.ReactNode;
+  setShowModal: React.Dispatch<SetStateAction<boolean>>;
+}) {
   const [projectInfo, updateProjectInfo] = useImmer(initialProjectInfo);
   const [releaseInfo, updateReleaseInfo] = useImmer(initialReleaseInfo);
   const [accomplishmentInfo, updateAccomplishmentInfo] = useImmer(initialAccomplishmentInfo);
@@ -134,6 +142,7 @@ export function ProjectDetailProvider({ children }: { children: React.ReactNode 
       updateMemberInfo,
       showShare,
       setShowShare,
+      setShowModal
     }),
     [
       projectInfo,
@@ -145,6 +154,7 @@ export function ProjectDetailProvider({ children }: { children: React.ReactNode 
       memberInfo,
       updateMemberInfo,
       showShare,
+      setShowModal
     ],
   );
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;

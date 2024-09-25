@@ -14,6 +14,7 @@ export default function StarButton({
 }) {
   const { projectInfo, updateProjectInfo } = useContext(ProjectDetailContext);
   const [isLiked, setIsLiked] = useState(projectInfo.isLiked);
+
   return (
     <s.Button
       $width={width}
@@ -22,6 +23,9 @@ export default function StarButton({
       $color="white"
       $type="star"
       onClick={() => {
+        setShowModal(true);
+        return;
+        // 모달창 사라지면 다시 활성화 예정
         setIsLiked((prev) => !prev);
         updateProjectInfo((update) => {
           if (isLiked) {

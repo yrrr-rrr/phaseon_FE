@@ -23,6 +23,9 @@ export default function NotificationButton({
       $color="#69acff"
       $type="notification"
       onClick={() => {
+        setShowModal(true);
+        return;
+        // 모달창 사라지면 다시 활성화 예정
         setIsNotified((prev) => !prev);
         updateProjectInfo((update) => {
           if (isNotified) {

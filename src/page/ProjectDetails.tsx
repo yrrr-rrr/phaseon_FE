@@ -17,7 +17,7 @@ export default function ProjectDetails() {
       {showModal && <ComingSoonModal setShowModal={setShowModal} showModal={showModal} />}
       <Header setShowModal={setShowModal} />
       <Main $overflow="none">
-        <ProjectDetailProvider>
+        <ProjectDetailProvider setShowModal={setShowModal}>
           <CategoryProvider>
             <s.Div>
               <FloatingBox setShowModal={setShowModal} />
