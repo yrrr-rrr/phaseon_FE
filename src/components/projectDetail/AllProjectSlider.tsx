@@ -109,7 +109,7 @@ export default function AllProjectSlider() {
 
 async function getProjects(updateData: Updater<ProjectGalleryData>) {
   try {
-    const response = await fetch('/public/dummy/projectCollection.json');
+    const response = await fetch('https://name.store:8443/api/project?page=0&size=100&sort=createdAt');
     const data = await response.json();
     updateData((slideObj) => {
       Object.assign(slideObj, data);
