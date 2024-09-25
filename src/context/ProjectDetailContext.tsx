@@ -142,7 +142,7 @@ export function ProjectDetailProvider({
       updateMemberInfo,
       showShare,
       setShowShare,
-      setShowModal
+      setShowModal,
     }),
     [
       projectInfo,
@@ -154,7 +154,7 @@ export function ProjectDetailProvider({
       memberInfo,
       updateMemberInfo,
       showShare,
-      setShowModal
+      setShowModal,
     ],
   );
   return <ProjectDetailContext.Provider value={value}>{children}</ProjectDetailContext.Provider>;
