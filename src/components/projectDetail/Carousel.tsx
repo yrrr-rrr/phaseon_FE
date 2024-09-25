@@ -10,14 +10,16 @@ import ButtonBox from '@/components/projectDetail/ButtonBox';
 export default function Carousel() {
   const options: EmblaOptionsType = { align: 'center', loop: true, slidesToScroll: 2 };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-  const { data } = useContext(ProjectDetailContext);
+  const { projectInfo } = useContext(ProjectDetailContext);
   const { setStartImg, setShowZoomComponent } = useContext(ZoomContext);
   const [currentImg, setCurrentImg] = useState<number>(0);
+  const [imgDirection, setImgDirection] = useState('row');
+  const img = new Image();
 
   const slides =
-    data.menu.projectinfo.carousel.length <= 2
-      ? [...data.menu.projectinfo.carousel, ...data.menu.projectinfo.carousel]
-      : data.menu.projectinfo.carousel;
+    projectInfo.projectMedia.length <= 2
+      ? [...projectInfo.projectMedia, ...projectInfo.projectMedia]
+      : projectInfo.projectMedia;
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -30,17 +32,28 @@ export default function Carousel() {
     emblaApi.on('select', onSelect);
   }, [emblaApi, onSelect]);
 
+  useEffect(() => {
+    if (img.width <= 0) return;
+
+    if (img.width >= 1920) {
+      setImgDirection('row');
+    } else {
+      setImgDirection('col');
+    }
+  }, [img.width]);
+
   return (
     <s.Section>
       <ButtonBox emblaApi={emblaApi} padding={20} />
       <s.CarouselViewport ref={emblaRef}>
         <s.CarouselContainer>
           {slides.map((carouselObj, index) => {
-            if (carouselObj.type === 'video') {
+            img.src = carouselObj.url;
+            if (carouselObj.mediaType === 'video') {
               return (
-                <s.CarouselSlide key={carouselObj.img + index}>
+                <s.CarouselSlide key={carouselObj.url + index}>
                   <YouTube
-                    videoId={carouselObj.img}
+                    videoId={carouselObj.url}
                     opts={{
                       width: '320px',
                       height: '180px',
@@ -50,11 +63,11 @@ export default function Carousel() {
               );
             }
             return (
-              <s.CarouselSlide key={carouselObj.img + index}>
+              <s.CarouselSlide key={carouselObj.url + index}>
                 <s.Img
-                  src={`/public/${carouselObj.img}`}
+                  src={carouselObj.url}
                   alt=""
-                  $type={carouselObj.type}
+                  $type={imgDirection}
                   onClick={() => {
                     setStartImg(index);
                     setShowZoomComponent(true);

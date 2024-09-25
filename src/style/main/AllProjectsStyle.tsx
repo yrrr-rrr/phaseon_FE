@@ -82,7 +82,6 @@ export const CategoryBox = styled.div`
 
   p {
     padding: 3px 4px;
-    width: 64px;
     height: 20px;
     border-radius: 4px;
     box-sizing: border-box;
