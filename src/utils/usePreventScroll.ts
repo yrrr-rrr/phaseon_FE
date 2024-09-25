@@ -15,5 +15,5 @@ export function usePreventScroll(showModal: boolean) {
         window.removeEventListener('touchmove', preventScroll);
       };
     }
-  }, []);
+  }, [showModal]);
 }
