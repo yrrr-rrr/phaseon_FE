@@ -7,6 +7,7 @@ import { Icon } from '@/components/common/Icon';
 import { ProjectGalleryData } from '@/interface';
 import { getStroke } from '@/utils/getStroke';
 import { getFill } from '@/utils/getFill';
+import { useLocation } from 'react-router-dom';
 
 export default function AllProjectView() {
   const { project, updateProject, currentCategory, category } = useContext(MainContext);
@@ -16,6 +17,9 @@ export default function AllProjectView() {
   const [showMoreButton, setShowMoreButton] = useState(false);
   const [isPageUpdate, setIsPageUpdate] = useState(false);
   const isFetching = useRef<boolean>(false);
+
+  const id = useLocation().pathname.replace('/', '');
+  console.log(id);
 
   const icons = [
     'BigProjectIcon',
